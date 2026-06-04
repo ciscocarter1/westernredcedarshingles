@@ -13,7 +13,7 @@ export function SiteHeader() {
         <Link to="/" className="flex items-center gap-2 text-primary">
           <span
             aria-hidden
-            className="block h-9 w-9 bg-primary sm:h-10 sm:w-10"
+            className="block h-12 w-12 bg-primary sm:h-14 sm:w-14"
             style={{
               WebkitMaskImage: `url(${logoIcon.url})`,
               maskImage: `url(${logoIcon.url})`,
