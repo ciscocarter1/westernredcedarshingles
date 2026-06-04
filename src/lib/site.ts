@@ -15,6 +15,7 @@ export const NAV = [
   { to: "/cedar-plank-grilling-guide", label: "Grilling" },
   { to: "/project-ideas", label: "Project Ideas" },
   { to: "/cedar-shingles-faq", label: "FAQ" },
+  { to: "/store-locator", label: "Find a Store" },
   { to: "/contact", label: "Contact" },
 ] as const;
 
