@@ -15,6 +15,7 @@ import { Route as ProjectIdeasRouteImport } from './routes/project-ideas'
 import { Route as ProductRouteImport } from './routes/product'
 import { Route as InstallationGuideRouteImport } from './routes/installation-guide'
 import { Route as HowToRouteImport } from './routes/how-to'
+import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CedarVsCompositeRouteImport } from './routes/cedar-vs-composite'
 import { Route as CedarShinglesFaqRouteImport } from './routes/cedar-shingles-faq'
 import { Route as CedarPlankGrillingGuideRouteImport } from './routes/cedar-plank-grilling-guide'
@@ -50,6 +51,11 @@ const HowToRoute = HowToRouteImport.update({
   path: '/how-to',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const CedarVsCompositeRoute = CedarVsCompositeRouteImport.update({
   id: '/cedar-vs-composite',
   path: '/cedar-vs-composite',
@@ -76,6 +82,7 @@ export interface FileRoutesByFullPath {
   '/cedar-plank-grilling-guide': typeof CedarPlankGrillingGuideRoute
   '/cedar-shingles-faq': typeof CedarShinglesFaqRoute
   '/cedar-vs-composite': typeof CedarVsCompositeRoute
+  '/contact': typeof ContactRoute
   '/how-to': typeof HowToRoute
   '/installation-guide': typeof InstallationGuideRoute
   '/product': typeof ProductRoute
@@ -88,6 +95,7 @@ export interface FileRoutesByTo {
   '/cedar-plank-grilling-guide': typeof CedarPlankGrillingGuideRoute
   '/cedar-shingles-faq': typeof CedarShinglesFaqRoute
   '/cedar-vs-composite': typeof CedarVsCompositeRoute
+  '/contact': typeof ContactRoute
   '/how-to': typeof HowToRoute
   '/installation-guide': typeof InstallationGuideRoute
   '/product': typeof ProductRoute
@@ -101,6 +109,7 @@ export interface FileRoutesById {
   '/cedar-plank-grilling-guide': typeof CedarPlankGrillingGuideRoute
   '/cedar-shingles-faq': typeof CedarShinglesFaqRoute
   '/cedar-vs-composite': typeof CedarVsCompositeRoute
+  '/contact': typeof ContactRoute
   '/how-to': typeof HowToRoute
   '/installation-guide': typeof InstallationGuideRoute
   '/product': typeof ProductRoute
@@ -115,6 +124,7 @@ export interface FileRouteTypes {
     | '/cedar-plank-grilling-guide'
     | '/cedar-shingles-faq'
     | '/cedar-vs-composite'
+    | '/contact'
     | '/how-to'
     | '/installation-guide'
     | '/product'
@@ -127,6 +137,7 @@ export interface FileRouteTypes {
     | '/cedar-plank-grilling-guide'
     | '/cedar-shingles-faq'
     | '/cedar-vs-composite'
+    | '/contact'
     | '/how-to'
     | '/installation-guide'
     | '/product'
@@ -139,6 +150,7 @@ export interface FileRouteTypes {
     | '/cedar-plank-grilling-guide'
     | '/cedar-shingles-faq'
     | '/cedar-vs-composite'
+    | '/contact'
     | '/how-to'
     | '/installation-guide'
     | '/product'
@@ -152,6 +164,7 @@ export interface RootRouteChildren {
   CedarPlankGrillingGuideRoute: typeof CedarPlankGrillingGuideRoute
   CedarShinglesFaqRoute: typeof CedarShinglesFaqRoute
   CedarVsCompositeRoute: typeof CedarVsCompositeRoute
+  ContactRoute: typeof ContactRoute
   HowToRoute: typeof HowToRoute
   InstallationGuideRoute: typeof InstallationGuideRoute
   ProductRoute: typeof ProductRoute
@@ -204,6 +217,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof HowToRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/cedar-vs-composite': {
       id: '/cedar-vs-composite'
       path: '/cedar-vs-composite'
@@ -240,6 +260,7 @@ const rootRouteChildren: RootRouteChildren = {
   CedarPlankGrillingGuideRoute: CedarPlankGrillingGuideRoute,
   CedarShinglesFaqRoute: CedarShinglesFaqRoute,
   CedarVsCompositeRoute: CedarVsCompositeRoute,
+  ContactRoute: ContactRoute,
   HowToRoute: HowToRoute,
   InstallationGuideRoute: InstallationGuideRoute,
   ProductRoute: ProductRoute,
