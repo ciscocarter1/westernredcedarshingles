@@ -156,7 +156,7 @@ function HomePage() {
       </section>
 
       {/* TREE OF LIFE */}
-      <section className="bg-forest text-forest-foreground py-20">
+      <section className="bg-primary text-primary-foreground py-20">
         <div className="mx-auto max-w-5xl px-4 text-center sm:px-6">
           <p className="font-ui text-sm font-semibold uppercase tracking-[0.2em] text-highlight">
             Pacific Northwest heritage
@@ -164,14 +164,14 @@ function HomePage() {
           <h2 className="font-display mt-3 text-3xl font-bold sm:text-4xl">
             The Tree of Life
           </h2>
-          <p className="font-body mx-auto mt-5 max-w-3xl text-lg text-forest-foreground/90">
+          <p className="font-body mx-auto mt-5 max-w-3xl text-lg text-primary-foreground/90">
             Western Red Cedar was the cornerstone of Northwest coastal Native American culture — called
             the <em>Tree of Life</em> and the <em>Life Giver</em>. It provided shelter, tools, clothing, and
             medicine for generations.
           </p>
           <div className="mt-12 grid grid-cols-2 gap-5 md:grid-cols-4">
             {TREE_OF_LIFE.map((t) => (
-              <div key={t.label} className="rounded-lg border border-forest-foreground/15 bg-forest-foreground/5 p-6 text-left backdrop-blur-sm">
+              <div key={t.label} className="rounded-lg border border-forest-foreground/15 bg-forest text-forest-foreground p-6 text-left shadow-sm">
                 <t.icon className="h-7 w-7 text-highlight" aria-hidden />
                 <div className="font-display mt-3 text-xl font-semibold">{t.label}</div>
                 <p className="font-body mt-1 text-sm text-forest-foreground/80">{t.desc}</p>
