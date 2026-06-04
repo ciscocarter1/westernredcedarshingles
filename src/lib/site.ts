@@ -15,7 +15,10 @@ export const NAV = [
   { to: "/cedar-plank-grilling-guide", label: "Grilling" },
   { to: "/project-ideas", label: "Project Ideas" },
   { to: "/cedar-shingles-faq", label: "FAQ" },
+  { to: "/contact", label: "Contact" },
 ] as const;
+
+export const CONTACT_EMAIL = "maggie@smccedar.com";
 
 export const FAQS = [
   {
