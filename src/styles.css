@@ -32,6 +32,8 @@
   --color-highlight-foreground: var(--highlight-foreground);
   --color-forest: var(--forest);
   --color-forest-foreground: var(--forest-foreground);
+  --color-cedar: var(--cedar);
+  --color-cedar-foreground: var(--cedar-foreground);
   --color-cream: var(--cream);
   --font-display: var(--font-display);
   --font-body: var(--font-body);
@@ -49,11 +51,11 @@
   --popover: oklch(0.99 0.008 80);
   --popover-foreground: oklch(0.18 0.01 60);
 
-  --primary: oklch(0.36 0.06 45);               /* deep cedar brown #5C3D2E */
+  --primary: oklch(0.39 0.155 257);             /* Lowe's navy #004990 (Pantone 280) */
   --primary-foreground: oklch(0.97 0.018 80);
 
   --secondary: oklch(0.92 0.022 75);
-  --secondary-foreground: oklch(0.28 0.04 45);
+  --secondary-foreground: oklch(0.30 0.05 45);  /* cedar brown text */
 
   --muted: oklch(0.92 0.018 80);
   --muted-foreground: oklch(0.42 0.02 60);
@@ -61,18 +63,20 @@
   --accent: oklch(0.42 0.08 145);               /* forest green #3A5A40 */
   --accent-foreground: oklch(0.97 0.018 80);
 
-  --highlight: oklch(0.65 0.13 55);             /* warm amber #C27C3A */
+  --highlight: oklch(0.65 0.13 55);             /* warm cedar amber #C27C3A */
   --highlight-foreground: oklch(0.15 0.01 60);
 
   --forest: oklch(0.42 0.08 145);
   --forest-foreground: oklch(0.97 0.018 80);
+  --cedar: oklch(0.36 0.06 45);                 /* deep cedar brown #5C3D2E */
+  --cedar-foreground: oklch(0.97 0.018 80);
   --cream: oklch(0.965 0.018 80);
 
   --destructive: oklch(0.55 0.22 27);
   --destructive-foreground: oklch(0.98 0 0);
   --border: oklch(0.85 0.02 70);
   --input: oklch(0.85 0.02 70);
-  --ring: oklch(0.36 0.06 45);
+  --ring: oklch(0.39 0.155 257);
 
   --font-display: "Playfair Display", Georgia, serif;
   --font-body: "Source Serif 4", "Source Serif Pro", Georgia, serif;
