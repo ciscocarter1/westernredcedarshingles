@@ -2,7 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout, Breadcrumbs } from "@/components/SiteLayout";
 import { LowesCTA } from "@/components/CTAButton";
 import { pageMeta, jsonLdScript, breadcrumbLd, LOWES_URL, HOWTO_PDF, SITE_URL } from "@/lib/site";
-import bundleImg from "@/assets/product-bundle.jpg";
+import bundleAsset from "@/assets/product-bundle-cedar.jpg.asset.json";
+const bundleImg = bundleAsset.url;
 import { Check, FileDown, Truck, RotateCcw, ShieldCheck } from "lucide-react";
 
 const TITLE = "Western Red Cedar Shingle Kit — #3/#4 Undercourse Grade | Buy at Lowe's";
