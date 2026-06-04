@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
-import { TreePine } from "lucide-react";
 import { NAV, LOWES_URL } from "@/lib/site";
+import logoAsset from "@/assets/wrc-logo-wordmark.png.asset.json";
 
 export function SiteFooter() {
   return (
@@ -8,10 +8,13 @@ export function SiteFooter() {
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6">
         <div className="grid gap-10 md:grid-cols-3">
           <div>
-            <div className="flex items-center gap-2">
-              <TreePine className="h-6 w-6" aria-hidden />
-              <span className="font-display text-xl font-bold">Western Red Cedar Planks</span>
-            </div>
+            <img
+              src={logoAsset.url}
+              alt="Western Red Cedar"
+              width={600}
+              height={300}
+              className="h-14 w-auto"
+            />
             <p className="font-body mt-3 text-sm text-primary-foreground/80">
               Natural, untreated #3/#4 undercourse Western Red Cedar shingles for DIY siding,
               accent walls, outdoor structures, and cedar plank grilling. Sold exclusively at Lowe's.
