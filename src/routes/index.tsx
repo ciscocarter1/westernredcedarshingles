@@ -141,10 +141,10 @@ function HomePage() {
           </h2>
           <p className="font-body mt-5 text-lg text-foreground/80">
             #3/#4 undercourse cedar carries natural character marks, flat grain, and the occasional knot.
-            On an interior accent wall that's the look people pay extra to fake — rustic warmth a flawless
+            On an interior accent wall that's the look people pay extra to fake, rustic warmth a flawless
             #1 Certigrade simply doesn't have. On a shed or pergola it performs identically to higher
             grades at a fraction of the cost. And when you're using it as a grilling plank? The grade
-            never mattered to begin with — it's going on the fire.
+            never mattered to begin with, it's going on the fire.
           </p>
           <Link
             to="/product"
