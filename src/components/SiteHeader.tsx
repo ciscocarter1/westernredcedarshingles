@@ -1,20 +1,25 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { Menu, X, TreePine } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { NAV } from "@/lib/site";
 import { LowesCTA } from "./CTAButton";
+import logoAsset from "@/assets/wrc-logo-wordmark.png.asset.json";
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-background/90 backdrop-blur supports-[backdrop-filter]:bg-background/75">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6">
-        <Link to="/" className="flex items-center gap-2 text-primary">
-          <TreePine className="h-6 w-6" aria-hidden />
-          <span className="font-display text-lg font-bold leading-tight sm:text-xl">
-            Western Red Cedar
-            <span className="hidden sm:inline"> Shingles</span>
-          </span>
+        <Link to="/" className="flex items-center gap-2" aria-label="Western Red Cedar Shingles — Home">
+          <img
+            src={logoAsset.url}
+            alt="Western Red Cedar"
+            width={600}
+            height={300}
+            className="h-10 w-auto sm:h-12"
+            style={{ filter: "invert(1)" }}
+          />
+          <span className="sr-only">Western Red Cedar Shingles</span>
         </Link>
         <nav className="hidden items-center gap-6 lg:flex" aria-label="Primary">
           {NAV.map((n) => (
