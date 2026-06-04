@@ -93,7 +93,7 @@ function HomePage() {
       {/* WHAT IT IS */}
       <section className="mx-auto max-w-4xl px-4 py-20 text-center sm:px-6">
         <h2 className="font-display text-3xl font-bold text-primary sm:text-4xl">
-          The honest DIY cedar shingle — straight from the Pacific Northwest
+          The honest DIY cedar shingle that are straight from the Pacific Northwest
         </h2>
         <p className="font-body mt-6 text-lg text-foreground/80 sm:text-xl">
           #3/#4 undercourse grade Western Red Cedar shingles, Lowe's Item #3976, sold exclusively at Lowe's.
