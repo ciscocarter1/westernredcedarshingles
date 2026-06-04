@@ -6,7 +6,7 @@ import heroImg from "@/assets/hero-cedar-shingles.jpg";
 import shedImg from "@/assets/project-shed.jpg";
 import accentImg from "@/assets/project-accent-wall.jpg";
 import grillImg from "@/assets/project-grilling.jpg";
-import textureImg from "@/assets/cedar-texture.jpg";
+import textureAsset from "@/assets/cedar-shingles-stack.png.asset.json";
 import { ChevronDown, Home as HomeIcon, Hammer, Shirt, Leaf } from "lucide-react";
 import { useState } from "react";
 
@@ -126,7 +126,7 @@ function HomePage() {
       <section className="mx-auto grid max-w-7xl gap-10 px-4 py-20 sm:px-6 lg:grid-cols-2 lg:items-center">
         <div className="overflow-hidden rounded-xl">
           <img
-            src={textureImg}
+            src={textureAsset.url}
             alt="Close-up of Western Red Cedar wood grain showing natural color variation"
             width={1600}
             height={900}
