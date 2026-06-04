@@ -20,15 +20,15 @@ export const NAV = [
 export const FAQS = [
   {
     q: "What exactly is this product and where can I buy it?",
-    a: "It's a Western Red Cedar Tree of Life wood shingle siding kit — #3/#4 undercourse grade, 100% natural and untreated. Item #3976 / Model #3976, sold exclusively at Lowe's, in store and online with free shipping over $45.",
+    a: "It's a Western Red Cedar Tree of Life wood shingle siding kit #3/#4 undercourse grade, 100% natural and untreated. Item #3976 / Model #3976, sold exclusively at Lowe's, in store and online with free shipping over $45.",
   },
   {
     q: "What grade are these cedar shingles?",
-    a: "These are #3/#4 undercourse grade Western Red Cedar shingles — also called utility grade. They contain natural character marks, flat grain, and some sapwood. For interior accent walls that's a feature: rustic warmth a flawless #1 Certigrade cannot match. For grilling planks the grade is irrelevant — it's going on the fire. For sheds, pergolas, and dog houses they perform identically to higher grades at a lower price.",
+    a: "These are #3/#4 undercourse grade Western Red Cedar shingles also called utility grade. They contain natural character marks, flat grain, and some sapwood. For interior accent walls that's a feature: rustic warmth a flawless #1 Certigrade cannot match. For grilling planks the grade is irrelevant. it's going on the fire. For sheds, pergolas, and dog houses they perform identically to higher grades at a lower price.",
   },
   {
     q: "What is Western Red Cedar and why is it special?",
-    a: "Western Red Cedar (Thuja plicata) is a Pacific Northwest softwood prized for natural rot and insect resistance, dimensional stability, and a straight, even grain. No chemical treatment required — the wood's natural oils do the work. Native peoples called it the Tree of Life.",
+    a: "Western Red Cedar (Thuja plicata) is a Pacific Northwest softwood prized for natural rot and insect resistance, dimensional stability, and a straight, even grain. No chemical treatment required, the wood's natural oils do the work. Native peoples called it the Tree of Life.",
   },
   {
     q: "Is this product treated or finished?",
