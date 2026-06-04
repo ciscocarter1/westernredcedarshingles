@@ -6,7 +6,7 @@ import heroImg from "@/assets/hero-cedar-shingles.jpg";
 import shedImg from "@/assets/project-shed.jpg";
 import accentImg from "@/assets/project-accent-wall.jpg";
 import grillImg from "@/assets/project-grilling.jpg";
-import textureAsset from "@/assets/cedar-shingles-stack.png.asset.json";
+import textureAsset from "@/assets/cedar-shingles-stack-wide.png.asset.json";
 import { ChevronDown, Home as HomeIcon, Hammer, Shirt, Leaf } from "lucide-react";
 import { useState } from "react";
 
