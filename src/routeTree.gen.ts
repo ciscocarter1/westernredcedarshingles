@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as WesternRedCedarRouteImport } from './routes/western-red-cedar'
+import { Route as StoreLocatorRouteImport } from './routes/store-locator'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ProjectIdeasRouteImport } from './routes/project-ideas'
 import { Route as ProductRouteImport } from './routes/product'
@@ -24,6 +25,11 @@ import { Route as IndexRouteImport } from './routes/index'
 const WesternRedCedarRoute = WesternRedCedarRouteImport.update({
   id: '/western-red-cedar',
   path: '/western-red-cedar',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StoreLocatorRoute = StoreLocatorRouteImport.update({
+  id: '/store-locator',
+  path: '/store-locator',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
@@ -88,6 +94,7 @@ export interface FileRoutesByFullPath {
   '/product': typeof ProductRoute
   '/project-ideas': typeof ProjectIdeasRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/store-locator': typeof StoreLocatorRoute
   '/western-red-cedar': typeof WesternRedCedarRoute
 }
 export interface FileRoutesByTo {
@@ -101,6 +108,7 @@ export interface FileRoutesByTo {
   '/product': typeof ProductRoute
   '/project-ideas': typeof ProjectIdeasRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/store-locator': typeof StoreLocatorRoute
   '/western-red-cedar': typeof WesternRedCedarRoute
 }
 export interface FileRoutesById {
@@ -115,6 +123,7 @@ export interface FileRoutesById {
   '/product': typeof ProductRoute
   '/project-ideas': typeof ProjectIdeasRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/store-locator': typeof StoreLocatorRoute
   '/western-red-cedar': typeof WesternRedCedarRoute
 }
 export interface FileRouteTypes {
@@ -130,6 +139,7 @@ export interface FileRouteTypes {
     | '/product'
     | '/project-ideas'
     | '/sitemap.xml'
+    | '/store-locator'
     | '/western-red-cedar'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -143,6 +153,7 @@ export interface FileRouteTypes {
     | '/product'
     | '/project-ideas'
     | '/sitemap.xml'
+    | '/store-locator'
     | '/western-red-cedar'
   id:
     | '__root__'
@@ -156,6 +167,7 @@ export interface FileRouteTypes {
     | '/product'
     | '/project-ideas'
     | '/sitemap.xml'
+    | '/store-locator'
     | '/western-red-cedar'
   fileRoutesById: FileRoutesById
 }
@@ -170,6 +182,7 @@ export interface RootRouteChildren {
   ProductRoute: typeof ProductRoute
   ProjectIdeasRoute: typeof ProjectIdeasRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  StoreLocatorRoute: typeof StoreLocatorRoute
   WesternRedCedarRoute: typeof WesternRedCedarRoute
 }
 
@@ -180,6 +193,13 @@ declare module '@tanstack/react-router' {
       path: '/western-red-cedar'
       fullPath: '/western-red-cedar'
       preLoaderRoute: typeof WesternRedCedarRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/store-locator': {
+      id: '/store-locator'
+      path: '/store-locator'
+      fullPath: '/store-locator'
+      preLoaderRoute: typeof StoreLocatorRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/sitemap.xml': {
@@ -266,6 +286,7 @@ const rootRouteChildren: RootRouteChildren = {
   ProductRoute: ProductRoute,
   ProjectIdeasRoute: ProjectIdeasRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
+  StoreLocatorRoute: StoreLocatorRoute,
   WesternRedCedarRoute: WesternRedCedarRoute,
 }
 export const routeTree = rootRouteImport
