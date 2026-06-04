@@ -9,8 +9,62 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as WesternRedCedarRouteImport } from './routes/western-red-cedar'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as ProjectIdeasRouteImport } from './routes/project-ideas'
+import { Route as ProductRouteImport } from './routes/product'
+import { Route as InstallationGuideRouteImport } from './routes/installation-guide'
+import { Route as HowToRouteImport } from './routes/how-to'
+import { Route as CedarVsCompositeRouteImport } from './routes/cedar-vs-composite'
+import { Route as CedarShinglesFaqRouteImport } from './routes/cedar-shingles-faq'
+import { Route as CedarPlankGrillingGuideRouteImport } from './routes/cedar-plank-grilling-guide'
 import { Route as IndexRouteImport } from './routes/index'
 
+const WesternRedCedarRoute = WesternRedCedarRouteImport.update({
+  id: '/western-red-cedar',
+  path: '/western-red-cedar',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProjectIdeasRoute = ProjectIdeasRouteImport.update({
+  id: '/project-ideas',
+  path: '/project-ideas',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProductRoute = ProductRouteImport.update({
+  id: '/product',
+  path: '/product',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InstallationGuideRoute = InstallationGuideRouteImport.update({
+  id: '/installation-guide',
+  path: '/installation-guide',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HowToRoute = HowToRouteImport.update({
+  id: '/how-to',
+  path: '/how-to',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CedarVsCompositeRoute = CedarVsCompositeRouteImport.update({
+  id: '/cedar-vs-composite',
+  path: '/cedar-vs-composite',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CedarShinglesFaqRoute = CedarShinglesFaqRouteImport.update({
+  id: '/cedar-shingles-faq',
+  path: '/cedar-shingles-faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CedarPlankGrillingGuideRoute = CedarPlankGrillingGuideRouteImport.update({
+  id: '/cedar-plank-grilling-guide',
+  path: '/cedar-plank-grilling-guide',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -19,28 +73,158 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/cedar-plank-grilling-guide': typeof CedarPlankGrillingGuideRoute
+  '/cedar-shingles-faq': typeof CedarShinglesFaqRoute
+  '/cedar-vs-composite': typeof CedarVsCompositeRoute
+  '/how-to': typeof HowToRoute
+  '/installation-guide': typeof InstallationGuideRoute
+  '/product': typeof ProductRoute
+  '/project-ideas': typeof ProjectIdeasRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/western-red-cedar': typeof WesternRedCedarRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/cedar-plank-grilling-guide': typeof CedarPlankGrillingGuideRoute
+  '/cedar-shingles-faq': typeof CedarShinglesFaqRoute
+  '/cedar-vs-composite': typeof CedarVsCompositeRoute
+  '/how-to': typeof HowToRoute
+  '/installation-guide': typeof InstallationGuideRoute
+  '/product': typeof ProductRoute
+  '/project-ideas': typeof ProjectIdeasRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/western-red-cedar': typeof WesternRedCedarRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/cedar-plank-grilling-guide': typeof CedarPlankGrillingGuideRoute
+  '/cedar-shingles-faq': typeof CedarShinglesFaqRoute
+  '/cedar-vs-composite': typeof CedarVsCompositeRoute
+  '/how-to': typeof HowToRoute
+  '/installation-guide': typeof InstallationGuideRoute
+  '/product': typeof ProductRoute
+  '/project-ideas': typeof ProjectIdeasRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/western-red-cedar': typeof WesternRedCedarRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/cedar-plank-grilling-guide'
+    | '/cedar-shingles-faq'
+    | '/cedar-vs-composite'
+    | '/how-to'
+    | '/installation-guide'
+    | '/product'
+    | '/project-ideas'
+    | '/sitemap.xml'
+    | '/western-red-cedar'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/cedar-plank-grilling-guide'
+    | '/cedar-shingles-faq'
+    | '/cedar-vs-composite'
+    | '/how-to'
+    | '/installation-guide'
+    | '/product'
+    | '/project-ideas'
+    | '/sitemap.xml'
+    | '/western-red-cedar'
+  id:
+    | '__root__'
+    | '/'
+    | '/cedar-plank-grilling-guide'
+    | '/cedar-shingles-faq'
+    | '/cedar-vs-composite'
+    | '/how-to'
+    | '/installation-guide'
+    | '/product'
+    | '/project-ideas'
+    | '/sitemap.xml'
+    | '/western-red-cedar'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  CedarPlankGrillingGuideRoute: typeof CedarPlankGrillingGuideRoute
+  CedarShinglesFaqRoute: typeof CedarShinglesFaqRoute
+  CedarVsCompositeRoute: typeof CedarVsCompositeRoute
+  HowToRoute: typeof HowToRoute
+  InstallationGuideRoute: typeof InstallationGuideRoute
+  ProductRoute: typeof ProductRoute
+  ProjectIdeasRoute: typeof ProjectIdeasRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  WesternRedCedarRoute: typeof WesternRedCedarRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/western-red-cedar': {
+      id: '/western-red-cedar'
+      path: '/western-red-cedar'
+      fullPath: '/western-red-cedar'
+      preLoaderRoute: typeof WesternRedCedarRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/project-ideas': {
+      id: '/project-ideas'
+      path: '/project-ideas'
+      fullPath: '/project-ideas'
+      preLoaderRoute: typeof ProjectIdeasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/product': {
+      id: '/product'
+      path: '/product'
+      fullPath: '/product'
+      preLoaderRoute: typeof ProductRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/installation-guide': {
+      id: '/installation-guide'
+      path: '/installation-guide'
+      fullPath: '/installation-guide'
+      preLoaderRoute: typeof InstallationGuideRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/how-to': {
+      id: '/how-to'
+      path: '/how-to'
+      fullPath: '/how-to'
+      preLoaderRoute: typeof HowToRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cedar-vs-composite': {
+      id: '/cedar-vs-composite'
+      path: '/cedar-vs-composite'
+      fullPath: '/cedar-vs-composite'
+      preLoaderRoute: typeof CedarVsCompositeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cedar-shingles-faq': {
+      id: '/cedar-shingles-faq'
+      path: '/cedar-shingles-faq'
+      fullPath: '/cedar-shingles-faq'
+      preLoaderRoute: typeof CedarShinglesFaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cedar-plank-grilling-guide': {
+      id: '/cedar-plank-grilling-guide'
+      path: '/cedar-plank-grilling-guide'
+      fullPath: '/cedar-plank-grilling-guide'
+      preLoaderRoute: typeof CedarPlankGrillingGuideRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -53,6 +237,15 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  CedarPlankGrillingGuideRoute: CedarPlankGrillingGuideRoute,
+  CedarShinglesFaqRoute: CedarShinglesFaqRoute,
+  CedarVsCompositeRoute: CedarVsCompositeRoute,
+  HowToRoute: HowToRoute,
+  InstallationGuideRoute: InstallationGuideRoute,
+  ProductRoute: ProductRoute,
+  ProjectIdeasRoute: ProjectIdeasRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
+  WesternRedCedarRoute: WesternRedCedarRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
