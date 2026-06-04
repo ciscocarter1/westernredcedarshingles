@@ -32,6 +32,8 @@
   --color-highlight-foreground: var(--highlight-foreground);
   --color-forest: var(--forest);
   --color-forest-foreground: var(--forest-foreground);
+  --color-cedar: var(--cedar);
+  --color-cedar-foreground: var(--cedar-foreground);
   --color-cream: var(--cream);
   --font-display: var(--font-display);
   --font-body: var(--font-body);
