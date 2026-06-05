@@ -1,3 +1,12 @@
+import exteriorIcon from "@/assets/uses/Exterior_Sidewalls.png.asset.json";
+import interiorIcon from "@/assets/uses/Interior_Accent_Walls.png.asset.json";
+import shedIcon from "@/assets/uses/Storage_Sheds.png.asset.json";
+import pergolaIcon from "@/assets/uses/Gazebos_Pergolas.png.asset.json";
+import dogIcon from "@/assets/uses/Dog_Houses.png.asset.json";
+import manCaveIcon from "@/assets/uses/Man_Caves.png.asset.json";
+import bbqIcon from "@/assets/uses/BBQ_Grilling_Planks.png.asset.json";
+import windowIcon from "@/assets/uses/Window_Doors.png.asset.json";
+
 export const SITE_URL = "https://westernredcedarshingles.com";
 export const SITE_NAME = "Western Red Cedar Planks";
 
@@ -84,15 +93,16 @@ export const FAQS = [
   },
 ];
 
+
 export const USES = [
-  { label: "Exterior Sidewalls", icon: "🏡" },
-  { label: "Interior Accent Walls", icon: "🛋️" },
-  { label: "Storage Sheds", icon: "🛖" },
-  { label: "Gazebos & Pergolas", icon: "⛩️" },
-  { label: "Dog Houses", icon: "🐕" },
-  { label: "Man Caves", icon: "🪵" },
-  { label: "BBQ Grilling Planks", icon: "🔥" },
-  { label: "Window & Door Shims", icon: "🔨" },
+  { label: "Exterior Sidewalls", icon: exteriorIcon.url },
+  { label: "Interior Accent Walls", icon: interiorIcon.url },
+  { label: "Storage Sheds", icon: shedIcon.url },
+  { label: "Gazebos & Pergolas", icon: pergolaIcon.url },
+  { label: "Dog Houses", icon: dogIcon.url },
+  { label: "Man Caves", icon: manCaveIcon.url },
+  { label: "BBQ Grilling Planks", icon: bbqIcon.url },
+  { label: "Window & Door Shims", icon: windowIcon.url },
 ];
 
 export function jsonLdScript(data: unknown) {
