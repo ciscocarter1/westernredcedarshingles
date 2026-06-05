@@ -117,43 +117,6 @@ function ContactPage() {
         <div className="mt-10 grid gap-10 lg:grid-cols-3 lg:gap-14">
           {/* Contact info */}
           <aside className="space-y-6 lg:col-span-1">
-            <div className="rounded-xl border border-border bg-card p-6 shadow-sm">
-              <h2 className="font-display text-xl font-bold text-primary">Direct contact</h2>
-              <ul className="font-body mt-4 space-y-4 text-sm text-foreground/80">
-                <li className="flex items-start gap-3">
-                  <Mail className="mt-0.5 h-5 w-5 shrink-0 text-accent" aria-hidden />
-                  <div>
-                    <div className="font-ui text-xs font-semibold uppercase tracking-wider text-foreground/60">
-                      Email
-                    </div>
-                    <a
-                      href={`mailto:${CONTACT_EMAIL}`}
-                      className="font-ui mt-0.5 inline-block font-semibold text-accent hover:underline"
-                    >
-                      {CONTACT_EMAIL}
-                    </a>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Phone className="mt-0.5 h-5 w-5 shrink-0 text-accent" aria-hidden />
-                  <div>
-                    <div className="font-ui text-xs font-semibold uppercase tracking-wider text-foreground/60">
-                      Response time
-                    </div>
-                    <div className="mt-0.5">Within 1–2 business days</div>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-accent" aria-hidden />
-                  <div>
-                    <div className="font-ui text-xs font-semibold uppercase tracking-wider text-foreground/60">
-                      Origin
-                    </div>
-                    <div className="mt-0.5">Pacific Northwest, USA</div>
-                  </div>
-                </li>
-              </ul>
-            </div>
             <div className="rounded-xl border border-border bg-secondary p-6">
               <h3 className="font-display text-lg font-bold text-primary">Looking to buy?</h3>
               <p className="font-body mt-2 text-sm text-foreground/80">
