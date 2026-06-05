@@ -11,5 +11,24 @@ export default defineConfig({
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
     server: { entry: "server" },
+    // Prerender every page route to static HTML at build time. crawlLinks follows
+    // <Link>/<a> from these entry points to discover and prerender the rest.
+    prerender: {
+      enabled: true,
+      crawlLinks: true,
+      routes: [
+        "/",
+        "/product",
+        "/western-red-cedar",
+        "/installation-guide",
+        "/cedar-plank-grilling-guide",
+        "/project-ideas",
+        "/cedar-shingles-faq",
+        "/cedar-vs-composite",
+        "/how-to",
+        "/contact",
+        "/store-locator",
+      ],
+    },
   },
 });
