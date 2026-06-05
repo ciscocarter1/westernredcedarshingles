@@ -17,7 +17,7 @@ const PROJECTS = [
   { title: "Build the Ultimate Man Cave Wall", desc: "Sports bar, basement lounge, gaming room. Cedar texture pairs beautifully with leather, brass, and warm lighting.", img: textureImg },
   { title: "Bring the Outdoors In", desc: "A bedroom cedar accent wall behind the headboard turns the bed into a cabin retreat. The natural cedar scent is a bonus that lasts months.", img: accentImg },
   { title: "BBQ & Outdoor Kitchen Cedar Walls", desc: "Clad the back wall of your outdoor kitchen in cedar shingles. Weather-resistant, fire-tolerant when used as cladding, and gorgeous in dappled afternoon light.", img: grillImg },
-  { title: "Gazebo and Pergola Cladding", desc: "Side panels, sun screens, partial walls — cedar shingles add privacy and texture to outdoor structures without blocking airflow.", img: shedImg },
+  { title: "Gazebo and Pergola Cladding", desc: "Side panels, sun screens, partial walls — cedar shingles add privacy and texture to outdoor structures without blocking airflow.", img: "/__l5e/assets-v1/5e3e0508-e438-4545-a3c4-a5781f0810ad/cedar-pallet-stack.jpeg" },
   { title: "Firepit Area Privacy Screens", desc: "Build cedar shingle privacy walls around a backyard firepit zone. Defines the space, deflects wind, and feels like a wilderness lodge.", img: textureImg },
   { title: "Children's Fort Exterior", desc: "Backyard fort, treehouse, or playhouse — cedar shingles upgrade a weekend project to a neighborhood landmark.", img: "/__l5e/assets-v1/3b7090de-9600-48e9-926b-db8bb8db6105/front-of-shed.png" },
 ];
