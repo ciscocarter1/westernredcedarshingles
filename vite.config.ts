@@ -21,7 +21,7 @@ export default defineConfig({
         "/product",
         "/western-red-cedar",
         "/installation-guide",
-        "/cedar-plank-grilling-guide",
+        // "/cedar-plank-grilling-guide", // temporarily excluded — SSR fetch failure during prerender
         "/project-ideas",
         "/cedar-shingles-faq",
         "/cedar-vs-composite",
