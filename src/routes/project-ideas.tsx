@@ -19,7 +19,7 @@ const PROJECTS = [
   { title: "BBQ & Outdoor Kitchen Cedar Walls", desc: "Clad the back wall of your outdoor kitchen in cedar shingles. Weather-resistant, fire-tolerant when used as cladding, and gorgeous in dappled afternoon light.", img: grillImg },
   { title: "Gazebo and Pergola Cladding", desc: "Side panels, sun screens, partial walls — cedar shingles add privacy and texture to outdoor structures without blocking airflow.", img: shedImg },
   { title: "Firepit Area Privacy Screens", desc: "Build cedar shingle privacy walls around a backyard firepit zone. Defines the space, deflects wind, and feels like a wilderness lodge.", img: textureImg },
-  { title: "Children's Fort Exterior", desc: "Backyard fort, treehouse, or playhouse — cedar shingles upgrade a weekend project to a neighborhood landmark.", img: shedImg },
+  { title: "Children's Fort Exterior", desc: "Backyard fort, treehouse, or playhouse — cedar shingles upgrade a weekend project to a neighborhood landmark.", img: "/__l5e/assets-v1/3b7090de-9600-48e9-926b-db8bb8db6105/front-of-shed.png" },
 ];
 
 export const Route = createFileRoute("/project-ideas")({
