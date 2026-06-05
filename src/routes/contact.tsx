@@ -4,7 +4,7 @@ import { z } from "zod";
 import { SiteLayout, Breadcrumbs } from "@/components/SiteLayout";
 import { pageMeta, jsonLdScript, breadcrumbLd, CONTACT_EMAIL, SITE_URL, SITE_NAME } from "@/lib/site";
 import { supabase } from "@/integrations/supabase/client";
-import { Mail, Phone, MapPin, Loader2 } from "lucide-react";
+import { Loader2 } from "lucide-react";
 import { toast } from "sonner";
 
 const TITLE = "Contact & Inquiries — Western Red Cedar Shingles";
