@@ -5,7 +5,8 @@ import { pageMeta, jsonLdScript, breadcrumbLd, SITE_URL } from "@/lib/site";
 import shedImg from "@/assets/project-shed.jpg";
 import accentImg from "@/assets/project-accent-wall.jpg";
 import grillImg from "@/assets/project-grilling.jpg";
-import textureImg from "@/assets/cedar-texture.jpg";
+import manCaveAsset from "@/assets/man-cave-cedar.png.asset.json";
+const textureImg = manCaveAsset.url;
 
 const TITLE = "Cedar Shingle Project Ideas — Accent Walls, Sheds, Man Caves & More";
 const DESC = "Get inspired with Western Red Cedar shingle project ideas. Interior accent walls, rustic dining rooms, backyard sheds, pergolas, man caves, and outdoor BBQ spaces.";
