@@ -15,19 +15,16 @@ export default defineConfig({
     // <Link>/<a> from these entry points to discover and prerender the rest.
     prerender: {
       enabled: true,
-      crawlLinks: true,
+      crawlLinks: false,
       routes: [
         "/",
         "/product",
         "/western-red-cedar",
         "/installation-guide",
-        // "/cedar-plank-grilling-guide", // temporarily excluded — SSR fetch failure during prerender
+        "/cedar-plank-grilling-guide",
         "/project-ideas",
         "/cedar-shingles-faq",
         "/cedar-vs-composite",
-        "/how-to",
-        "/contact",
-        "/store-locator",
       ],
     },
   },
