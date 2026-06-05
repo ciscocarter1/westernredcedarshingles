@@ -93,14 +93,6 @@ export const FAQS = [
   },
 ];
 
-import exteriorIcon from "@/assets/uses/Exterior_Sidewalls.png.asset.json";
-import interiorIcon from "@/assets/uses/Interior_Accent_Walls.png.asset.json";
-import shedIcon from "@/assets/uses/Storage_Sheds.png.asset.json";
-import pergolaIcon from "@/assets/uses/Gazebos_Pergolas.png.asset.json";
-import dogIcon from "@/assets/uses/Dog_Houses.png.asset.json";
-import manCaveIcon from "@/assets/uses/Man_Caves.png.asset.json";
-import bbqIcon from "@/assets/uses/BBQ_Grilling_Planks.png.asset.json";
-import windowIcon from "@/assets/uses/Window_Doors.png.asset.json";
 
 export const USES = [
   { label: "Exterior Sidewalls", icon: exteriorIcon.url },
