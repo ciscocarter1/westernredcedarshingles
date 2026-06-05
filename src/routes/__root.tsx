@@ -96,17 +96,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary_large_image" },
       // Google Search Console — replace content value when verification tag is issued.
       // { name: "google-site-verification", content: "REPLACE_ME" },
-      { title: "Western Red Cedar Shingles" },
-      { property: "og:title", content: "Western Red Cedar Shingles" },
-      { name: "twitter:title", content: "Western Red Cedar Shingles" },
-      { name: "description", content: "Define Your Home With Character and
-Charm Using Lowe's Cost-Effective Western Red Cedar Shingles" },
-      { property: "og:description", content: "Define Your Home With Character and
-Charm Using Lowe's Cost-Effective Western Red Cedar Shingles" },
-      { name: "twitter:description", content: "Define Your Home With Character and
-Charm Using Lowe's Cost-Effective Western Red Cedar Shingles" },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/69d04d91-bbbc-4eec-a3e2-dda673d25e20" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/69d04d91-bbbc-4eec-a3e2-dda673d25e20" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
