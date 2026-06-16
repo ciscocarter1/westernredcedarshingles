@@ -78,7 +78,7 @@ const ORG_LD = {
   name: "Western Red Cedar Planks",
   url: "https://westernredcedarshingles.com",
   description:
-    "Maker of natural Western Red Cedar shingle kits sold exclusively at Lowe's for DIY siding, accent walls, outdoor structures, and cedar plank grilling.",
+    "Maker of natural Western Red Cedar Shingle bundles sold exclusively at Lowe's for siding, accent walls, sheds, and outdoor projects. Pro and DIY friendly.",
   sameAs: [
     "https://www.lowes.com/pd/Red-Cedar-Untreated-Wood-Siding-Shingles/3379244",
   ],

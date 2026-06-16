@@ -16,8 +16,8 @@ export function SiteFooter() {
               className="h-14 w-auto"
             />
             <p className="font-body mt-3 text-sm text-primary-foreground/80">
-              Natural, untreated #3/#4 undercourse Western Red Cedar shingles for DIY siding,
-              accent walls, outdoor structures, and cedar plank grilling. Sold exclusively at Lowe's.
+              Natural, untreated #3/#4 undercourse Western Red Cedar Shingles for siding, sheds,
+              accent walls, and outdoor projects. Pro and DIY friendly. Sold exclusively at Lowe's.
             </p>
           </div>
           <div>

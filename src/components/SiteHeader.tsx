@@ -10,7 +10,7 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-background/90 backdrop-blur supports-[backdrop-filter]:bg-background/75">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6">
-        <Link to="/" className="flex items-center gap-2 text-primary">
+        <Link to="/" className="mr-6 flex items-center gap-4 text-primary lg:mr-10">
           <span
             aria-hidden
             className="block h-12 w-12 bg-primary sm:h-14 sm:w-14"

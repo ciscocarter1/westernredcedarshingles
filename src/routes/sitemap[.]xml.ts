@@ -8,7 +8,7 @@ const ROUTES = [
   { path: "/product", changefreq: "weekly", priority: "0.9" },
   { path: "/western-red-cedar", changefreq: "monthly", priority: "0.8" },
   { path: "/installation-guide", changefreq: "monthly", priority: "0.8" },
-  { path: "/cedar-plank-grilling-guide", changefreq: "monthly", priority: "0.8" },
+  
   { path: "/project-ideas", changefreq: "monthly", priority: "0.7" },
   { path: "/cedar-shingles-faq", changefreq: "monthly", priority: "0.7" },
   { path: "/cedar-vs-composite", changefreq: "monthly", priority: "0.6" },
