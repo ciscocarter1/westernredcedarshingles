@@ -12,7 +12,7 @@ const DESC = "Get inspired with Western Red Cedar Shingles project ideas. Siding
 
 const PROJECTS = [
   { title: "Creative Backyard Shed with Western Red Cedar Shingles", desc: "Turn a basic storage shed into a focal point. Cedar shingles weather to silver-gray and look better every year — no paint, no replacement panels.", img: shedImg },
-  { title: "DIY Rustic Accent Wall", desc: "Dining room, bedroom, or stairwell. Construction adhesive, brad nails, a level — installable in a weekend with a warmer result than any peel-and-stick alternative.", img: accentImg },
+  { title: "DIY Rustic Accent Wall", desc: "Dining room, bedroom, or stairwell. Construction adhesive, brad nails, a level — installable in a weekend with a warmer result than any peel-and-stick alternative.", img: "/__l5e/assets-v1/d8745c97-af8f-4baa-b6e3-9a79b9eb71b1/diy-rustic-accent-wall.png" },
   { title: "Build the Ultimate Man Cave Wall", desc: "Sports bar, basement lounge, gaming room. Cedar texture pairs beautifully with leather, brass, and warm lighting.", img: textureImg },
   { title: "Bring the Outdoors In", desc: "A bedroom cedar accent wall behind the headboard turns the bed into a cabin retreat. The natural cedar scent is a bonus that lasts months.", img: "/__l5e/assets-v1/decedbde-4239-420a-b91d-3c60c456f61c/maggie_bedroom.png" },
   { title: "Outdoor Kitchen & BBQ Cedar Walls", desc: "Clad the back wall of your outdoor kitchen in Western Red Cedar Shingles. Weather-resistant and gorgeous in dappled afternoon light.", img: "/__l5e/assets-v1/fdef2a4b-7cd7-42e2-b98d-dea25bf6d89c/back-bbq.png" },
