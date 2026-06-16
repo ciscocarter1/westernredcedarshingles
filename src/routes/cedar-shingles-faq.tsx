@@ -43,8 +43,9 @@ function FaqPage() {
           Western Red Cedar Shingles — Frequently Asked Questions
         </h1>
         <p className="font-body mt-5 text-lg text-foreground/80">
-          Fifteen questions verified from the product listing and our own DIY experience. If your
-          question isn't here, the answer is almost always: yes, you can probably use cedar for that.
+          Answers verified from the product listing and our own DIY and pro contractor experience. If your
+          question isn't here, the answer is almost always: yes, you can probably use Western Red Cedar
+          Shingles for that.
         </p>
       </section>
 
@@ -58,8 +59,8 @@ function FaqPage() {
 
       <section className="bg-secondary py-16">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
-          <h2 className="font-display text-3xl font-bold text-primary sm:text-4xl">Ready to order?</h2>
-          <p className="font-body mt-3 text-lg text-foreground/80">Item #3976 at Lowe's.</p>
+          <h2 className="font-display text-3xl font-bold text-primary sm:text-4xl">Ready to Purchase?</h2>
+          <p className="font-body mt-3 text-lg text-foreground/80">Item #3976 at Lowe's — in-store only.</p>
           <div className="mt-6"><LowesCTA size="lg">Buy at Lowe's</LowesCTA></div>
         </div>
       </section>
