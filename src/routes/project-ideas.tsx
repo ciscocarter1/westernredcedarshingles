@@ -2,7 +2,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout, Breadcrumbs } from "@/components/SiteLayout";
 import { LowesCTA } from "@/components/CTAButton";
 import { pageMeta, jsonLdScript, breadcrumbLd, SITE_URL } from "@/lib/site";
-import shedImg from "@/assets/project-shed.jpg";
 import accentImg from "@/assets/project-accent-wall.jpg";
 import manCaveAsset from "@/assets/man-cave-cedar.png.asset.json";
 const textureImg = manCaveAsset.url;
@@ -11,7 +10,7 @@ const TITLE = "Cedar Shingle Project Ideas — Siding, Accent Walls, Sheds, Man 
 const DESC = "Get inspired with Western Red Cedar Shingles project ideas. Siding, interior accent walls, rustic dining rooms, backyard sheds, pergolas, man caves, and outdoor spaces.";
 
 const PROJECTS = [
-  { title: "Creative Backyard Shed with Western Red Cedar Shingles", desc: "Turn a basic storage shed into a focal point. Cedar shingles weather to silver-gray and look better every year — no paint, no replacement panels.", img: shedImg },
+  { title: "Creative Backyard Shed with Western Red Cedar Shingles", desc: "Turn a basic storage shed into a focal point. Cedar shingles weather to silver-gray and look better every year — no paint, no replacement panels.", img: "/__l5e/assets-v1/93739a25-4f73-4ea6-8134-a92d2cfd499b/creative-backyard-shed.png" },
   { title: "DIY Rustic Accent Wall", desc: "Dining room, bedroom, or stairwell. Construction adhesive, brad nails, a level — installable in a weekend with a warmer result than any peel-and-stick alternative.", img: "/__l5e/assets-v1/d8745c97-af8f-4baa-b6e3-9a79b9eb71b1/diy-rustic-accent-wall.png" },
   { title: "Build the Ultimate Man Cave Wall", desc: "Sports bar, basement lounge, gaming room. Cedar texture pairs beautifully with leather, brass, and warm lighting.", img: textureImg },
   { title: "Bring the Outdoors In", desc: "A bedroom cedar accent wall behind the headboard turns the bed into a cabin retreat. The natural cedar scent is a bonus that lasts months.", img: "/__l5e/assets-v1/decedbde-4239-420a-b91d-3c60c456f61c/maggie_bedroom.png" },
