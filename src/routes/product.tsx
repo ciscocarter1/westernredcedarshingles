@@ -4,10 +4,10 @@ import { LowesCTA } from "@/components/CTAButton";
 import { pageMeta, jsonLdScript, breadcrumbLd, LOWES_URL, HOWTO_PDF, SITE_URL } from "@/lib/site";
 import bundleAsset from "@/assets/product-bundle-cedar.jpg.asset.json";
 const bundleImg = bundleAsset.url;
-import { Check, FileDown, Truck, RotateCcw, ShieldCheck } from "lucide-react";
+import { Check, FileDown } from "lucide-react";
 
-const TITLE = "Western Red Cedar Shingle Kit — #3/#4 Undercourse Grade | Buy at Lowe's";
-const DESC = "100% natural, untreated #3/#4 undercourse Western Red Cedar shingles. Item #3976 at Lowe's. Free shipping over $45. Perfect for DIY accent walls, sheds, pergolas, and cedar plank grilling.";
+const TITLE = "Western Red Cedar Shingles — Siding Bundle, #3/#4 Undercourse | Lowe's";
+const DESC = "100% natural, untreated #3/#4 undercourse Western Red Cedar Shingles. Item #3976 at Lowe's, in-store only. Affordable, beautiful siding for contractors and DIYers — sheds, accent walls, pergolas, and more.";
 
 export const Route = createFileRoute("/product")({
   head: () => {
@@ -24,9 +24,9 @@ export const Route = createFileRoute("/product")({
         jsonLdScript({
           "@context": "https://schema.org",
           "@type": "Product",
-          name: "Western Red Cedar Tree of Life Wood Shingle Siding",
+          name: "Western Red Cedar Shingles — Tree of Life Siding Bundle",
           description:
-            "100% natural, untreated #3/#4 undercourse Western Red Cedar shingles for DIY siding, interior accent walls, outdoor structures, and cedar plank grilling. Available exclusively at Lowe's.",
+            "100% natural, untreated #3/#4 undercourse Western Red Cedar Shingles for siding, interior accent walls, sheds, and outdoor structures. Available exclusively at Lowe's, in-store only.",
           brand: { "@type": "Brand", name: "Western Red Cedar Planks" },
           material: "Western Red Cedar (Thuja plicata)",
           sku: "3976",
@@ -57,19 +57,19 @@ export const Route = createFileRoute("/product")({
 });
 
 const HIGHLIGHTS = [
-  { t: "Affordable & Authentic", d: "Western Red Cedar siding shingles at a budget-friendly price." },
-  { t: "100% Natural & Sustainable", d: "Pure, organic cedar — durable and eco-friendly." },
-  { t: "Versatile & Cost-Effective", d: "DIY projects, siding, and rustic designs without breaking the bank." },
-  { t: "BBQ-Ready Grilling Planks", d: "Enhances flavors of salmon, brats, vegetables, and more." },
+  { t: "Affordable & Authentic Siding", d: "Real Western Red Cedar Shingles at a budget-friendly price — a pro-grade siding option that respects the project." },
+  { t: "100% Natural & Sustainable", d: "Pure, organic Western Red Cedar — durable and eco-friendly." },
+  { t: "Versatile & Cost-Effective", d: "Siding, accent walls, sheds, pergolas, and rustic designs without breaking the bank." },
+  { t: "Pro Contractor Friendly", d: "An affordable, beautiful, and distinctive siding option general contractors and remodelers can offer their clients." },
   { t: "Inspired by Tradition", d: "Pacific Northwest Native American heritage." },
   { t: "Roofing", d: "Permitted on non-inhabited buildings only (sheds, dog houses, gazebos)." },
 ];
 
 const APPLICATIONS = [
-  "Exterior Sidewalls", "Exterior Eaves", "Entry Way Highlights", "Storage Sheds",
+  "Siding", "Exterior Sidewalls", "Exterior Eaves", "Entry Way Highlights", "Storage Sheds",
   "Spa Coverings", "Gazebos", "Pergolas", "Neighborhood Forts", "Dog Houses",
   "Man Cave Walls", "Dining Room Walls", "Bedroom Walls", "Family Room Walls",
-  "Office Walls", "Garden Stakes", "Builder's Shims", "Grilling Planks",
+  "Office Walls", "Garden Stakes", "Builder's Shims",
 ];
 
 function ProductPage() {
@@ -84,7 +84,7 @@ function ProductPage() {
         <div className="overflow-hidden rounded-xl bg-secondary">
           <img
             src={bundleImg}
-            alt="Bundle of Western Red Cedar #3/#4 undercourse wood shingles"
+            alt="Bundle of Western Red Cedar Shingles, #3/#4 undercourse grade"
             width={1200}
             height={1200}
             fetchPriority="high"
@@ -96,19 +96,19 @@ function ProductPage() {
             Item #3976 · Model #3976
           </p>
           <h1 className="font-display mt-3 text-3xl font-bold leading-tight text-primary sm:text-4xl lg:text-5xl">
-            Western Red Cedar Tree of Life Wood Shingle — Item #3976 at Lowe's
+            Western Red Cedar Shingles — Tree of Life Siding Bundle, Item #3976 at Lowe's
           </h1>
           <div className="mt-5 flex flex-wrap gap-2">
-            {["100% Natural", "Untreated", "#3/#4 Undercourse Grade", "Available at Lowe's"].map((b) => (
+            {["100% Natural", "Untreated", "#3/#4 Undercourse Grade", "In-Store at Lowe's"].map((b) => (
               <span key={b} className="font-ui rounded-full bg-secondary px-3 py-1 text-xs font-semibold text-secondary-foreground">
                 {b}
               </span>
             ))}
           </div>
           <p className="font-body mt-6 text-lg text-foreground/80">
-            The honest DIY cedar shingle: rustic character, real Pacific Northwest Western Red Cedar,
-            and a price that respects the project. Use them for siding, accent walls, outdoor
-            structures, or food-safe grilling planks.
+            Honest Western Red Cedar Shingles: rustic character, real Pacific Northwest cedar, and a price
+            that respects the project. The affordable, beautiful, and distinctive siding option contractors
+            and DIYers reach for — for siding, accent walls, sheds, pergolas, and outdoor structures.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
             <LowesCTA size="lg">Buy at Lowe's</LowesCTA>
@@ -120,11 +120,6 @@ function ProductPage() {
             >
               <FileDown className="h-4 w-4" /> HowTo Manual (PDF)
             </a>
-          </div>
-          <div className="font-ui mt-6 grid grid-cols-3 gap-4 border-t border-border pt-6 text-sm">
-            <div className="flex items-center gap-2"><Truck className="h-4 w-4 text-accent" /> Free ship $45+</div>
-            <div className="flex items-center gap-2"><RotateCcw className="h-4 w-4 text-accent" /> Free returns</div>
-            <div className="flex items-center gap-2"><ShieldCheck className="h-4 w-4 text-accent" /> Lowe's price guarantee</div>
           </div>
         </div>
       </section>
@@ -150,19 +145,20 @@ function ProductPage() {
       {/* GRADE TRANSPARENCY */}
       <section className="mx-auto max-w-4xl px-4 py-20 sm:px-6">
         <h2 className="font-display text-3xl font-bold text-primary sm:text-4xl">
-          Why #3/#4 Undercourse Grade Is the Smart Choice for DIY
+          Why #3/#4 Undercourse Western Red Cedar Shingles Are the Smart Choice
         </h2>
         <div className="font-body prose-cedar mt-6 space-y-5 text-lg text-foreground/85">
           <p>
-            Utility-grade shingles contain natural character marks, flat grain, and sapwood. We don't
-            hide that — we lead with it.
+            Utility-grade Western Red Cedar Shingles contain natural character marks, flat grain, and
+            sapwood. We don't hide that — we lead with it.
           </p>
           <p>
             For interior accent walls, those features <strong>are</strong> the look. The variation in tone
-            and grain produces a rustic warmth that pristine #1 Certigrade can't replicate at any price.
-            For grilling planks, the grade is irrelevant — it's going on the fire. For sheds, gazebos, and
-            pergolas, undercourse shingles perform identically to higher grades at a meaningfully lower
-            cost.
+            and grain produces a rustic warmth that pristine Number One Blue Label can't replicate at any
+            price. For sheds, gazebos, pergolas, and siding applications, undercourse Western Red Cedar
+            Shingles perform comparably to higher grades at a meaningfully lower cost — exactly what
+            general contractors and pro remodelers need to offer clients an affordable, beautiful, and
+            distinctive siding option.
           </p>
           <p>
             This is the same grade used as the <strong>undercourse layer</strong> in double-course wall
@@ -191,7 +187,7 @@ function ProductPage() {
         <div className="rounded-2xl bg-primary p-10 text-center text-primary-foreground shadow-lg">
           <h2 className="font-display text-3xl font-bold sm:text-4xl">Available exclusively at Lowe's</h2>
           <p className="font-body mt-3 text-lg text-primary-foreground/90">
-            Free shipping over $45 · Free returns · Best price guarantee
+            In-store only · Item #3976 · See our Store Locator for the nearest Lowe's
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-3">
             <LowesCTA size="lg" variant="highlight">Buy at Lowe's</LowesCTA>
