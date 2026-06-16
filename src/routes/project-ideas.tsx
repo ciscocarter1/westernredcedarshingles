@@ -16,7 +16,7 @@ const PROJECTS = [
   { title: "Bring the Outdoors In", desc: "A bedroom cedar accent wall behind the headboard turns the bed into a cabin retreat. The natural cedar scent is a bonus that lasts months.", img: "/__l5e/assets-v1/decedbde-4239-420a-b91d-3c60c456f61c/maggie_bedroom.png" },
   { title: "Outdoor Kitchen & BBQ Cedar Walls", desc: "Clad the back wall of your outdoor kitchen in Western Red Cedar Shingles. Weather-resistant and gorgeous in dappled afternoon light.", img: "/__l5e/assets-v1/fdef2a4b-7cd7-42e2-b98d-dea25bf6d89c/back-bbq.png" },
   { title: "Gazebo and Pergola Cladding", desc: "Side panels, sun screens, partial walls — Western Red Cedar Shingles add privacy and texture to outdoor structures.", img: "/__l5e/assets-v1/e9d0bae2-c228-423a-afb6-066def3240d2/gazebo-pergola-cladding.png" },
-  { title: "Firepit Area Privacy Screens", desc: "Build cedar shingle privacy walls around a backyard firepit zone. Defines the space, deflects wind, and feels like a wilderness lodge.", img: "/__l5e/assets-v1/87882c8d-0cc0-411e-9b80-f8c471d2c65c/firepit-privacy-screen.jpg" },
+  { title: "Firepit Area Privacy Screens", desc: "Build cedar shingle privacy walls around a backyard firepit zone. Defines the space, deflects wind, and feels like a wilderness lodge.", img: "/__l5e/assets-v1/36722ac8-17d0-4544-995d-1e51e8b92d43/firepit-privacy-screen.png" },
   { title: "Children's Fort Exterior", desc: "Backyard fort, treehouse, or playhouse — Western Red Cedar Shingles upgrade a weekend project to a neighborhood landmark.", img: "/__l5e/assets-v1/7d89c8df-6eac-4fd2-bf93-2cf9c9e19c0e/kids-play-fort.png" },
 ];
 
