@@ -4,7 +4,6 @@ import shedIcon from "@/assets/uses/Storage_Sheds.png.asset.json";
 import pergolaIcon from "@/assets/uses/Gazebos_Pergolas.png.asset.json";
 import dogIcon from "@/assets/uses/Dog_Houses.png.asset.json";
 import manCaveIcon from "@/assets/uses/Man_Caves.png.asset.json";
-import bbqIcon from "@/assets/uses/BBQ_Grilling_Planks.png.asset.json";
 import windowIcon from "@/assets/uses/Window_Doors.png.asset.json";
 
 export const SITE_URL = "https://westernredcedarshingles.com";
@@ -21,7 +20,6 @@ export const NAV = [
   { to: "/product", label: "Product" },
   { to: "/western-red-cedar", label: "Cedar Species" },
   { to: "/installation-guide", label: "Installation" },
-  { to: "/cedar-plank-grilling-guide", label: "Grilling" },
   { to: "/project-ideas", label: "Project Ideas" },
   { to: "/cedar-shingles-faq", label: "FAQ" },
   { to: "/store-locator", label: "Find a Store" },
@@ -33,23 +31,23 @@ export const CONTACT_EMAIL = "maggie@smccedar.com";
 export const FAQS = [
   {
     q: "What exactly is this product and where can I buy it?",
-    a: "It's a Western Red Cedar Tree of Life wood shingle siding kit #3/#4 undercourse grade, 100% natural and untreated. Item #3976 / Model #3976, sold exclusively at Lowe's, in store and online with free shipping over $45.",
+    a: "It's a Western Red Cedar Tree of Life wood shingle siding bundle, #3/#4 undercourse grade, 100% natural and untreated. Item #3976 / Model #3976, sold exclusively at Lowe's. This is an in-store-only product — please see our Store Locator to find the Lowe's location nearest you.",
   },
   {
-    q: "What grade are these cedar shingles?",
-    a: "These are #3/#4 undercourse grade Western Red Cedar shingles also called utility grade. They contain natural character marks, flat grain, and some sapwood. For interior accent walls that's a feature: rustic warmth a flawless #1 Certigrade cannot match. For grilling planks the grade is irrelevant. it's going on the fire. For sheds, pergolas, and dog houses they perform identically to higher grades at a lower price.",
+    q: "What grade are these Western Red Cedar Shingles?",
+    a: "These are #3/#4 undercourse grade Western Red Cedar Shingles, also called utility grade. They contain natural character marks, flat grain, and some sapwood. For interior accent walls that's a feature — rustic warmth a flawless Number One Blue Label cannot match. For sheds, pergolas, gazebos, dog houses, and siding applications they perform comparably to higher grades at a lower price.",
   },
   {
     q: "What is Western Red Cedar and why is it special?",
-    a: "Western Red Cedar (Thuja plicata) is a Pacific Northwest softwood prized for natural rot and insect resistance, dimensional stability, and a straight, even grain. No chemical treatment required, the wood's natural oils do the work. Native peoples called it the Tree of Life.",
+    a: "Western Red Cedar (Thuja plicata) is a Pacific Northwest softwood prized for natural rot and insect resistance, dimensional stability, and a straight, even grain. No chemical treatment required — the wood's natural oils do the work. Native peoples called it the Tree of Life.",
   },
   {
     q: "Is this product treated or finished?",
-    a: "No. The shingles ship 100% natural and untreated. That's what makes them safe to use as grilling planks. You can leave them natural to silver out, or seal/stain after installation.",
+    a: "No. The shingles are 100% natural and untreated. You can leave them natural to silver out, or seal/stain after installation.",
   },
   {
-    q: "What can I use these shingles for?",
-    a: "Exterior sidewalls and eaves, entry-way highlights, storage sheds, spa coverings, gazebos, pergolas, neighborhood forts, dog houses, man-cave walls, dining-room/bedroom/family-room/office accent walls, garden stakes, builder's shims, and BBQ grilling planks.",
+    q: "What can I use these Western Red Cedar Shingles for?",
+    a: "Siding, exterior sidewalls and eaves, entry-way highlights, storage sheds, spa coverings, gazebos, pergolas, neighborhood forts, dog houses, man-cave walls, dining-room/bedroom/family-room/office accent walls, garden stakes, and builder's shims.",
   },
   {
     q: "Can these shingles be used on a roof?",
@@ -60,28 +58,24 @@ export const FAQS = [
     a: "Yes — they're popular for accent walls in dining rooms, bedrooms, family rooms, offices, and man caves. Construction adhesive plus brad nails is typically enough for interior installs.",
   },
   {
-    q: "How do I install cedar shingles on a wall?",
+    q: "How do I install Western Red Cedar Shingles on a wall?",
     a: "Snap a level chalk line at the base, work upward course by course with a 1/8\" gap between shingles for expansion, stagger joints at least 1.5\" from the course below, and use two galvanized nails per shingle placed ~2\" above the butt line and 3/4\" from each edge. Full step-by-step on our Installation Guide page.",
   },
   {
-    q: "Are these cedar shingles safe to use as grilling planks?",
-    a: "Yes. They are 100% natural and untreated — exactly what's required for food-safe cedar planking. Soak in water at least 1 hour before grilling.",
+    q: "Is this product available for contractors and bulk orders?",
+    a: "Yes. General contractors and professional remodelers are a primary audience for this bundle — Western Red Cedar Shingles deliver an affordable, beautiful, and distinctive siding option for client projects. For bulk or commercial quantities, contact us through the Contact page or ask the pro desk at your local Lowe's.",
   },
   {
-    q: "What foods can I grill on a cedar plank?",
-    a: "Salmon is the classic (Native American tradition), but bratwursts, chicken, pork, shrimp, and mixed vegetables all work beautifully. The plank adds a mild smoky cedar note without overpowering.",
-  },
-  {
-    q: "How do I grill on a cedar plank — basic steps?",
-    a: "1) Soak the plank in water for at least 1 hour. 2) Preheat grill to medium. 3) Place soaked plank on grill, close lid, heat ~7 minutes until lightly smoking. 4) Place seasoned food on the plank, close lid, cook to temperature. 5) Serve from the plank or transfer to a board.",
+    q: "Does it take special skills or tools to install?",
+    a: "No. A level, a chalk line, a hammer or nail gun, a circular or hand saw, and galvanized nails are all you need. The wood is light, cuts cleanly, and nails without splitting — Western Red Cedar Shingles are one of the most DIY-friendly siding products on the market.",
   },
   {
     q: "What is the cultural significance of Western Red Cedar?",
-    a: "Western Red Cedar was the cornerstone of Pacific Northwest Native American culture — known as the Tree of Life and Life Giver. It provided shelter (longhouses, totem poles), tools (canoes, paddles), clothing (woven bark), and medicine. We honor that heritage in the product name.",
+    a: "Western Red Cedar was the cornerstone of Pacific Northwest Native American culture — known as the Tree of Life and Life Giver. It provided food preparation options, shelter (longhouses, totem poles), tools (canoes, paddles), clothing (woven bark), and medicine. We honor that heritage in the product name.",
   },
   {
     q: "Is this product available for online ordering and shipping?",
-    a: "Yes — order through Lowes.com with free shipping on orders over $45 and free returns. In-store pickup is also available.",
+    a: "No. This is an in-store-only product. Please see our Store Locator to find the Lowe's location nearest you.",
   },
   {
     q: "Does this product come with installation instructions?",
@@ -89,7 +83,7 @@ export const FAQS = [
   },
   {
     q: "Are there project ideas available to help me get started?",
-    a: "Yes — see our Project Ideas page for backyard sheds, rustic accent walls, man caves, gazebos, BBQ outdoor kitchens, firepit privacy screens, and more.",
+    a: "Yes — see our Project Ideas page for backyard sheds, rustic accent walls, man caves, gazebos, firepit privacy screens, children's forts, and more.",
   },
 ];
 
@@ -101,7 +95,7 @@ export const USES = [
   { label: "Gazebos & Pergolas", icon: pergolaIcon.url },
   { label: "Dog Houses", icon: dogIcon.url },
   { label: "Man Caves", icon: manCaveIcon.url },
-  { label: "BBQ Grilling Planks", icon: bbqIcon.url },
+  { label: "Siding", icon: exteriorIcon.url },
   { label: "Window & Door Shims", icon: windowIcon.url },
 ];
 

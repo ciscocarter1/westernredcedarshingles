@@ -19,7 +19,6 @@ import { Route as HowToRouteImport } from './routes/how-to'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CedarVsCompositeRouteImport } from './routes/cedar-vs-composite'
 import { Route as CedarShinglesFaqRouteImport } from './routes/cedar-shingles-faq'
-import { Route as CedarPlankGrillingGuideRouteImport } from './routes/cedar-plank-grilling-guide'
 import { Route as IndexRouteImport } from './routes/index'
 
 const WesternRedCedarRoute = WesternRedCedarRouteImport.update({
@@ -72,11 +71,6 @@ const CedarShinglesFaqRoute = CedarShinglesFaqRouteImport.update({
   path: '/cedar-shingles-faq',
   getParentRoute: () => rootRouteImport,
 } as any)
-const CedarPlankGrillingGuideRoute = CedarPlankGrillingGuideRouteImport.update({
-  id: '/cedar-plank-grilling-guide',
-  path: '/cedar-plank-grilling-guide',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -85,7 +79,6 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/cedar-plank-grilling-guide': typeof CedarPlankGrillingGuideRoute
   '/cedar-shingles-faq': typeof CedarShinglesFaqRoute
   '/cedar-vs-composite': typeof CedarVsCompositeRoute
   '/contact': typeof ContactRoute
@@ -99,7 +92,6 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/cedar-plank-grilling-guide': typeof CedarPlankGrillingGuideRoute
   '/cedar-shingles-faq': typeof CedarShinglesFaqRoute
   '/cedar-vs-composite': typeof CedarVsCompositeRoute
   '/contact': typeof ContactRoute
@@ -114,7 +106,6 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/cedar-plank-grilling-guide': typeof CedarPlankGrillingGuideRoute
   '/cedar-shingles-faq': typeof CedarShinglesFaqRoute
   '/cedar-vs-composite': typeof CedarVsCompositeRoute
   '/contact': typeof ContactRoute
@@ -130,7 +121,6 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
-    | '/cedar-plank-grilling-guide'
     | '/cedar-shingles-faq'
     | '/cedar-vs-composite'
     | '/contact'
@@ -144,7 +134,6 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
-    | '/cedar-plank-grilling-guide'
     | '/cedar-shingles-faq'
     | '/cedar-vs-composite'
     | '/contact'
@@ -158,7 +147,6 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
-    | '/cedar-plank-grilling-guide'
     | '/cedar-shingles-faq'
     | '/cedar-vs-composite'
     | '/contact'
@@ -173,7 +161,6 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  CedarPlankGrillingGuideRoute: typeof CedarPlankGrillingGuideRoute
   CedarShinglesFaqRoute: typeof CedarShinglesFaqRoute
   CedarVsCompositeRoute: typeof CedarVsCompositeRoute
   ContactRoute: typeof ContactRoute
@@ -258,13 +245,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CedarShinglesFaqRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/cedar-plank-grilling-guide': {
-      id: '/cedar-plank-grilling-guide'
-      path: '/cedar-plank-grilling-guide'
-      fullPath: '/cedar-plank-grilling-guide'
-      preLoaderRoute: typeof CedarPlankGrillingGuideRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/': {
       id: '/'
       path: '/'
@@ -277,7 +257,6 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  CedarPlankGrillingGuideRoute: CedarPlankGrillingGuideRoute,
   CedarShinglesFaqRoute: CedarShinglesFaqRoute,
   CedarVsCompositeRoute: CedarVsCompositeRoute,
   ContactRoute: ContactRoute,
@@ -292,13 +271,3 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}

@@ -40,7 +40,6 @@ const SUBJECTS = [
   "General product question",
   "Bulk / contractor order",
   "Installation help",
-  "Grilling plank question",
   "Custom project guidance",
   "Press / partnership",
   "Other",
@@ -120,8 +119,8 @@ function ContactPage() {
             <div className="rounded-xl border border-border bg-secondary p-6">
               <h3 className="font-display text-lg font-bold text-primary">Looking to buy?</h3>
               <p className="font-body mt-2 text-sm text-foreground/80">
-                The shingle kit is stocked exclusively at Lowe's — Item #3976, free shipping over
-                $45.
+                Western Red Cedar Shingles are stocked exclusively at Lowe's — Item #3976. In-store
+                only. See our Store Locator for the nearest Lowe's.
               </p>
             </div>
           </aside>

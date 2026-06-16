@@ -4,22 +4,21 @@ import { LowesCTA } from "@/components/CTAButton";
 import { pageMeta, jsonLdScript, breadcrumbLd, SITE_URL } from "@/lib/site";
 import shedImg from "@/assets/project-shed.jpg";
 import accentImg from "@/assets/project-accent-wall.jpg";
-import grillImg from "@/assets/project-grilling.jpg";
 import manCaveAsset from "@/assets/man-cave-cedar.png.asset.json";
 const textureImg = manCaveAsset.url;
 
-const TITLE = "Cedar Shingle Project Ideas — Accent Walls, Sheds, Man Caves & More";
-const DESC = "Get inspired with Western Red Cedar shingle project ideas. Interior accent walls, rustic dining rooms, backyard sheds, pergolas, man caves, and outdoor BBQ spaces.";
+const TITLE = "Cedar Shingle Project Ideas — Siding, Accent Walls, Sheds, Man Caves & More";
+const DESC = "Get inspired with Western Red Cedar Shingles project ideas. Siding, interior accent walls, rustic dining rooms, backyard sheds, pergolas, man caves, and outdoor spaces.";
 
 const PROJECTS = [
-  { title: "Creative Backyard Shed with Cedar Shingles", desc: "Turn a basic storage shed into a focal point. Cedar shingles weather to silver-gray and look better every year — no paint, no replacement panels.", img: shedImg },
+  { title: "Creative Backyard Shed with Western Red Cedar Shingles", desc: "Turn a basic storage shed into a focal point. Cedar shingles weather to silver-gray and look better every year — no paint, no replacement panels.", img: shedImg },
   { title: "DIY Rustic Accent Wall", desc: "Dining room, bedroom, or stairwell. Construction adhesive, brad nails, a level — installable in a weekend with a warmer result than any peel-and-stick alternative.", img: accentImg },
   { title: "Build the Ultimate Man Cave Wall", desc: "Sports bar, basement lounge, gaming room. Cedar texture pairs beautifully with leather, brass, and warm lighting.", img: textureImg },
   { title: "Bring the Outdoors In", desc: "A bedroom cedar accent wall behind the headboard turns the bed into a cabin retreat. The natural cedar scent is a bonus that lasts months.", img: "/__l5e/assets-v1/52b56714-c219-4feb-a8a0-f025e0865463/cedar-house-exterior.png" },
-  { title: "BBQ & Outdoor Kitchen Cedar Walls", desc: "Clad the back wall of your outdoor kitchen in cedar shingles. Weather-resistant, fire-tolerant when used as cladding, and gorgeous in dappled afternoon light.", img: "/__l5e/assets-v1/fdef2a4b-7cd7-42e2-b98d-dea25bf6d89c/back-bbq.png" },
-  { title: "Gazebo and Pergola Cladding", desc: "Side panels, sun screens, partial walls — cedar shingles add privacy and texture to outdoor structures without blocking airflow.", img: "/__l5e/assets-v1/5e3e0508-e438-4545-a3c4-a5781f0810ad/cedar-pallet-stack.jpeg" },
+  { title: "Outdoor Kitchen & BBQ Cedar Walls", desc: "Clad the back wall of your outdoor kitchen in Western Red Cedar Shingles. Weather-resistant and gorgeous in dappled afternoon light.", img: "/__l5e/assets-v1/fdef2a4b-7cd7-42e2-b98d-dea25bf6d89c/back-bbq.png" },
+  { title: "Gazebo and Pergola Cladding", desc: "Side panels, sun screens, partial walls — Western Red Cedar Shingles add privacy and texture to outdoor structures.", img: "/__l5e/assets-v1/5e3e0508-e438-4545-a3c4-a5781f0810ad/cedar-pallet-stack.jpeg" },
   { title: "Firepit Area Privacy Screens", desc: "Build cedar shingle privacy walls around a backyard firepit zone. Defines the space, deflects wind, and feels like a wilderness lodge.", img: textureImg },
-  { title: "Children's Fort Exterior", desc: "Backyard fort, treehouse, or playhouse — cedar shingles upgrade a weekend project to a neighborhood landmark.", img: "/__l5e/assets-v1/3b7090de-9600-48e9-926b-db8bb8db6105/front-of-shed.png" },
+  { title: "Children's Fort Exterior", desc: "Backyard fort, treehouse, or playhouse — Western Red Cedar Shingles upgrade a weekend project to a neighborhood landmark.", img: "/__l5e/assets-v1/3b7090de-9600-48e9-926b-db8bb8db6105/front-of-shed.png" },
 ];
 
 export const Route = createFileRoute("/project-ideas")({
@@ -83,7 +82,7 @@ function ProjectIdeasPage() {
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
           <h2 className="font-display text-3xl font-bold sm:text-4xl">Pick your project. Get your bundles.</h2>
           <p className="font-body mt-4 text-lg text-primary-foreground/90">
-            Item #3976 at Lowe's — free shipping over $45.
+            Item #3976 at Lowe's — in-store only. See our Store Locator for the nearest Lowe's.
           </p>
           <div className="mt-6"><LowesCTA size="lg" variant="highlight">Shop at Lowe's</LowesCTA></div>
         </div>

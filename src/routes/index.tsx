@@ -6,13 +6,14 @@ import heroAsset from "@/assets/hero-cedar-house-v2.png.asset.json";
 const heroImg = heroAsset.url;
 import shedImg from "@/assets/project-shed.jpg";
 import accentImg from "@/assets/project-accent-wall.jpg";
-import grillImg from "@/assets/project-grilling.jpg";
+import manCaveAsset from "@/assets/man-cave-cedar.png.asset.json";
+const manCaveImg = manCaveAsset.url;
 import textureAsset from "@/assets/cedar-shingles-stack-wide.png.asset.json";
 import { ChevronDown, Home as HomeIcon, Hammer, Shirt, Leaf } from "lucide-react";
 import { useState } from "react";
 
-const TITLE = "Western Red Cedar Shingles — DIY Kits Available at Lowe's | Western Red Cedar Planks";
-const DESC = "Shop Western Red Cedar shingle kits, available exclusively at Lowe's. 100% natural, untreated cedar perfect for accent walls, sheds, pergolas, and BBQ planking. Tree of Life tradition.";
+const TITLE = "Western Red Cedar Shingles — Siding & Outdoor Projects | Buy at Lowe's";
+const DESC = "Shop Western Red Cedar Shingle bundles, exclusively at Lowe's. 100% natural, untreated cedar — affordable, beautiful siding for contractors and DIYers. Sheds, accent walls, pergolas, dog houses, and more.";
 
 export const Route = createFileRoute("/")({
   head: () => {
@@ -74,7 +75,7 @@ function HomePage() {
             The Tree of Life — Pacific Northwest Heritage
           </p>
           <h1 className="font-display max-w-3xl text-4xl font-bold leading-[1.1] text-primary-foreground sm:text-5xl lg:text-6xl">
-            Natural Western Red Cedar Shingles for Walls, Sheds &amp; Outdoor Projects
+            Natural Western Red Cedar Shingles for Siding, Sheds, Walls &amp; Outdoor Projects
           </h1>
           <p className="font-body mt-6 max-w-2xl text-lg text-primary-foreground/90 sm:text-xl">
             100% Natural. Untreated. Available Exclusively at Lowe's.
@@ -94,12 +95,12 @@ function HomePage() {
       {/* WHAT IT IS */}
       <section className="mx-auto max-w-4xl px-4 py-20 text-center sm:px-6">
         <h2 className="font-display text-3xl font-bold text-primary sm:text-4xl">
-          The honest DIY cedar shingle that are straight from the Pacific Northwest
+          Honest Western Red Cedar Shingles, straight from the Pacific Northwest
         </h2>
         <p className="font-body mt-6 text-lg text-foreground/80 sm:text-xl">
-          #3/#4 undercourse grade Western Red Cedar shingles, Lowe's Item #3976, sold exclusively at Lowe's.
-          100% natural and untreated, they're the versatile foundation for siding, accent walls, outdoor
-          structures, and food-safe grilling planks.
+          #3/#4 undercourse grade Western Red Cedar Shingles, Lowe's Item #3976, sold exclusively at Lowe's
+          in-store. 100% natural and untreated — the versatile, affordable foundation for siding, accent
+          walls, sheds, gazebos, and other outdoor projects. Built for contractors and DIYers alike.
         </p>
       </section>
 
@@ -107,7 +108,7 @@ function HomePage() {
       <section className="bg-secondary py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <h2 className="font-display text-center text-3xl font-bold text-primary sm:text-4xl">
-            Eight ways to put cedar shingles to work
+            Seven ways pros and DIYers put Western Red Cedar Shingles to work
           </h2>
           <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-4">
             {USES.map((u) => (
@@ -138,14 +139,14 @@ function HomePage() {
         <div>
           <p className="font-ui text-sm font-semibold uppercase tracking-wider text-highlight">Honest grading</p>
           <h2 className="font-display mt-2 text-3xl font-bold text-primary sm:text-4xl">
-            Why undercourse grade is the right call for DIY
+            Why undercourse grade is the right call for siding and DIY
           </h2>
           <p className="font-body mt-5 text-lg text-foreground/80">
-            #3/#4 undercourse cedar carries natural character marks, flat grain, and the occasional knot.
-            On an interior accent wall that's the look people pay extra to fake, rustic warmth a flawless
-            #1 Certigrade simply doesn't have. On a shed or pergola it performs identically to higher
-            grades at a fraction of the cost. And when you're using it as a grilling plank? The grade
-            never mattered to begin with, it's going on the fire.
+            #3/#4 undercourse Western Red Cedar Shingles carry natural character marks, flat grain, and the
+            occasional knot. On an interior accent wall that's the look people pay extra to fake — rustic
+            warmth a flawless Number One Blue Label simply doesn't have. On a shed, pergola, or siding job
+            they perform comparably to higher grades at a fraction of the cost. For contractors, it's an
+            affordable, beautiful, and distinctive option clients remember.
           </p>
           <Link
             to="/product"
@@ -197,7 +198,7 @@ function HomePage() {
           {[
             { img: shedImg, title: "Backyard Cedar Shed", desc: "Rustic, weather-friendly, build-yourself.", w: 1024, h: 768 },
             { img: accentImg, title: "Dining-Room Accent Wall", desc: "Warm interior texture in a weekend.", w: 1024, h: 768 },
-            { img: grillImg, title: "Cedar Plank Salmon", desc: "Food-safe planks — soak, smoke, serve.", w: 1024, h: 768 },
+            { img: manCaveImg, title: "Man Cave Cedar Wall", desc: "Texture that pairs with leather, brass, warm light.", w: 1024, h: 768 },
           ].map((p) => (
             <Link
               to="/project-ideas"
@@ -236,7 +237,7 @@ function HomePage() {
           </div>
           <div className="mt-8 text-center">
             <Link to="/cedar-shingles-faq" className="font-ui font-semibold text-accent hover:underline">
-              Read all 15 FAQs →
+              Read all FAQs →
             </Link>
           </div>
         </div>
@@ -246,10 +247,10 @@ function HomePage() {
       <section className="bg-primary py-20 text-primary-foreground">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
           <h2 className="font-display text-3xl font-bold sm:text-4xl">
-            Ready to Start Your Project?
+            Ready to Purchase?
           </h2>
           <p className="font-body mt-4 text-lg text-primary-foreground/90">
-            Available exclusively at Lowe's — free shipping over $45, free returns.
+            Available exclusively at Lowe's — in-store only. Find the location nearest you.
           </p>
           <div className="mt-8">
             <LowesCTA size="lg" variant="highlight">Shop at Lowe's</LowesCTA>
