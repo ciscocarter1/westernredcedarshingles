@@ -18,7 +18,7 @@ const PROJECTS = [
   { title: "Outdoor Kitchen & BBQ Cedar Walls", desc: "Clad the back wall of your outdoor kitchen in Western Red Cedar Shingles. Weather-resistant and gorgeous in dappled afternoon light.", img: "/__l5e/assets-v1/fdef2a4b-7cd7-42e2-b98d-dea25bf6d89c/back-bbq.png" },
   { title: "Gazebo and Pergola Cladding", desc: "Side panels, sun screens, partial walls — Western Red Cedar Shingles add privacy and texture to outdoor structures.", img: "/__l5e/assets-v1/884d83ee-ec01-40b8-a0ef-56517f892a20/gazebo-pergola-cladding.jpg" },
   { title: "Firepit Area Privacy Screens", desc: "Build cedar shingle privacy walls around a backyard firepit zone. Defines the space, deflects wind, and feels like a wilderness lodge.", img: "/__l5e/assets-v1/87882c8d-0cc0-411e-9b80-f8c471d2c65c/firepit-privacy-screen.jpg" },
-  { title: "Children's Fort Exterior", desc: "Backyard fort, treehouse, or playhouse — Western Red Cedar Shingles upgrade a weekend project to a neighborhood landmark.", img: "/__l5e/assets-v1/3b7090de-9600-48e9-926b-db8bb8db6105/front-of-shed.png" },
+  { title: "Children's Fort Exterior", desc: "Backyard fort, treehouse, or playhouse — Western Red Cedar Shingles upgrade a weekend project to a neighborhood landmark.", img: "/__l5e/assets-v1/e395dd49-a679-436f-84e5-b87a9758c784/children-fort-exterior.png" },
 ];
 
 export const Route = createFileRoute("/project-ideas")({
