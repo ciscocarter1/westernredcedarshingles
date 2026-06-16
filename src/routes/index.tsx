@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
 import { LowesCTA } from "@/components/CTAButton";
 import { pageMeta, jsonLdScript, USES, FAQS, LOWES_URL, SITE_URL } from "@/lib/site";
-import heroAsset from "@/assets/hero-cedar-house-v2.png.asset.json";
+import heroAsset from "@/assets/maked-house.png.asset.json";
 const heroImg = heroAsset.url;
 import shedImg from "@/assets/project-shed.jpg";
 import accentImg from "@/assets/project-accent-wall.jpg";
