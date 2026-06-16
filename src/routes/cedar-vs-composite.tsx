@@ -16,7 +16,7 @@ const ROWS: { label: string; cedar: string; composite: string; cedarWin: boolean
   { label: "Longevity (well-maintained)", cedar: "40+ years exterior, decades interior", composite: "20–40 years depending on product", cedarWin: false },
   { label: "Maintenance", cedar: "Optional staining/sealing every few years; natural weathering looks great", composite: "Low maintenance (cleaning only)", cedarWin: false },
   { label: "Upfront cost", cedar: "Low for #3/#4 undercourse grade — DIY-friendly pricing", composite: "Often higher per square foot installed", cedarWin: true },
-  { label: "Food-safe (grilling plank use)", cedar: "Yes (when untreated, like Item #3976)", composite: "Never — synthetic materials are not food-safe", cedarWin: true },
+  { label: "Flavor-enhancing wood (natural cedar)", cedar: "Yes (natural, untreated)", composite: "No — synthetic materials don't impart natural flavor", cedarWin: true },
   { label: "Off-gassing / VOCs", cedar: "None — cedar is natural and untreated", composite: "Varies; resin- and adhesive-based products may off-gas", cedarWin: true },
 ];
 
@@ -93,9 +93,9 @@ function VsComposite() {
         </p>
         <h2 className="font-display mt-10 text-3xl font-bold text-primary">When cedar is the better call</h2>
         <p className="font-body mt-4 text-lg text-foreground/85">
-          DIY projects, accent walls, sheds, gazebos, pergolas, dog houses, man caves, and anywhere
-          natural beauty matters. Cedar is also the only honest choice if you want grilling planks too —
-          composite is never food-safe.
+          Siding for contractors and homeowners who want a distinctive look, DIY projects, accent walls,
+          sheds, gazebos, pergolas, dog houses, man caves, and anywhere natural beauty matters. Cedar
+          delivers warmth, character, and value composite simply can't match.
         </p>
       </section>
 
