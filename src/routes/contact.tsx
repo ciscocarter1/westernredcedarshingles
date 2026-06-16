@@ -109,7 +109,7 @@ function ContactPage() {
           </h1>
           <p className="font-body mt-5 text-lg text-foreground/80">
             Product questions, bulk orders, installation help, custom project guidance — send a note
-            and we'll get back to you within 1–2 business days.
+            and we'll get back to you as soon as possible.
           </p>
         </div>
 
