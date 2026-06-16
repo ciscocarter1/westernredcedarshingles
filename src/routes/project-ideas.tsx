@@ -3,7 +3,7 @@ import { SiteLayout, Breadcrumbs } from "@/components/SiteLayout";
 import { LowesCTA } from "@/components/CTAButton";
 import { pageMeta, jsonLdScript, breadcrumbLd, SITE_URL } from "@/lib/site";
 import accentImg from "@/assets/project-accent-wall.jpg";
-import manCaveAsset from "@/assets/man-cave-cedar.png.asset.json";
+import manCaveAsset from "@/assets/man-cave-bar.png.asset.json";
 const textureImg = manCaveAsset.url;
 
 const TITLE = "Cedar Shingle Project Ideas — Siding, Accent Walls, Sheds, Man Caves & More";
