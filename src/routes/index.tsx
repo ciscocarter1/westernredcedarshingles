@@ -252,7 +252,10 @@ function HomePage() {
             Ready to Purchase?
           </h2>
           <p className="font-body mt-4 text-lg text-primary-foreground/90">
-            Available exclusively at Lowe's — in-store only. Find the location nearest you.
+            Available exclusively at Lowe's — in-store only.{" "}
+            <Link to="/store-locator" className="font-semibold text-highlight underline-offset-4 hover:underline">
+              Find the location nearest you.
+            </Link>
           </p>
           <div className="mt-8">
             <LowesCTA size="lg" variant="highlight">Shop at Lowe's</LowesCTA>
