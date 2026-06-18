@@ -187,7 +187,9 @@ function ProductPage() {
         <div className="rounded-2xl bg-primary p-10 text-center text-primary-foreground shadow-lg">
           <h2 className="font-display text-3xl font-bold sm:text-4xl">Available exclusively at Lowe's</h2>
           <p className="font-body mt-3 text-lg text-primary-foreground/90">
-            In-store only · Item #3976 · See our Store Locator for the nearest Lowe's
+            In-store only · Item #3976 · See our{" "}
+            <Link to="/store-locator" className="font-semibold text-highlight underline-offset-4 hover:underline">Store Locator</Link>{" "}
+            for the nearest Lowe's
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-3">
             <LowesCTA size="lg" variant="highlight">Buy at Lowe's</LowesCTA>
