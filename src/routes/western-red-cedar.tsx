@@ -96,7 +96,7 @@ function SpeciesPage() {
           ))}
         </div>
         <p className="mt-6 rounded-lg bg-highlight/15 p-5 text-foreground/90">
-          <strong>Why our #3/#4 Black Label is ideal for siding and DIY:</strong> the natural character
+          <strong>Why our Number 3 and Number 4 Black Label grades are ideal for siding and DIY:</strong> the natural character
           that costs more on a furniture piece is exactly what gives an accent wall, shed, or siding
           install its rustic warmth. It's an affordable, beautiful, and distinctive option contractors
           can offer clients.
