@@ -52,7 +52,7 @@ function FaqPage() {
       <section className="mx-auto max-w-3xl px-4 pb-16 sm:px-6">
         <div className="space-y-3">
           {FAQS.map((f, i) => (
-            <FaqItem key={i} q={f.q} a={f.a} num={i + 1} />
+            <FaqItem key={i} q={f.q} a={f.a} aHtml={f.aHtml} num={i + 1} />
           ))}
         </div>
       </section>
@@ -68,7 +68,7 @@ function FaqPage() {
   );
 }
 
-function FaqItem({ q, a, num }: { q: string; a: string; num: number }) {
+function FaqItem({ q, a, aHtml, num }: { q: string; a: string; aHtml?: string; num: number }) {
   const [open, setOpen] = useState(num <= 3);
   return (
     <div className="rounded-lg border border-border bg-card shadow-sm">
@@ -83,7 +83,11 @@ function FaqItem({ q, a, num }: { q: string; a: string; num: number }) {
         </span>
         <ChevronDown className={`h-5 w-5 shrink-0 transition-transform ${open ? "rotate-180" : ""}`} />
       </button>
-      {open && <div className="font-body px-5 pb-5 pl-12 text-foreground/85">{a}</div>}
+      {open && (
+        aHtml
+          ? <div className="font-body px-5 pb-5 pl-12 text-foreground/85" dangerouslySetInnerHTML={{ __html: aHtml }} />
+          : <div className="font-body px-5 pb-5 pl-12 text-foreground/85">{a}</div>
+      )}
     </div>
   );
 }

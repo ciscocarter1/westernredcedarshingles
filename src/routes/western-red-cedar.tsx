@@ -25,7 +25,7 @@ const GRADES = [
   { g: "Number One Blue Label", d: "Premium, 100% edge-grain, 100% heartwood, clear. Top of the spectrum — used where flawless appearance matters most." },
   { g: "#2 Red Label", d: "Mostly clear with limited defects above the clear portion. A solid mid-tier choice." },
   { g: "#3 Black Label", d: "More character — knots, sapwood, flat grain. Reliable, value-focused." },
-  { g: "#4 Undercourse", d: "Utility grade — natural character marks throughout. Designed as the undercourse layer in double-course walls, ideal for siding, sheds, dog houses, and rustic outdoor structures." },
+  { g: "#4 Black Label", d: "Utility grade — natural character marks throughout. Designed as the undercourse layer in double-course walls, ideal for siding, sheds, dog houses, and rustic outdoor structures." },
 ];
 
 function SpeciesPage() {
@@ -69,9 +69,7 @@ function SpeciesPage() {
           {[
             ["Natural rot resistance", "Cedar's own oils (thujaplicins) repel decay — no chemical treatment required."],
             ["Insect resistance", "Same oils deter termites and carpenter ants."],
-            ["Dimensional stability", "Low shrink/swell — cedar holds its shape across humidity swings."],
             ["Weather durability", "One of the most durable softwoods available; decades of proven exterior service."],
-            ["Straight, even grain", "Splits cleanly, nails without splitting, finishes beautifully."],
             ["Light weight", "Easy to handle and install — perfect for DIY."],
           ].map(([h, d]) => (
             <li key={h} className="rounded-lg border border-border bg-card p-5 shadow-sm">
@@ -98,9 +96,10 @@ function SpeciesPage() {
           ))}
         </div>
         <p className="mt-6 rounded-lg bg-highlight/15 p-5 text-foreground/90">
-          <strong>Why #3/#4 is ideal for siding and DIY:</strong> the natural character that costs more on
-          a furniture piece is exactly what gives an accent wall, shed, or siding install its rustic
-          warmth. It's an affordable, beautiful, and distinctive option contractors can offer clients.
+          <strong>Why our #3/#4 Black Label is ideal for siding and DIY:</strong> the natural character
+          that costs more on a furniture piece is exactly what gives an accent wall, shed, or siding
+          install its rustic warmth. It's an affordable, beautiful, and distinctive option contractors
+          can offer clients.
         </p>
       </Section>
 
@@ -121,7 +120,6 @@ function SpeciesPage() {
                 ["Natural rot resistance", "Excellent", "Poor", "Chemical only"],
                 ["Insect resistance", "Excellent (oils)", "Poor", "Chemical only"],
                 ["Treatment required", "None", "Yes", "Already treated"],
-                ["Flavor-enhancing", "Yes", "No", "No"],
                 ["Weathers to", "Silver-gray", "Gray/decay", "Gray"],
               ].map((r) => (
                 <tr key={r[0]} className="border-b border-border/50">

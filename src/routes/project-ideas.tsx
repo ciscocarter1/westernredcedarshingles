@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout, Breadcrumbs } from "@/components/SiteLayout";
 import { LowesCTA } from "@/components/CTAButton";
 import { pageMeta, jsonLdScript, breadcrumbLd, SITE_URL } from "@/lib/site";
@@ -81,7 +81,9 @@ function ProjectIdeasPage() {
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
           <h2 className="font-display text-3xl font-bold sm:text-4xl">Pick your project. Get your bundles.</h2>
           <p className="font-body mt-4 text-lg text-primary-foreground/90">
-            Item #3976 at Lowe's — in-store only. See our Store Locator for the nearest Lowe's.
+            Item #3976 at Lowe's — in-store only. See our{" "}
+            <Link to="/store-locator" className="font-semibold text-highlight underline-offset-4 hover:underline">Store Locator</Link>{" "}
+            for the nearest Lowe's.
           </p>
           <div className="mt-6"><LowesCTA size="lg" variant="highlight">Shop at Lowe's</LowesCTA></div>
         </div>

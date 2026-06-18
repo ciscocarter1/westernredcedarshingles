@@ -110,7 +110,7 @@ function HomePage() {
       <section className="bg-secondary py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <h2 className="font-display text-center text-3xl font-bold text-primary sm:text-4xl">
-            Seven ways pros and DIYers put Western Red Cedar Shingles to work
+            Eight ways pros and DIYers put Western Red Cedar Shingles to work
           </h2>
           <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-4">
             {USES.map((u) => (
@@ -234,7 +234,7 @@ function HomePage() {
           </h2>
           <div className="mt-10 space-y-3">
             {FAQS.slice(0, 3).map((f, i) => (
-              <FaqRow key={i} q={f.q} a={f.a} />
+              <FaqRow key={i} q={f.q} a={f.a} aHtml={f.aHtml} />
             ))}
           </div>
           <div className="mt-8 text-center">
@@ -252,7 +252,10 @@ function HomePage() {
             Ready to Purchase?
           </h2>
           <p className="font-body mt-4 text-lg text-primary-foreground/90">
-            Available exclusively at Lowe's — in-store only. Find the location nearest you.
+            Available exclusively at Lowe's — in-store only.{" "}
+            <Link to="/store-locator" className="font-semibold text-highlight underline-offset-4 hover:underline">
+              Find the location nearest you.
+            </Link>
           </p>
           <div className="mt-8">
             <LowesCTA size="lg" variant="highlight">Shop at Lowe's</LowesCTA>
@@ -266,7 +269,7 @@ function HomePage() {
   );
 }
 
-function FaqRow({ q, a }: { q: string; a: string }) {
+function FaqRow({ q, a, aHtml }: { q: string; a: string; aHtml?: string }) {
   const [open, setOpen] = useState(false);
   return (
     <div className="rounded-lg border border-border bg-card shadow-sm">
@@ -278,7 +281,11 @@ function FaqRow({ q, a }: { q: string; a: string }) {
         <span>{q}</span>
         <ChevronDown className={`h-5 w-5 shrink-0 transition-transform ${open ? "rotate-180" : ""}`} />
       </button>
-      {open && <div className="font-body px-5 pb-5 text-foreground/80">{a}</div>}
+      {open && (
+        aHtml
+          ? <div className="font-body px-5 pb-5 text-foreground/80" dangerouslySetInnerHTML={{ __html: aHtml }} />
+          : <div className="font-body px-5 pb-5 text-foreground/80">{a}</div>
+      )}
     </div>
   );
 }
