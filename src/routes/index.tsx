@@ -25,6 +25,15 @@ export const Route = createFileRoute("/")({
       scripts: [
         jsonLdScript({
           "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "Western Red Cedar Planks",
+          url: SITE_URL,
+          description:
+            "Maker of natural Western Red Cedar shingle bundles sold exclusively at Lowe's for siding, accent walls, outdoor structures, and DIY and contractor projects.",
+          sameAs: ["https://www.lowes.com/pd/Red-Cedar-Untreated-Wood-Siding-Shingles/3379244"],
+        }),
+        jsonLdScript({
+          "@context": "https://schema.org",
           "@type": "WebSite",
           name: "Western Red Cedar Planks",
           url: SITE_URL,
