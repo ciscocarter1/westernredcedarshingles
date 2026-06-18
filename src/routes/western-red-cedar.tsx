@@ -22,10 +22,10 @@ export const Route = createFileRoute("/western-red-cedar")({
 });
 
 const GRADES = [
-  { g: "Number One Blue Label", d: "Premium, 100% edge-grain, 100% heartwood, clear. Top of the spectrum — used where flawless appearance matters most." },
-  { g: "#2 Red Label", d: "Mostly clear with limited defects above the clear portion. A solid mid-tier choice." },
-  { g: "#3 Black Label", d: "More character — knots, sapwood, flat grain. Reliable, value-focused." },
-  { g: "#4 Black Label", d: "Utility grade — natural character marks throughout. Designed as the undercourse layer in double-course walls, ideal for siding, sheds, dog houses, and rustic outdoor structures." },
+  { g: "Number 1 Grade, Blue Label® (Premium / Clear)", d: "100% heartwood, 100% clear, and 100% edge-grain. The highest quality available. Used for roofs and sidewalls where a flawless appearance and maximum longevity matter most." },
+  { g: "Number 2 Grade, Red Label® (Good / Select)", d: "Mostly clear with limited defects allowed above the clear portion. Flat grain and some sapwood are permitted. A solid mid-tier choice for general applications, starter courses, or secondary walls." },
+  { g: "Number 3 Grade, Black Label® (Common / Utility)", d: "More character, including knots, sapwood, and flat grain. A reliable, value-focused choice for economy applications and secondary buildings." },
+  { g: "Number 4 Grade, Black Label (Utility / Undercoursing Grade)", d: "Natural character marks throughout. Intended for undercoursing in double-course walls. Ideal for the undercourse layer in double-course walls, utilitarian siding, sheds, dog houses, and rustic outdoor structures." },
 ];
 
 function SpeciesPage() {
@@ -96,7 +96,7 @@ function SpeciesPage() {
           ))}
         </div>
         <p className="mt-6 rounded-lg bg-highlight/15 p-5 text-foreground/90">
-          <strong>Why our #3/#4 Black Label is ideal for siding and DIY:</strong> the natural character
+          <strong>Why our Number 3 and Number 4 Black Label grades are ideal for siding and DIY:</strong> the natural character
           that costs more on a furniture piece is exactly what gives an accent wall, shed, or siding
           install its rustic warmth. It's an affordable, beautiful, and distinctive option contractors
           can offer clients.
