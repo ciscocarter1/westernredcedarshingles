@@ -52,7 +52,7 @@ function FaqPage() {
       <section className="mx-auto max-w-3xl px-4 pb-16 sm:px-6">
         <div className="space-y-3">
           {FAQS.map((f, i) => (
-            <FaqItem key={i} q={f.q} a={f.a} num={i + 1} />
+            <FaqItem key={i} q={f.q} a={f.a} aHtml={f.aHtml} num={i + 1} />
           ))}
         </div>
       </section>
