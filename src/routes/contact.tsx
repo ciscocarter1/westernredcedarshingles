@@ -9,7 +9,7 @@ import { toast } from "sonner";
 
 const TITLE = "Contact & Inquiries — Western Red Cedar Shingles";
 const DESC =
-  "Get in touch about Western Red Cedar shingle kits — product questions, bulk orders, project guidance, and DIY support. We respond within 1–2 business days.";
+  "Get in touch about Western Red Cedar Shingle bundles — product questions, bulk orders, project guidance, and DIY support. We respond within 1–2 business days.";
 
 export const Route = createFileRoute("/contact")({
   head: () => {
