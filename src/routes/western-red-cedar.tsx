@@ -69,9 +69,7 @@ function SpeciesPage() {
           {[
             ["Natural rot resistance", "Cedar's own oils (thujaplicins) repel decay — no chemical treatment required."],
             ["Insect resistance", "Same oils deter termites and carpenter ants."],
-            ["Dimensional stability", "Low shrink/swell — cedar holds its shape across humidity swings."],
             ["Weather durability", "One of the most durable softwoods available; decades of proven exterior service."],
-            ["Straight, even grain", "Splits cleanly, nails without splitting, finishes beautifully."],
             ["Light weight", "Easy to handle and install — perfect for DIY."],
           ].map(([h, d]) => (
             <li key={h} className="rounded-lg border border-border bg-card p-5 shadow-sm">
