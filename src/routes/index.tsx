@@ -266,7 +266,7 @@ function HomePage() {
   );
 }
 
-function FaqRow({ q, a }: { q: string; a: string }) {
+function FaqRow({ q, a, aHtml }: { q: string; a: string; aHtml?: string }) {
   const [open, setOpen] = useState(false);
   return (
     <div className="rounded-lg border border-border bg-card shadow-sm">
@@ -278,7 +278,11 @@ function FaqRow({ q, a }: { q: string; a: string }) {
         <span>{q}</span>
         <ChevronDown className={`h-5 w-5 shrink-0 transition-transform ${open ? "rotate-180" : ""}`} />
       </button>
-      {open && <div className="font-body px-5 pb-5 text-foreground/80">{a}</div>}
+      {open && (
+        aHtml
+          ? <div className="font-body px-5 pb-5 text-foreground/80" dangerouslySetInnerHTML={{ __html: aHtml }} />
+          : <div className="font-body px-5 pb-5 text-foreground/80">{a}</div>
+      )}
     </div>
   );
 }
