@@ -24,24 +24,19 @@ export const Route = createFileRoute("/product")({
         jsonLdScript({
           "@context": "https://schema.org",
           "@type": "Product",
-          name: "Western Red Cedar Shingles — Tree of Life Siding Bundle",
+          name: "Western Red Cedar Tree of Life Wood Shingle Siding",
           description:
-            "100% natural, untreated #3/#4 undercourse Western Red Cedar Shingles for siding, interior accent walls, sheds, and outdoor structures. Available exclusively at Lowe's, in-store only.",
+            "100% natural, untreated #3/#4 undercourse Western Red Cedar shingles for siding, sheds, accent walls, and outdoor projects. Available exclusively at Lowe's.",
           brand: { "@type": "Brand", name: "Western Red Cedar Planks" },
           material: "Western Red Cedar (Thuja plicata)",
           sku: "3976",
-          mpn: "3976",
           image: `${SITE_URL}${bundleImg}`,
           offers: {
             "@type": "Offer",
-            url: LOWES_URL,
+            url: "https://www.lowes.com/pd/Red-Cedar-Untreated-Wood-Siding-Shingles/3379244",
             priceCurrency: "USD",
-            availability: "https://schema.org/InStock",
             seller: { "@type": "Organization", name: "Lowe's" },
-            shippingDetails: {
-              "@type": "OfferShippingDetails",
-              shippingRate: { "@type": "MonetaryAmount", value: "0", currency: "USD" },
-            },
+            availability: "https://schema.org/InStoreOnly",
           },
         }),
         jsonLdScript(

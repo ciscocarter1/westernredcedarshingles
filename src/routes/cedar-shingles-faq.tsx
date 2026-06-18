@@ -5,8 +5,8 @@ import { LowesCTA } from "@/components/CTAButton";
 import { pageMeta, jsonLdScript, breadcrumbLd, FAQS } from "@/lib/site";
 import { ChevronDown } from "lucide-react";
 
-const TITLE = "Western Red Cedar Shingles FAQ — Grade, Uses, Installation & Grilling";
-const DESC = "Answers to the most common questions about Western Red Cedar shingles — what grade they are, where to buy, how to install, grilling use, roofing rules, and more.";
+const TITLE = "Western Red Cedar Shingles FAQ — Grade, Uses & Installation";
+const DESC = "Answers to the most common questions about Western Red Cedar shingles — what grade they are, where to buy, how to install, roofing rules, and more.";
 
 export const Route = createFileRoute("/cedar-shingles-faq")({
   head: () => {
@@ -83,11 +83,11 @@ function FaqItem({ q, a, aHtml, num }: { q: string; a: string; aHtml?: string; n
         </span>
         <ChevronDown className={`h-5 w-5 shrink-0 transition-transform ${open ? "rotate-180" : ""}`} />
       </button>
-      {open && (
-        aHtml
+      <div hidden={!open}>
+        {aHtml
           ? <div className="font-body px-5 pb-5 pl-12 text-foreground/85" dangerouslySetInnerHTML={{ __html: aHtml }} />
-          : <div className="font-body px-5 pb-5 pl-12 text-foreground/85">{a}</div>
-      )}
+          : <div className="font-body px-5 pb-5 pl-12 text-foreground/85">{a}</div>}
+      </div>
     </div>
   );
 }
