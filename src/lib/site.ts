@@ -38,7 +38,7 @@ export const FAQS: Faq[] = [
   },
   {
     q: "What grade are these Western Red Cedar Shingles?",
-    a: "These are #3/#4 undercourse grade Western Red Cedar Shingles, also called utility grade. They contain natural character marks, flat grain, and some sapwood. For interior accent walls that's a feature — rustic warmth that a flawless Number One Blue Label cannot match. For sheds, pergolas, gazebos, dog houses, and siding applications they perform comparably to higher grades at a fraction of the price.",
+    a: "These are #3/#4 undercourse grade Western Red Cedar Shingles, also called utility grade. They contain natural character marks, flat grain, and some sapwood. For interior accent walls that's a feature that rustic warmth that a flawless Number One Blue Label cannot match. For sheds, pergolas, gazebos, dog houses, and siding applications they perform comparably to higher grades at a fraction of the price.",
   },
   {
     q: "What is Western Red Cedar and why is it special?",
