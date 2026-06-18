@@ -25,7 +25,7 @@ const GRADES = [
   { g: "Number One Blue Label", d: "Premium, 100% edge-grain, 100% heartwood, clear. Top of the spectrum — used where flawless appearance matters most." },
   { g: "#2 Red Label", d: "Mostly clear with limited defects above the clear portion. A solid mid-tier choice." },
   { g: "#3 Black Label", d: "More character — knots, sapwood, flat grain. Reliable, value-focused." },
-  { g: "#4 Undercourse", d: "Utility grade — natural character marks throughout. Designed as the undercourse layer in double-course walls, ideal for siding, sheds, dog houses, and rustic outdoor structures." },
+  { g: "#4 Black Label", d: "Utility grade — natural character marks throughout. Designed as the undercourse layer in double-course walls, ideal for siding, sheds, dog houses, and rustic outdoor structures." },
 ];
 
 function SpeciesPage() {
