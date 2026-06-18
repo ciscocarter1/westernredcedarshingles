@@ -28,22 +28,25 @@ export const NAV = [
 
 export const CONTACT_EMAIL = "maggie@smccedar.com";
 
-export const FAQS = [
+type Faq = { q: string; a: string; aHtml?: string };
+
+export const FAQS: Faq[] = [
   {
     q: "What exactly is this product and where can I buy it?",
     a: "It's a Western Red Cedar Tree of Life wood shingle siding bundle, #3/#4 undercourse grade, 100% natural and untreated. Item #3976 / Model #3976, sold exclusively at Lowe's. This is an in-store-only product — please see our Store Locator to find the Lowe's location nearest you.",
+    aHtml: `It's a Western Red Cedar Tree of Life wood shingle siding bundle, #3/#4 undercourse grade, 100% natural and untreated. Item #3976 / Model #3976, sold exclusively at Lowe's. This is an in-store-only product — please see our <a href="/store-locator" class="text-accent font-semibold hover:underline">Store Locator</a> to find the Lowe's location nearest you.`,
   },
   {
     q: "What grade are these Western Red Cedar Shingles?",
-    a: "These are #3/#4 undercourse grade Western Red Cedar Shingles, also called utility grade. They contain natural character marks, flat grain, and some sapwood. For interior accent walls that's a feature — rustic warmth a flawless Number One Blue Label cannot match. For sheds, pergolas, gazebos, dog houses, and siding applications they perform comparably to higher grades at a lower price.",
+    a: "These are #3/#4 undercourse grade Western Red Cedar Shingles, also called utility grade. They contain natural character marks, flat grain, and some sapwood. For interior accent walls that's a feature — rustic warmth that a flawless Number One Blue Label cannot match. For sheds, pergolas, gazebos, dog houses, and siding applications they perform comparably to higher grades at a fraction of the price.",
   },
   {
     q: "What is Western Red Cedar and why is it special?",
-    a: "Western Red Cedar (Thuja plicata) is a Pacific Northwest softwood prized for natural rot and insect resistance, dimensional stability, and a straight, even grain. No chemical treatment required — the wood's natural oils do the work. Native peoples called it the Tree of Life.",
+    a: "Western Red Cedar (Thuja plicata) is a Pacific Northwest softwood prized for natural rot and insect resistance. No chemical treatment required — the wood's natural oils do the work. Native peoples called it the Tree of Life.",
   },
   {
     q: "Is this product treated or finished?",
-    a: "No. The shingles are 100% natural and untreated. You can leave them natural to silver out, or seal/stain after installation.",
+    a: "No. The shingles are 100% natural and untreated. You can leave them natural to silver out (think Martha's Vineyard vibe), or seal/stain after installation to keep the beautiful warm wood look.",
   },
   {
     q: "What can I use these Western Red Cedar Shingles for?",
@@ -63,19 +66,21 @@ export const FAQS = [
   },
   {
     q: "Is this product available for contractors and bulk orders?",
-    a: "Yes. General contractors and professional remodelers are a primary audience for this bundle — Western Red Cedar Shingles deliver an affordable, beautiful, and distinctive siding option for client projects. For bulk or commercial quantities, contact us through the Contact page or ask the pro desk at your local Lowe's.",
+    a: "Yes. General contractors and professional remodelers are a primary audience for this product — Western Red Cedar Shingles deliver an affordable, beautiful, and distinctive siding option for client projects. For bulk or commercial quantities, just check with the pro desk at your local Lowe's store. See our Store Locator for the nearest one to you.",
+    aHtml: `Yes. General contractors and professional remodelers are a primary audience for this product — Western Red Cedar Shingles deliver an affordable, beautiful, and distinctive siding option for client projects. For bulk or commercial quantities, just check with the pro desk at your local Lowe's store. See our <a href="/store-locator" class="text-accent font-semibold hover:underline">Store Locator</a> for the nearest one to you.`,
   },
   {
     q: "Does it take special skills or tools to install?",
-    a: "No. A level, a chalk line, a hammer or nail gun, a circular or hand saw, and galvanized nails are all you need. The wood is light, cuts cleanly, and nails without splitting — Western Red Cedar Shingles are one of the most DIY-friendly siding products on the market.",
+    a: "Yes. When working with Western Red Cedar you should use Type 304 or 316 stainless steel ring shank nails with thin shanks and blunt points. These fasteners prevent the natural tannins in cedar from reacting with the metal which avoids dark grey streaks, rust, and wood decay. A level, a chalk line, a hammer or nail gun, a circular or hand saw, and galvanized nails are all you need. The wood is light, cuts cleanly, and nails without splitting — Western Red Cedar Shingles are one of the most DIY-friendly siding products on the market.",
   },
   {
     q: "What is the cultural significance of Western Red Cedar?",
-    a: "Western Red Cedar was the cornerstone of Pacific Northwest Native American culture — known as the Tree of Life and Life Giver. It provided food preparation options, shelter (longhouses, totem poles), tools (canoes, paddles), clothing (woven bark), and medicine. We honor that heritage in the product name.",
+    a: "Western Red Cedar was the cornerstone of Pacific Northwest Native American culture — known as the Tree of Life and Life Giver. It provided food preparation options, shelter (longhouses, totem poles), tools (canoes, paddles), clothing (woven bark), and medicine. We honor that heritage in our product.",
   },
   {
     q: "Is this product available for online ordering and shipping?",
     a: "No. This is an in-store-only product. Please see our Store Locator to find the Lowe's location nearest you.",
+    aHtml: `No. This is an in-store-only product. Please see our <a href="/store-locator" class="text-accent font-semibold hover:underline">Store Locator</a> to find the Lowe's location nearest you.`,
   },
   {
     q: "Does this product come with installation instructions?",
@@ -84,6 +89,7 @@ export const FAQS = [
   {
     q: "Are there project ideas available to help me get started?",
     a: "Yes — see our Project Ideas page for backyard sheds, rustic accent walls, man caves, gazebos, firepit privacy screens, children's forts, and more.",
+    aHtml: `Yes — see our <a href="/project-ideas" class="text-accent font-semibold hover:underline">Project Ideas</a> page for backyard sheds, rustic accent walls, man caves, gazebos, firepit privacy screens, children's forts, and more.`,
   },
 ];
 
