@@ -168,6 +168,26 @@ function HomePage() {
         </div>
       </section>
 
+      {/* CONTRACTOR CALLOUT QUOTES */}
+      <section className="bg-secondary py-16">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6">
+          <p className="font-ui text-center text-sm font-semibold uppercase tracking-[0.2em] text-highlight">
+            For Pro Contractors &amp; Remodelers
+          </p>
+          <div className="mt-8 space-y-6">
+            <blockquote className="font-display border-l-4 border-accent bg-card px-6 py-5 text-lg italic text-foreground/90 shadow-sm sm:text-xl">
+              "Offer your clients an affordable siding option created by Mother Nature, that has been used for thousands of years by the Native American Tribes of the beautiful Pacific Northwest."
+            </blockquote>
+            <blockquote className="font-display border-l-4 border-accent bg-card px-6 py-5 text-lg italic text-foreground/90 shadow-sm sm:text-xl">
+              "This product will enable you to offer your clients a totally unique, durable, and cost-effective siding option."
+            </blockquote>
+            <blockquote className="font-display border-l-4 border-accent bg-card px-6 py-5 text-lg italic text-foreground/90 shadow-sm sm:text-xl">
+              "This siding product is 100% organic, beautiful, durable, and cost-effective."
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
       {/* TREE OF LIFE */}
       <section className="bg-primary text-primary-foreground py-20">
         <div className="mx-auto max-w-5xl px-4 text-center sm:px-6">
