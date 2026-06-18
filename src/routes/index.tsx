@@ -110,7 +110,7 @@ function HomePage() {
       <section className="bg-secondary py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <h2 className="font-display text-center text-3xl font-bold text-primary sm:text-4xl">
-            Seven ways pros and DIYers put Western Red Cedar Shingles to work
+            Eight ways pros and DIYers put Western Red Cedar Shingles to work
           </h2>
           <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-4">
             {USES.map((u) => (
