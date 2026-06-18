@@ -234,7 +234,7 @@ function HomePage() {
           </h2>
           <div className="mt-10 space-y-3">
             {FAQS.slice(0, 3).map((f, i) => (
-              <FaqRow key={i} q={f.q} a={f.a} />
+              <FaqRow key={i} q={f.q} a={f.a} aHtml={f.aHtml} />
             ))}
           </div>
           <div className="mt-8 text-center">
