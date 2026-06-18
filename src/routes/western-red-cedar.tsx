@@ -120,7 +120,6 @@ function SpeciesPage() {
                 ["Natural rot resistance", "Excellent", "Poor", "Chemical only"],
                 ["Insect resistance", "Excellent (oils)", "Poor", "Chemical only"],
                 ["Treatment required", "None", "Yes", "Already treated"],
-                ["Flavor-enhancing", "Yes", "No", "No"],
                 ["Weathers to", "Silver-gray", "Gray/decay", "Gray"],
               ].map((r) => (
                 <tr key={r[0]} className="border-b border-border/50">
