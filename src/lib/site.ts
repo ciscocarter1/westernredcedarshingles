@@ -42,7 +42,7 @@ export const FAQS: Faq[] = [
   },
   {
     q: "What is Western Red Cedar and why is it special?",
-    a: "Western Red Cedar (Thuja plicata) is a Pacific Northwest softwood prized for natural rot and insect resistance. No chemical treatment required — the wood's natural oils do the work. Native peoples called it the Tree of Life.",
+    a: "Western Red Cedar (Thuja plicata) is a Pacific Northwest softwood prized for natural rot and insect resistance. No chemical treatment required. The wood's natural oils do the work. Native peoples called it the Tree of Life.",
   },
   {
     q: "Is this product treated or finished?",
