@@ -228,7 +228,7 @@ function HomePage() {
           {[
             { img: shedImg, title: "Backyard Cedar Shed", desc: "Rustic, weather-friendly, build-yourself.", w: 1024, h: 768 },
             { img: accentImg, title: "Dining-Room Accent Wall", desc: "Warm interior texture in a weekend.", w: 1024, h: 768 },
-            { img: manCaveImg, title: "The Shingle Tavern", desc: "Texture that pairs with leather, brass, warm light.", w: 1280, h: 960 },
+            { img: manCaveImg, title: "Man Cave Cedar Wall", desc: "Texture that pairs with leather, brass, warm light.", w: 1024, h: 768 },
           ].map((p) => (
             <Link
               to="/project-ideas"
