@@ -8,8 +8,7 @@ import shedAsset from "@/assets/backyard-garden-shed.png.asset.json";
 const shedImg = shedAsset.url;
 import accentAsset from "@/assets/dining-room-accent-wall.png.asset.json";
 const accentImg = accentAsset.url;
-import manCaveAsset from "@/assets/man-cave-cedar.png.asset.json";
-const manCaveImg = manCaveAsset.url;
+import manCaveImg from "@/assets/shingle-tavern.jpg";
 import textureAsset from "@/assets/cedar-shingles-stack-wide.png.asset.json";
 import { ChevronDown, Home as HomeIcon, Hammer, Shirt, Leaf } from "lucide-react";
 import { useState } from "react";
@@ -109,8 +108,8 @@ function HomePage() {
           Honest Western Red Cedar Shingles, straight from the Pacific Northwest
         </h2>
         <p className="font-body mt-6 text-lg text-foreground/80 sm:text-xl">
-          #3/#4 undercourse grade Western Red Cedar Shingles, Lowe's Item #3976, sold exclusively at Lowe's
-          in-store. 100% natural and untreated — the versatile, affordable foundation for siding, accent
+          Our #3/#4 undercourse grade Western Red Cedar Shingles, Lowe's Item #3976, sold exclusively at Lowe's
+          in-store. 100% natural and untreated — the versatile, affordable solution for siding, accent
           walls, sheds, gazebos, and other outdoor projects. Built for contractors and DIYers alike.
         </p>
       </section>
@@ -153,7 +152,7 @@ function HomePage() {
             Why undercourse grade is the right call for siding and DIY
           </h2>
           <p className="font-body mt-5 text-lg text-foreground/80">
-            #3/#4 undercourse Western Red Cedar Shingles carry natural character marks, flat grain, and the
+            Our #3/#4 undercourse grade Western Red Cedar Shingles carry natural character marks, flat grain, and the
             occasional knot. On an interior accent wall that's the look people pay extra to fake — rustic
             warmth a flawless Number One Blue Label simply doesn't have. On a shed, pergola, or siding job
             they perform comparably to higher grades at a fraction of the cost. For contractors, it's an
@@ -229,7 +228,7 @@ function HomePage() {
           {[
             { img: shedImg, title: "Backyard Cedar Shed", desc: "Rustic, weather-friendly, build-yourself.", w: 1024, h: 768 },
             { img: accentImg, title: "Dining-Room Accent Wall", desc: "Warm interior texture in a weekend.", w: 1024, h: 768 },
-            { img: manCaveImg, title: "Man Cave Cedar Wall", desc: "Texture that pairs with leather, brass, warm light.", w: 1024, h: 768 },
+            { img: manCaveImg, title: "The Shingle Tavern", desc: "Texture that pairs with leather, brass, warm light.", w: 1280, h: 960 },
           ].map((p) => (
             <Link
               to="/project-ideas"
