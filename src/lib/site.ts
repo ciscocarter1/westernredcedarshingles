@@ -33,8 +33,8 @@ type Faq = { q: string; a: string; aHtml?: string };
 export const FAQS: Faq[] = [
   {
     q: "What exactly is this product and where can I buy it?",
-    a: "It's a Western Red Cedar Tree of Life wood shingle siding bundle, #3/#4 undercourse grade, 100% natural and untreated. Item #3976 / Model #3976, sold exclusively at Lowe's. This is an in-store-only product — please see our Store Locator to find the Lowe's location nearest you.",
-    aHtml: `It's a Western Red Cedar Tree of Life wood shingle siding bundle, #3/#4 undercourse grade, 100% natural and untreated. Item #3976 / Model #3976, sold exclusively at Lowe's. This is an in-store-only product — please see our <a href="/store-locator" class="text-accent font-semibold hover:underline">Store Locator</a> to find the Lowe's location nearest you.`,
+    a: "It's a Western Red Cedar Tree of Life wood shingle siding bundle. Our #3/#4 undercourse grade is 100% natural and untreated and sold exclusively at Lowe's. This is an in-store-only product — please see our Store Locator to find the Lowe's location nearest you. Item #3976 / Model #3976.",
+    aHtml: `It's a Western Red Cedar Tree of Life wood shingle siding bundle. Our #3/#4 undercourse grade is 100% natural and untreated and sold exclusively at Lowe's. This is an in-store-only product — please see our <a href="/store-locator" class="text-accent font-semibold hover:underline">Store Locator</a> to find the Lowe's location nearest you. Item #3976 / Model #3976.`,
   },
   {
     q: "What grade are these Western Red Cedar Shingles?",

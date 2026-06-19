@@ -102,8 +102,23 @@ function InstallPage() {
           )}
         </div>
 
+        {/* Product spec sheet */}
+        <div className="font-body mt-12 rounded-xl border border-border bg-card p-6 shadow-sm">
+          <h3 className="font-display text-xl font-semibold text-primary">Product spec sheet — plan your purchase</h3>
+          <dl className="mt-4 grid gap-4 sm:grid-cols-2">
+            <div>
+              <dt className="font-ui text-xs font-semibold uppercase tracking-wider text-foreground/60">Each shingle</dt>
+              <dd className="mt-1 text-foreground/85">⅜" – ⅝" thick × 18" long × random width 4" – 14"</dd>
+            </div>
+            <div>
+              <dt className="font-ui text-xs font-semibold uppercase tracking-wider text-foreground/60">Coverage per bundle</dt>
+              <dd className="mt-1 text-foreground/85">At 7.50" exposure = 15 sq ft of wall coverage with ⅛" gap</dd>
+            </div>
+          </dl>
+        </div>
+
         {/* Double-course note */}
-        <div className="font-body mt-12 rounded-xl border border-highlight/40 bg-highlight/10 p-6">
+        <div className="font-body mt-8 rounded-xl border border-highlight/40 bg-highlight/10 p-6">
           <h3 className="font-display text-xl font-semibold text-primary">Double-course method note</h3>
           <p className="mt-2 text-foreground/85">
             #3/#4 undercourse shingles installed as the first (undercourse) layer beneath a higher-grade

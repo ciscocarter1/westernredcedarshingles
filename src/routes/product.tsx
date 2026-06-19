@@ -91,7 +91,7 @@ function ProductPage() {
             Item #3976 · Model #3976
           </p>
           <h1 className="font-display mt-3 text-3xl font-bold leading-tight text-primary sm:text-4xl lg:text-5xl">
-            Western Red Cedar Shingles — Tree of Life Siding Bundle, Item #3976 at Lowe's
+            Western Red Cedar Shingles — Tree of Life Siding, Item #3976 at Lowe's
           </h1>
           <div className="mt-5 flex flex-wrap gap-2">
             {["100% Natural", "Untreated", "#3/#4 Undercourse Grade", "In-Store at Lowe's"].map((b) => (
@@ -140,7 +140,7 @@ function ProductPage() {
       {/* GRADE TRANSPARENCY */}
       <section className="mx-auto max-w-4xl px-4 py-20 sm:px-6">
         <h2 className="font-display text-3xl font-bold text-primary sm:text-4xl">
-          Why #3/#4 Undercourse Western Red Cedar Shingles Are the Smart Choice
+          Why Our #3/#4 Undercourse Western Red Cedar Shingles Are the Smart Choice
         </h2>
         <div className="font-body prose-cedar mt-6 space-y-5 text-lg text-foreground/85">
           <p>
@@ -149,8 +149,8 @@ function ProductPage() {
           </p>
           <p>
             For interior accent walls, those features <strong>are</strong> the look. The variation in tone
-            and grain produces a rustic warmth that pristine Number One Blue Label can't replicate at any
-            price. For sheds, gazebos, pergolas, and siding applications, undercourse Western Red Cedar
+            and grain produces a rustic warmth that pristine Number One Blue Label simply can't replicate at any
+            price. For sheds, gazebos, pergolas, and siding applications, our #3/#4 grade undercourse Western Red Cedar
             Shingles perform comparably to higher grades at a meaningfully lower cost — exactly what
             general contractors and pro remodelers need to offer clients an affordable, beautiful, and
             distinctive siding option.
