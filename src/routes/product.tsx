@@ -140,7 +140,7 @@ function ProductPage() {
       {/* GRADE TRANSPARENCY */}
       <section className="mx-auto max-w-4xl px-4 py-20 sm:px-6">
         <h2 className="font-display text-3xl font-bold text-primary sm:text-4xl">
-          Why Our #3/#4 Undercourse Western Red Cedar Shingles Are the Smart Choice
+          Why #3/#4 Undercourse Western Red Cedar Shingles Are the Smart Choice
         </h2>
         <div className="font-body prose-cedar mt-6 space-y-5 text-lg text-foreground/85">
           <p>
