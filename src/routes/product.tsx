@@ -158,7 +158,7 @@ function ProductPage() {
           <p>
             This is the same grade used as the <strong>undercourse layer</strong> in double-course wall
             installation, and as <strong>starter rows</strong> in single-course applications. It's a real
-            building product — not a discount remainder.
+            building product, not a discount remainder.
           </p>
         </div>
       </section>
