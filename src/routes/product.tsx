@@ -149,8 +149,7 @@ function ProductPage() {
           </p>
           <p>
             For interior accent walls, those features <strong>are</strong> the look. The variation in tone
-            and grain produces a rustic warmth that pristine Number One Blue Label simply can't replicate at any
-            price. For sheds, gazebos, pergolas, and siding applications, our #3/#4 grade undercourse Western Red Cedar
+            and grain produces a rustic warmth that pristine Number One Blue Label simply can't replicate. For sheds, gazebos, pergolas, and siding applications, our #3/#4 grade undercourse Western Red Cedar
             Shingles perform comparably to higher grades at a meaningfully lower cost, exactly what
             general contractors and pro remodelers need to offer clients an affordable, beautiful, and
             distinctive siding option.
