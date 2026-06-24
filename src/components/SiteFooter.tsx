@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import Link from "next/link";
 import { NAV, LOWES_URL } from "@/lib/site";
 import logoAsset from "@/assets/wrc-logo-wordmark.png.asset.json";
 
@@ -25,7 +25,7 @@ export function SiteFooter() {
             <ul className="font-ui space-y-2 text-sm">
               {NAV.map((n) => (
                 <li key={n.to}>
-                  <Link to={n.to} className="text-primary-foreground/80 hover:text-primary-foreground hover:underline">
+                  <Link href={n.to} className="text-primary-foreground/80 hover:text-primary-foreground hover:underline">
                     {n.label}
                   </Link>
                 </li>

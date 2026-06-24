@@ -1,27 +1,62 @@
 {
-  "include": ["src/**/*.ts", "src/**/*.tsx", "vite.config.ts", "eslint.config.js"],
+  "include": [
+    "app/**/*.ts",
+    "app/**/*.tsx",
+    "next.config.ts",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
   "compilerOptions": {
     "target": "ES2022",
-    "jsx": "react-jsx",
+    "jsx": "preserve",
     "module": "ESNext",
-    "lib": ["ES2022", "DOM", "DOM.Iterable"],
-    "types": ["vite/client"],
-
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
     /* Bundler mode */
     "moduleResolution": "Bundler",
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": false,
     "noEmit": true,
-
     /* Linting */
     "skipLibCheck": true,
     "strict": true,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true,
     "paths": {
-      "@/*": ["./src/*"]
-    }
-  }
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "allowJs": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true
+  },
+  "exclude": [
+    "node_modules",
+    "src/routes",
+    "src/server.ts",
+    "src/start.ts",
+    "src/router.tsx",
+    "src/routeTree.gen.ts",
+    "src/lib/error-capture.ts",
+    "src/lib/error-page.ts",
+    "src/lib/lovable-error-reporting.ts",
+    "src/lib/api",
+    "src/lib/config.server.ts",
+    "src/integrations/supabase/auth-middleware.ts",
+    "src/integrations/supabase/client.server.ts",
+    "src/integrations/supabase/auth-attacher.ts"
+  ]
 }

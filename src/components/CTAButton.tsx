@@ -1,3 +1,5 @@
+"use client";
+
 import { LOWES_URL } from "@/lib/site";
 import { ExternalLink } from "lucide-react";
 

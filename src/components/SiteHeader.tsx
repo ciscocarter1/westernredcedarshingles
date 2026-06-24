@@ -1,4 +1,7 @@
-import { Link } from "@tanstack/react-router";
+"use client";
+
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { NAV } from "@/lib/site";
@@ -7,10 +10,11 @@ import logoIcon from "@/assets/wrc-logo-icon.png.asset.json";
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-background/90 backdrop-blur supports-[backdrop-filter]:bg-background/75">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6">
-        <Link to="/" className="mr-6 flex items-center gap-4 text-primary lg:mr-10">
+        <Link href="/" className="mr-6 flex items-center gap-4 text-primary lg:mr-10">
           <span
             aria-hidden
             className="block h-12 w-12 bg-primary sm:h-14 sm:w-14"
@@ -34,9 +38,8 @@ export function SiteHeader() {
           {NAV.map((n) => (
             <Link
               key={n.to}
-              to={n.to}
-              className="font-ui text-sm font-medium text-foreground/80 transition-colors hover:text-primary"
-              activeProps={{ className: "text-primary" }}
+              href={n.to}
+              className={`font-ui text-sm font-medium transition-colors hover:text-primary ${pathname === n.to ? "text-primary" : "text-foreground/80"}`}
             >
               {n.label}
             </Link>
@@ -59,10 +62,9 @@ export function SiteHeader() {
             {NAV.map((n) => (
               <Link
                 key={n.to}
-                to={n.to}
+                href={n.to}
                 onClick={() => setOpen(false)}
-                className="font-ui rounded-md px-3 py-2 text-sm font-medium text-foreground/90 hover:bg-secondary"
-                activeProps={{ className: "bg-secondary text-primary" }}
+                className={`font-ui rounded-md px-3 py-2 text-sm font-medium text-foreground/90 hover:bg-secondary ${pathname === n.to ? "bg-secondary text-primary" : ""}`}
               >
                 {n.label}
               </Link>
