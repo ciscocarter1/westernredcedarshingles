@@ -115,9 +115,13 @@ export default function StoreLocatorClient() {
                             Store #{s.code}
                           </div>
                           <a
-                            href={`https://www.lowes.com/store/${s.abbr}-${encodeURIComponent(
-                              s.name.replace(/^Lowe's of /, "").replace(/,.*$/, "").trim(),
-                            )}/${s.code}`}
+                            href={`https://www.lowes.com/store/${s.abbr}-${s.name
+                              .replace(/^Lowe's of /, "")
+                              .replace(/,.*$/, "")
+                              .trim()
+                              .replace(/[^a-zA-Z0-9\s]/g, "")
+                              .trim()
+                              .replace(/\s+/g, "-")}/${s.code}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="font-ui mt-2 inline-flex items-center gap-1 text-sm font-semibold text-accent hover:underline"

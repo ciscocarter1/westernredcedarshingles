@@ -16,6 +16,15 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "storage.googleapis.com" },
     ],
   },
+  // Proxy Lovable CDN asset paths to the published Lovable site
+  async rewrites() {
+    return [
+      {
+        source: "/__l5e/:path*",
+        destination: "https://westernredcedarshingles.lovable.app/__l5e/:path*",
+      },
+    ];
+  },
   // Redirect /how-to → /installation-guide
   async redirects() {
     return [
