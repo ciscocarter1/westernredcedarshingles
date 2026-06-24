@@ -131,25 +131,30 @@ export function pageMeta(opts: {
   path: string;
   ogType?: string;
   image?: string;
+  jsonLd?: unknown[];
 }) {
   const url = `${SITE_URL}${opts.path}`;
   const img = opts.image ?? `${SITE_URL}/og-default.jpg`;
   return {
-    meta: [
-      { title: opts.title },
-      { name: "description", content: opts.description },
-      { name: "robots", content: "index, follow" },
-      { property: "og:title", content: opts.title },
-      { property: "og:description", content: opts.description },
-      { property: "og:type", content: opts.ogType ?? "website" },
-      { property: "og:url", content: url },
-      { property: "og:image", content: img },
-      { property: "og:site_name", content: SITE_NAME },
-      { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: opts.title },
-      { name: "twitter:description", content: opts.description },
-      { name: "twitter:image", content: img },
-    ],
-    links: [{ rel: "canonical", href: opts.path }],
+    title: opts.title,
+    description: opts.description,
+    alternates: { canonical: url },
+    openGraph: {
+      title: opts.title,
+      description: opts.description,
+      type: (opts.ogType === "product" ? "website" : (opts.ogType ?? "website")) as "website" | "article",
+      url,
+      images: [{ url: img }],
+      siteName: SITE_NAME,
+    },
+    twitter: {
+      card: "summary_large_image" as const,
+      title: opts.title,
+      description: opts.description,
+      images: [img],
+    },
+    other: opts.jsonLd
+      ? { "application/ld+json": opts.jsonLd.map((d) => JSON.stringify(d)).join("\n") }
+      : undefined,
   };
 }
