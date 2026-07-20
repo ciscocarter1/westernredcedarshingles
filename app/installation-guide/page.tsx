@@ -14,7 +14,7 @@ export const metadata: Metadata = pageMeta({
   title: TITLE,
   description: DESC,
   path: "/installation-guide",
-  image: `${SITE_URL}${shedImg}`,
+  image: `${SITE_URL}${shedImg.src}`,
   jsonLd: [
     {
       "@context": "https://schema.org",
