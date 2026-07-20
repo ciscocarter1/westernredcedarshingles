@@ -5,8 +5,8 @@ import { LowesCTA } from "@/components/CTAButton";
 import { pageMeta, jsonLdScript, breadcrumbLd, HOWTO_PDF, SITE_URL } from "@/lib/site";
 import shedImg from "@/assets/project-shed.jpg";
 
-const TITLE = "How to Install Cedar Shingles on Walls & Sheds — Step-by-Step Guide";
-const DESC = "Follow our step-by-step cedar shingle installation guide for exterior walls, interior accent walls, and outdoor structures. Tools list, nailing pattern, spacing, and coverage tips.";
+const TITLE = "How to Install Cedar Shingles — Step-by-Step Guide";
+const DESC = "Learn how to install Western Red Cedar Shingles on siding, sheds, and accent walls. Tips for DIYers and pro contractors using Lowe's Item #3976.";
 
 const EXTERIOR_STEPS = [
   { name: "Gather materials", text: "Cedar shingles, galvanized nails, chalk line, level, tape measure, hand saw or circular saw." },

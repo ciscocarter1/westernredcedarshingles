@@ -16,9 +16,9 @@ const shedImg = shedAsset.url;
 const accentImg = accentAsset.url;
 const manCaveImg = manCaveAsset.url;
 
-const TITLE = "Western Red Cedar Shingles — Siding & Outdoor Projects | Buy at Lowe's";
+const TITLE = "Cedar Shingles for Siding & DIY | Buy at Lowe's";
 const DESC =
-  "Shop Western Red Cedar Shingle bundles, exclusively at Lowe's. 100% natural, untreated cedar — affordable, beautiful siding for contractors and DIYers. Sheds, accent walls, pergolas, dog houses, and more.";
+  "Shop natural, untreated Western Red Cedar Shingles at Lowe's — Item #3976. Affordable cedar siding for sheds, accent walls, pergolas, and more.";
 
 export const metadata: Metadata = pageMeta({
   title: TITLE,

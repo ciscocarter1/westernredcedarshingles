@@ -6,9 +6,9 @@ import shedImg from "@/assets/project-shed.jpg";
 import InstallTabsClient from "./InstallTabsClient";
 import { EXTERIOR_STEPS, INTERIOR_STEPS } from "./steps-data";
 
-const TITLE = "How to Install Cedar Shingles on Walls & Sheds — Step-by-Step Guide";
+const TITLE = "How to Install Cedar Shingles — Step-by-Step Guide";
 const DESC =
-  "Follow our step-by-step cedar shingle installation guide for exterior walls, interior accent walls, and outdoor structures. Tools list, nailing pattern, spacing, and coverage tips.";
+  "Learn how to install Western Red Cedar Shingles on siding, sheds, and accent walls. Tips for DIYers and pro contractors using Lowe's Item #3976.";
 
 export const metadata: Metadata = pageMeta({
   title: TITLE,

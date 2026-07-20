@@ -8,9 +8,9 @@ import manCaveAsset from "@/assets/man-cave-bar.png.asset.json";
 
 const textureImg = manCaveAsset.url;
 
-const TITLE = "Cedar Shingle Project Ideas — Siding, Accent Walls, Sheds, Man Caves & More";
+const TITLE = "Cedar Shingle Project Ideas — Sheds, Walls & More";
 const DESC =
-  "Get inspired with Western Red Cedar Shingles project ideas. Siding, interior accent walls, rustic dining rooms, backyard sheds, pergolas, man caves, and outdoor spaces.";
+  "Get inspired. Cedar shingles for accent walls, backyard sheds, pergolas, man caves, and dog houses. Natural wood. Affordable. Available at Lowe's.";
 
 const PROJECTS = [
   { title: "Creative Backyard Shed with Western Red Cedar Shingles", desc: "Turn a basic storage shed into a focal point. Cedar shingles weather to silver-gray and look better every year — no paint, no replacement panels.", img: "/__l5e/assets-v1/93739a25-4f73-4ea6-8134-a92d2cfd499b/creative-backyard-shed.png" },

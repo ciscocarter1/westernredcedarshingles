@@ -5,8 +5,8 @@ import { LowesCTA } from "@/components/CTAButton";
 import { pageMeta, jsonLdScript, breadcrumbLd, FAQS } from "@/lib/site";
 import { ChevronDown } from "lucide-react";
 
-const TITLE = "Western Red Cedar Shingles FAQ — Grade, Uses & Installation";
-const DESC = "Answers to the most common questions about Western Red Cedar Shingles — what grade they are, where to buy, how to install, roofing rules, and more.";
+const TITLE = "Cedar Shingles FAQ — Grades, Uses & Where to Buy";
+const DESC = "Answers to common questions about Western Red Cedar Shingles — undercourse grade explained, best uses, and where to find them at your local Lowe's.";
 
 export const Route = createFileRoute("/cedar-shingles-faq")({
   head: () => {
