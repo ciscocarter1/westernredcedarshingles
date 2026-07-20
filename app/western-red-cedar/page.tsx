@@ -14,7 +14,7 @@ export const metadata: Metadata = pageMeta({
   title: TITLE,
   description: DESC,
   path: "/western-red-cedar",
-  image: `${SITE_URL}${forestImg}`,
+  image: `${SITE_URL}${forestImg.src}`,
   jsonLd: [
     {
       "@context": "https://schema.org",
@@ -44,7 +44,7 @@ export default function SpeciesPage() {
       {/* HERO */}
       <section className="relative isolate overflow-hidden">
         <div className="absolute inset-0 -z-10">
-          <img src={forestImg} alt="Pacific Northwest old-growth Western Red Cedar forest" width={1600} height={900} className="h-full w-full object-cover" fetchPriority="high" />
+          <img src={forestImg.src} alt="Pacific Northwest old-growth Western Red Cedar forest" width={1600} height={900} className="h-full w-full object-cover" fetchPriority="high" />
           <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/60 to-background" />
         </div>
         <div className="mx-auto max-w-5xl px-4 py-24 sm:px-6 sm:py-32">
@@ -146,7 +146,7 @@ export default function SpeciesPage() {
 
       {/* CULTURAL */}
       <section className="relative isolate overflow-hidden bg-forest py-20 text-forest-foreground">
-        <img src={textureImg} alt="" aria-hidden width={1600} height={900} className="absolute inset-0 -z-10 h-full w-full object-cover opacity-10" />
+        <img src={textureImg.src} alt="" aria-hidden width={1600} height={900} className="absolute inset-0 -z-10 h-full w-full object-cover opacity-10" />
         <div className="mx-auto max-w-4xl px-4 sm:px-6">
           <h2 className="font-display text-3xl font-bold sm:text-4xl">The Tree of Life</h2>
           <div className="font-body mt-6 space-y-5 text-lg text-forest-foreground/90">
