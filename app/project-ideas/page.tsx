@@ -56,6 +56,14 @@ export default function ProjectIdeasPage() {
           Eight directions to take a bundle of Item #3976 — from a single accent wall to a full
           backyard transformation.
         </p>
+        <p className="font-body mt-4">
+          <Link
+            href="/cedar-accent-wall-diy"
+            className="font-ui inline-flex items-center gap-2 text-sm font-semibold text-highlight underline-offset-4 hover:underline"
+          >
+            Cedar Accent Wall — Full DIY Guide →
+          </Link>
+        </p>
       </section>
 
       <section className="mx-auto max-w-7xl px-4 pb-20 sm:px-6">
