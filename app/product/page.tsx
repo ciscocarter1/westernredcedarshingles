@@ -8,9 +8,9 @@ import { Check, FileDown } from "lucide-react";
 
 const bundleImg = bundleAsset.url;
 
-const TITLE = "Western Red Cedar Shingles — Siding Bundle, #3/#4 Undercourse | Lowe's";
+const TITLE = "Western Red Cedar Shingles — #3/#4 Undercourse Grade";
 const DESC =
-  "100% natural, untreated #3/#4 undercourse Western Red Cedar Shingles. Item #3976 at Lowe's, in-store only. Affordable, beautiful siding for contractors and DIYers — sheds, accent walls, pergolas, and more.";
+  "Our #3/#4 undercourse grade cedar shingles are 100% natural, untreated, and sold exclusively at Lowe's. Built for siding, sheds, and DIY projects.";
 
 export const metadata: Metadata = pageMeta({
   title: TITLE,
