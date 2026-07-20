@@ -58,6 +58,14 @@ export default function InstallPage() {
           Two complete walkthroughs: structural exterior wall construction and a faster interior accent
           wall method. Use the tabs below.
         </p>
+        <p className="font-body mt-4">
+          <a
+            href="/cedar-shed-siding"
+            className="font-ui inline-flex items-center gap-2 text-sm font-semibold text-highlight underline-offset-4 hover:underline"
+          >
+            How to Side a Shed with Cedar Shingles →
+          </a>
+        </p>
       </section>
 
       <InstallTabsClient

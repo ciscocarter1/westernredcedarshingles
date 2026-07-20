@@ -56,12 +56,18 @@ export default function ProjectIdeasPage() {
           Eight directions to take a bundle of Item #3976 — from a single accent wall to a full
           backyard transformation.
         </p>
-        <p className="font-body mt-4">
+        <p className="font-body mt-4 flex flex-wrap justify-center gap-x-6 gap-y-2">
           <Link
             href="/cedar-accent-wall-diy"
             className="font-ui inline-flex items-center gap-2 text-sm font-semibold text-highlight underline-offset-4 hover:underline"
           >
             Cedar Accent Wall — Full DIY Guide →
+          </Link>
+          <Link
+            href="/cedar-shed-siding"
+            className="font-ui inline-flex items-center gap-2 text-sm font-semibold text-highlight underline-offset-4 hover:underline"
+          >
+            How to Side a Shed with Cedar Shingles →
           </Link>
         </p>
       </section>
