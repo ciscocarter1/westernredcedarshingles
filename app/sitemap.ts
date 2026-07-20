@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/western-red-cedar`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/installation-guide`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/project-ideas`, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/cedar-accent-wall-diy`, changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/cedar-shingles-faq`, changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/cedar-vs-composite`, changeFrequency: "monthly", priority: 0.6 },
     { url: `${BASE_URL}/store-locator`, changeFrequency: "monthly", priority: 0.7 },
