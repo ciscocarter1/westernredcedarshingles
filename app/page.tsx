@@ -244,7 +244,10 @@ export default function HomePage() {
             For DIY homeowners, Western Red Cedar is forgiving material. It cuts cleanly with a standard
             circular saw, nails without splitting at the edges, and requires no special tools or
             experience. As a result, a first-time installer can complete an interior accent wall in a
-            single weekend with basic carpentry skills and our installation guide.
+            single weekend with basic carpentry skills and our installation guide. In particular,
+            forgiving cut lines and knot-friendly grain mean small mistakes disappear into the
+            natural texture of the wall rather than standing out as flaws. Furthermore, cedar's
+            light weight keeps handling and layout physically easy for a solo installer.
           </p>
         </div>
       </section>
