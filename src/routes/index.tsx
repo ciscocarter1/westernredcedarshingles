@@ -222,12 +222,41 @@ function HomePage() {
         </div>
       </section>
 
+      {/* WHY CHOOSE */}
+      <section className="mx-auto max-w-4xl px-4 py-20 sm:px-6">
+        <h2 className="font-display text-3xl font-bold text-primary sm:text-4xl">
+          Why Contractors and DIYers Choose Western Red Cedar Shingles
+        </h2>
+        <div className="font-body mt-6 space-y-5 text-lg text-foreground/85">
+          <p>
+            Western Red Cedar is one of the few building materials that genuinely improves with time.
+            Left untreated it weathers to a natural silver-gray patina that no composite or vinyl product
+            can replicate. Additionally, stained or finished it holds color longer than most softwoods
+            because the natural oils in the wood resist moisture absorption from the start.
+          </p>
+          <p>
+            For contractors, the economics are straightforward. Our undercourse grade Western Red Cedar
+            Shingles deliver the look clients want at a price point that keeps projects competitive.
+            For example, a shed exterior, a privacy screen, or a garage accent wall. These are the jobs
+            where the character of undercourse grade is not a limitation but the entire point.
+            Furthermore, natural knots and grain variation give each installation a texture that reads
+            as custom work.
+          </p>
+          <p>
+            For DIY homeowners, Western Red Cedar is forgiving material. It cuts cleanly with a standard
+            circular saw, nails without splitting at the edges, and requires no special tools or
+            experience. As a result, a first-time installer can complete an interior accent wall in a
+            single weekend with basic carpentry skills and our installation guide.
+          </p>
+        </div>
+      </section>
+
       {/* PROJECT IDEAS */}
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
         <div className="flex items-end justify-between gap-4">
           <div>
             <h2 className="font-display text-3xl font-bold text-primary sm:text-4xl">Project inspiration</h2>
-            <p className="font-body mt-2 text-foreground/70">Start here, then go further.</p>
+            <p className="font-body mt-2 text-foreground/70">For this reason we start here, then go further.</p>
           </div>
           <Link to="/project-ideas" className="font-ui text-sm font-semibold text-accent hover:underline">
             See all ideas →
@@ -235,9 +264,9 @@ function HomePage() {
         </div>
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {[
-            { img: shedImg, title: "Backyard Cedar Shed", desc: "Rustic, weather-friendly, build-yourself.", w: 1024, h: 768 },
-            { img: accentImg, title: "Dining-Room Accent Wall", desc: "Warm interior texture in a weekend.", w: 1024, h: 768 },
-            { img: manCaveImg, title: "Man Cave Cedar Wall", desc: "Texture that pairs with leather, brass, warm light.", w: 1024, h: 768 },
+            { img: shedImg, title: "Backyard Cedar Shed", desc: "Rustic, weather-friendly, build-yourself.", alt: "Backyard cedar shed clad in Western Red Cedar Shingles siding", w: 1024, h: 768 },
+            { img: accentImg, title: "Dining-Room Accent Wall", desc: "Warm interior texture in a weekend.", alt: "Dining room accent wall built with cedar shingles DIY project", w: 1024, h: 768 },
+            { img: manCaveImg, title: "Man Cave Cedar Wall", desc: "Texture that pairs with leather, brass, warm light.", alt: "Man cave interior accent wall covered in Western Red Cedar Shingles", w: 1024, h: 768 },
           ].map((p) => (
             <Link
               to="/project-ideas"
@@ -247,7 +276,7 @@ function HomePage() {
               <div className="aspect-[4/3] overflow-hidden">
                 <img
                   src={p.img}
-                  alt={p.title}
+                  alt={p.alt}
                   width={p.w}
                   height={p.h}
                   loading="lazy"
