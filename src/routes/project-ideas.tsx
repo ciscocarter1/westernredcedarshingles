@@ -10,7 +10,7 @@ const TITLE = "Cedar Shingle Project Ideas — Sheds, Walls & More";
 const DESC = "Get inspired. Cedar shingles for accent walls, backyard sheds, pergolas, man caves, and dog houses. Natural wood. Affordable. Available at Lowe's.";
 
 const PROJECTS = [
-  { title: "Creative Backyard Shed with Western Red Cedar Shingles", desc: "Turn a basic storage shed into a focal point. Cedar shingles weather to silver-gray and look better every year — no paint, no replacement panels.", img: "/images/creative-backyard-shed.png" },
+  { title: "Creative Backyard Shed with Western Red Cedar Shingles", desc: "Turn a basic storage shed into a focal point. Cedar shingles weather to silver-gray and look better every year — no paint, no replacement panels.", img: "/images/creative-backyard-shed.png", to: "/how-to-side-a-shed-with-cedar-shingles" as const },
   { title: "DIY Rustic Accent Wall", desc: "Dining room, bedroom, or stairwell. Construction adhesive, brad nails, a level — installable in a weekend with a warmer result than any peel-and-stick alternative.", img: "/images/indoor-sides-accent-wall.png" },
   { title: "Build the Ultimate Man Cave Wall", desc: "Sports bar, basement lounge, gaming room. Cedar texture pairs beautifully with leather, brass, and warm lighting.", img: textureImg },
   { title: "Bring the Outdoors In", desc: "A bedroom cedar accent wall behind the headboard turns the bed into a cabin retreat. The natural cedar scent is a bonus that lasts months.", img: "/images/maggie_bedroom.png" },
