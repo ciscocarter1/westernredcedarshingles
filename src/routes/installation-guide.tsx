@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { SiteLayout, Breadcrumbs } from "@/components/SiteLayout";
 import { LowesCTA } from "@/components/CTAButton";
@@ -96,7 +96,20 @@ function InstallPage() {
 
         <div className="mt-8">
           {tab === "exterior" ? (
-            <StepList steps={EXTERIOR_STEPS} />
+            <>
+              <StepList steps={EXTERIOR_STEPS} />
+              <div className="font-body mt-6 rounded-xl border border-highlight/40 bg-highlight/10 p-5">
+                <p className="text-foreground/85">
+                  Working on a shed?{" "}
+                  <Link
+                    to="/how-to-side-a-shed-with-cedar-shingles"
+                    className="font-semibold text-highlight underline-offset-4 hover:underline"
+                  >
+                    See our complete shed siding walkthrough →
+                  </Link>
+                </p>
+              </div>
+            </>
           ) : (
             <StepList steps={INTERIOR_STEPS} />
           )}
