@@ -195,10 +195,16 @@ export default function HomePage() {
             The Tree of Life
           </h2>
           <p className="font-body mx-auto mt-5 max-w-3xl text-lg text-primary-foreground/90">
-            Western Red Cedar was the cornerstone of Northwest coastal Native American culture — called
-            the <em>Tree of Life</em> and the <em>Life Giver</em>. It provided shelter, tools, clothing, and
-            medicine for generations.
+            Western Red Cedar was the cornerstone of Northwest coastal Native American culture, called
+            the <em>Tree of Life</em> and the <em>Life Giver</em>. In addition, it provided shelter, tools,
+            clothing, and medicine for generations. For this reason, when you install Western Red Cedar
+            Shingles today you are working with a material whose usefulness has been proven for
+            thousands of years across the Pacific Northwest coast. Furthermore, the same qualities that
+            made cedar the first-choice building material for the tribes, its natural resistance to rot
+            and insects, straight-splitting grain, and dimensional stability, are exactly the qualities
+            that make cedar siding the smart choice on a modern jobsite.
           </p>
+
           <div className="mt-12 grid grid-cols-2 gap-5 md:grid-cols-4">
             {TREE_OF_LIFE.map((t) => (
               <div key={t.label} className="rounded-lg border border-forest-foreground/15 bg-forest text-forest-foreground p-6 text-left shadow-sm">
