@@ -109,9 +109,11 @@ function HomePage() {
           Honest Western Red Cedar Shingles, straight from the Pacific Northwest
         </h2>
         <p className="font-body mt-6 text-lg text-foreground/80 sm:text-xl">
-          Our #3/#4 undercourse grade Western Red Cedar Shingles, Lowe's Item #3976, sold exclusively at Lowe's
-          in-store. 100% natural and untreated — the versatile, affordable solution for siding, accent
-          walls, sheds, gazebos, and other outdoor projects. Built for contractors and DIYers alike.
+          Our #3/#4 undercourse grade Western Red Cedar Shingles, Lowe's Item #3976, are sold exclusively at Lowe's
+          in-store. In particular, every bundle is 100% natural and untreated, which makes them the versatile,
+          affordable solution for siding, accent walls, sheds, gazebos, and other outdoor projects. Furthermore,
+          they are built for contractors and DIYers alike, so the same bundle that finishes a client's exterior
+          can just as easily wrap a weekend accent wall at home.
         </p>
       </section>
 
@@ -121,6 +123,11 @@ function HomePage() {
           <h2 className="font-display text-center text-3xl font-bold text-primary sm:text-4xl">
             Eight ways pros and DIYers put Western Red Cedar Shingles to work
           </h2>
+          <p className="font-body mx-auto mt-4 max-w-3xl text-center text-foreground/75">
+            For example, the same bundle covers everything from full exterior sidewalls to a single interior
+            accent wall. In addition, contractors regularly reach for these shingles on sheds, gazebos, and
+            pergola cladding when a project calls for real cedar character.
+          </p>
           <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-4">
             {USES.map((u) => (
               <div
@@ -140,7 +147,7 @@ function HomePage() {
         <div className="overflow-hidden rounded-xl">
           <img
             src={textureAsset.url}
-            alt="Close-up of Western Red Cedar wood grain showing natural color variation"
+            alt="Close-up of Western Red Cedar Shingles wood grain showing natural cedar siding color variation"
             width={1600}
             height={900}
             loading="lazy"
@@ -154,10 +161,10 @@ function HomePage() {
           </h2>
           <p className="font-body mt-5 text-lg text-foreground/80">
             Our #3/#4 undercourse grade Western Red Cedar Shingles carry natural character marks, flat grain, and the
-            occasional knot. On an interior accent wall that's the look people pay extra to fake — rustic
-            warmth a flawless Number One Blue Label simply doesn't have. On a shed, pergola, or siding job
-            they perform comparably to higher grades at a fraction of the cost. For contractors, it's an
-            affordable, beautiful, and distinctive option clients remember.
+            occasional knot. In particular, on an interior accent wall that's the look people pay extra to fake, a rustic
+            warmth a flawless Number One Blue Label simply doesn't have. By contrast, on a shed, pergola, or siding job
+            they perform comparably to higher grades at a fraction of the cost. As a result, contractors get an
+            affordable, beautiful, and distinctive option clients remember long after the invoice is paid.
           </p>
           <Link
             to="/product"
@@ -167,6 +174,7 @@ function HomePage() {
           </Link>
         </div>
       </section>
+
 
       {/* CONTRACTOR CALLOUT QUOTES */}
       <section className="bg-secondary py-16">
