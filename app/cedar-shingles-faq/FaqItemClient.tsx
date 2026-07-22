@@ -26,7 +26,7 @@ export default function FaqItemClient({
         </span>
         <ChevronDown className={`h-5 w-5 shrink-0 transition-transform ${open ? "rotate-180" : ""}`} />
       </button>
-      <div hidden={!open}>
+      <div className={open ? "" : "sr-only"} aria-hidden={!open}>
         {aHtml
           ? <div className="font-body px-5 pb-5 pl-12 text-foreground/85" dangerouslySetInnerHTML={{ __html: aHtml }} />
           : <div className="font-body px-5 pb-5 pl-12 text-foreground/85">{a}</div>}
