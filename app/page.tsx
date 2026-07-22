@@ -105,8 +105,11 @@ export default function HomePage() {
           in-store. In particular, every bundle is 100% natural and untreated, which makes them the versatile,
           affordable solution for siding, accent walls, sheds, gazebos, and other outdoor projects. Furthermore,
           they are built for contractors and DIYers alike, so the same bundle that finishes a client's exterior
-          can just as easily wrap a weekend accent wall at home.
+          can just as easily wrap a weekend accent wall at home. In addition, because the shingles ship
+          untreated, you keep full control over the final finish, whether that means letting the wood
+          silver naturally over the seasons or sealing it to lock in warm cedar tones.
         </p>
+
       </section>
 
       {/* USES GRID */}
