@@ -127,7 +127,7 @@ function HomePage() {
                 key={u.label}
                 className="rounded-lg border border-border bg-card p-6 text-center shadow-sm transition-all hover:-translate-y-1 hover:shadow-md"
               >
-                <img src={u.icon} alt="" width={96} height={96} loading="lazy" className="mx-auto h-20 w-20 object-contain" />
+                <img src={u.icon} alt={u.alt} width={96} height={96} loading="lazy" className="mx-auto h-20 w-20 object-contain" />
                 <div className="font-ui mt-3 text-sm font-semibold text-foreground">{u.label}</div>
               </div>
             ))}
