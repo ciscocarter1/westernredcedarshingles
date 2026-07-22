@@ -15,11 +15,11 @@ export default function FaqRowClient({ q, a, aHtml }: { q: string; a: string; aH
         <span>{q}</span>
         <ChevronDown className={`h-5 w-5 shrink-0 transition-transform ${open ? "rotate-180" : ""}`} />
       </button>
-      {open && (
-        aHtml
+      <div className={open ? "" : "sr-only"} aria-hidden={!open}>
+        {aHtml
           ? <div className="font-body px-5 pb-5 text-foreground/80" dangerouslySetInnerHTML={{ __html: aHtml }} />
-          : <div className="font-body px-5 pb-5 text-foreground/80">{a}</div>
-      )}
+          : <div className="font-body px-5 pb-5 text-foreground/80">{a}</div>}
+      </div>
     </div>
   );
 }

@@ -3,8 +3,8 @@ import type { ReactNode } from "react";
 import { SiteLayout, Breadcrumbs } from "@/components/SiteLayout";
 import { LowesCTA } from "@/components/CTAButton";
 import { pageMeta, SITE_URL } from "@/lib/site";
-import forestImg from "@/assets/cedar-forest.jpg";
-import textureImg from "@/assets/cedar-texture.jpg";
+const forestImg = { src: "/images/western-red-cedar-forest-pacific-northwest.jpg" };
+const textureImg = { src: "/images/western-red-cedar-grain-texture.jpg" };
 
 const TITLE = "What Is Western Red Cedar? Species Guide — Properties, Grades & Uses";
 const DESC =
@@ -146,7 +146,7 @@ export default function SpeciesPage() {
 
       {/* CULTURAL */}
       <section className="relative isolate overflow-hidden bg-forest py-20 text-forest-foreground">
-        <img src={textureImg.src} alt="" aria-hidden width={1600} height={900} className="absolute inset-0 -z-10 h-full w-full object-cover opacity-10" />
+        <img src={textureImg.src} alt="Close-up of Western Red Cedar wood grain texture showing natural color variation" width={1600} height={900} className="absolute inset-0 -z-10 h-full w-full object-cover opacity-10" />
         <div className="mx-auto max-w-4xl px-4 sm:px-6">
           <h2 className="font-display text-3xl font-bold sm:text-4xl">The Tree of Life</h2>
           <div className="font-body mt-6 space-y-5 text-lg text-forest-foreground/90">

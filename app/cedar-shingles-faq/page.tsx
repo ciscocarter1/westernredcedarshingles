@@ -3,15 +3,17 @@ import { SiteLayout, Breadcrumbs } from "@/components/SiteLayout";
 import { LowesCTA } from "@/components/CTAButton";
 import { pageMeta, FAQS, SITE_URL } from "@/lib/site";
 import FaqItemClient from "./FaqItemClient";
+import heroAsset from "@/assets/western-red-cedar-shed-siding.png.asset.json";
 
-const TITLE = "Cedar Shingles FAQ — Grades, Uses & Where to Buy";
+const TITLE = "Western Red Cedar Shingles FAQ — Grade, Uses & Installation";
 const DESC =
-  "Answers to common questions about Western Red Cedar Shingles — undercourse grade explained, best uses, and where to find them at your local Lowe's.";
+  "Answers to the most common questions about Western Red Cedar Shingles — what grade they are, where to buy, how to install, and more.";
 
 export const metadata: Metadata = pageMeta({
   title: TITLE,
   description: DESC,
   path: "/cedar-shingles-faq",
+  image: `${SITE_URL}${heroAsset.url}`,
   jsonLd: [
     {
       "@context": "https://schema.org",

@@ -95,14 +95,14 @@ export const FAQS: Faq[] = [
 
 
 export const USES = [
-  { label: "Exterior Sidewalls", icon: exteriorIcon.url, alt: "Exterior Sidewalls icon for Western Red Cedar Shingles applications" },
-  { label: "Interior Accent Walls", icon: interiorIcon.url, alt: "Interior Accent Wall icon for cedar shingle DIY projects" },
-  { label: "Storage Sheds", icon: shedIcon.url, alt: "Storage Shed built with Western Red Cedar Shingles siding" },
-  { label: "Gazebos & Pergolas", icon: pergolaIcon.url, alt: "Gazebo and pergola with Western Red Cedar Shingles cladding" },
-  { label: "Dog Houses", icon: dogIcon.url, alt: "Cedar shingle dog house exterior siding project" },
-  { label: "Man Caves", icon: manCaveIcon.url, alt: "Western Red Cedar Shingles man cave accent wall project" },
-  { label: "Siding", icon: exteriorIcon.url, alt: "Cedar siding project icon for Western Red Cedar Shingles" },
-  { label: "Window & Door Shims", icon: windowIcon.url, alt: "Window and door shim applications for cedar shingles" },
+  { label: "Exterior Sidewalls", icon: exteriorIcon.url, alt: "Exterior sidewall cedar shingle siding icon" },
+  { label: "Interior Accent Walls", icon: interiorIcon.url, alt: "Interior accent wall Western Red Cedar Shingles icon" },
+  { label: "Storage Sheds", icon: shedIcon.url, alt: "Storage shed cedar shingle siding icon" },
+  { label: "Gazebos & Pergolas", icon: pergolaIcon.url, alt: "Gazebo and pergola cedar shingle cladding icon" },
+  { label: "Dog Houses", icon: dogIcon.url, alt: "Dog house exterior cedar shingle siding icon" },
+  { label: "Man Caves", icon: manCaveIcon.url, alt: "Man cave interior cedar shingle accent wall icon" },
+  { label: "Siding", icon: exteriorIcon.url, alt: "Cedar shingle siding application icon" },
+  { label: "Window & Door Shims", icon: windowIcon.url, alt: "Window and door shim Western Red Cedar Shingles icon" },
 ];
 
 export function jsonLdScript(data: unknown) {
@@ -153,8 +153,9 @@ export function pageMeta(opts: {
       description: opts.description,
       images: [img],
     },
-    other: opts.jsonLd
-      ? { "application/ld+json": opts.jsonLd.map((d) => JSON.stringify(d)).join("\n") }
-      : undefined,
+    other: {
+      "twitter:url": url,
+      ...(opts.jsonLd ? { "application/ld+json": opts.jsonLd.map((d) => JSON.stringify(d)).join("\n") } : {}),
+    },
   };
 }

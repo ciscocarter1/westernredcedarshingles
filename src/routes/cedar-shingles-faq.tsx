@@ -2,15 +2,16 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { SiteLayout, Breadcrumbs } from "@/components/SiteLayout";
 import { LowesCTA } from "@/components/CTAButton";
-import { pageMeta, jsonLdScript, breadcrumbLd, FAQS } from "@/lib/site";
+import { pageMeta, jsonLdScript, breadcrumbLd, FAQS, SITE_URL } from "@/lib/site";
+import heroAsset from "@/assets/western-red-cedar-shed-siding.png.asset.json";
 import { ChevronDown } from "lucide-react";
 
-const TITLE = "Cedar Shingles FAQ — Grades, Uses & Where to Buy";
-const DESC = "Answers to common questions about Western Red Cedar Shingles — undercourse grade explained, best uses, and where to find them at your local Lowe's.";
+const TITLE = "Western Red Cedar Shingles FAQ — Grade, Uses & Installation";
+const DESC = "Answers to the most common questions about Western Red Cedar Shingles — what grade they are, where to buy, how to install, and more.";
 
 export const Route = createFileRoute("/cedar-shingles-faq")({
   head: () => {
-    const m = pageMeta({ title: TITLE, description: DESC, path: "/cedar-shingles-faq" });
+    const m = pageMeta({ title: TITLE, description: DESC, path: "/cedar-shingles-faq", image: `${SITE_URL}${heroAsset.url}` });
     return {
       ...m,
       scripts: [
