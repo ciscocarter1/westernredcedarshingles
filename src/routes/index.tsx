@@ -14,7 +14,7 @@ import textureAsset from "@/assets/cedar-shingles-stack-wide.png.asset.json";
 import { ChevronDown, Home as HomeIcon, Hammer, Shirt, Leaf } from "lucide-react";
 import { useState } from "react";
 
-const TITLE = "Cedar Shingles for Siding & DIY | Buy at Lowe's";
+const TITLE = "Western Red Cedar Shingles for Siding & DIY | Buy at Lowe's";
 const DESC = "Shop natural, untreated Western Red Cedar Shingles at Lowe's — Item #3976. Affordable cedar siding for sheds, accent walls, pergolas, and more.";
 
 export const Route = createFileRoute("/")({
