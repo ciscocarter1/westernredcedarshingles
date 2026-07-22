@@ -3,8 +3,8 @@ import type { ReactNode } from "react";
 import { SiteLayout, Breadcrumbs } from "@/components/SiteLayout";
 import { LowesCTA } from "@/components/CTAButton";
 import { pageMeta, SITE_URL } from "@/lib/site";
-import forestImg from "@/assets/cedar-forest.jpg";
-import textureImg from "@/assets/cedar-texture.jpg";
+const forestImg = { src: "/images/western-red-cedar-forest-pacific-northwest.jpg" };
+const textureImg = { src: "/images/western-red-cedar-grain-texture.jpg" };
 
 const TITLE = "What Is Western Red Cedar? Species Guide — Properties, Grades & Uses";
 const DESC =
