@@ -152,6 +152,7 @@ export function pageMeta(opts: {
       title: opts.title,
       description: opts.description,
       images: [img],
+      site: url,
     },
     other: opts.jsonLd
       ? { "application/ld+json": opts.jsonLd.map((d) => JSON.stringify(d)).join("\n") }
