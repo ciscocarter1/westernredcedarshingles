@@ -16,7 +16,7 @@ const shedImg = shedAsset.url;
 const accentImg = accentAsset.url;
 const manCaveImg = manCaveAsset.url;
 
-const TITLE = "Cedar Shingles for Siding & DIY | Buy at Lowe's";
+const TITLE = "Western Red Cedar Shingles for Siding & DIY | Buy at Lowe's";
 const DESC =
   "Shop natural, untreated Western Red Cedar Shingles at Lowe's — Item #3976. Affordable cedar siding for sheds, accent walls, pergolas, and more.";
 
@@ -78,8 +78,11 @@ export default function HomePage() {
             Natural Western Red Cedar Shingles for Siding, Sheds, Walls &amp; Outdoor Projects
           </h1>
           <p className="font-body mt-6 max-w-2xl text-lg text-primary-foreground/90 sm:text-xl">
-            100% Natural. Untreated. Available Exclusively at Lowe's.
+            100% Natural. Untreated. Available Exclusively at Lowe's. In addition, every bundle is
+            milled from real Pacific Northwest Western Red Cedar and ready for siding, sheds,
+            pergolas, and interior accent walls.
           </p>
+
           <div className="mt-8 flex flex-wrap gap-3">
             <LowesCTA size="lg" variant="highlight">Buy at Lowe's — Item #3976</LowesCTA>
             <Link
@@ -98,10 +101,15 @@ export default function HomePage() {
           Honest Western Red Cedar Shingles, straight from the Pacific Northwest
         </h2>
         <p className="font-body mt-6 text-lg text-foreground/80 sm:text-xl">
-          Our #3/#4 undercourse grade Western Red Cedar Shingles, Lowe's Item #3976, sold exclusively at Lowe's
-          in-store. 100% natural and untreated — the versatile, affordable solution for siding, accent
-          walls, sheds, gazebos, and other outdoor projects. Built for contractors and DIYers alike.
+          Our #3/#4 undercourse grade Western Red Cedar Shingles, Lowe's Item #3976, are sold exclusively at Lowe's
+          in-store. In particular, every bundle is 100% natural and untreated, which makes them the versatile,
+          affordable solution for siding, accent walls, sheds, gazebos, and other outdoor projects. Furthermore,
+          they are built for contractors and DIYers alike, so the same bundle that finishes a client's exterior
+          can just as easily wrap a weekend accent wall at home. In addition, because the shingles ship
+          untreated, you keep full control over the final finish, whether that means letting the wood
+          silver naturally over the seasons or sealing it to lock in warm cedar tones.
         </p>
+
       </section>
 
       {/* USES GRID */}
@@ -110,13 +118,18 @@ export default function HomePage() {
           <h2 className="font-display text-center text-3xl font-bold text-primary sm:text-4xl">
             Eight ways pros and DIYers put Western Red Cedar Shingles to work
           </h2>
+          <p className="font-body mx-auto mt-4 max-w-3xl text-center text-foreground/75">
+            For example, the same bundle covers everything from full exterior sidewalls to a single interior
+            accent wall. In addition, contractors regularly reach for these shingles on sheds, gazebos, and
+            pergola cladding when a project calls for real cedar character.
+          </p>
           <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-4">
             {USES.map((u) => (
               <div
                 key={u.label}
                 className="rounded-lg border border-border bg-card p-6 text-center shadow-sm transition-all hover:-translate-y-1 hover:shadow-md"
               >
-                <img src={u.icon} alt="" width={96} height={96} loading="lazy" className="mx-auto h-20 w-20 object-contain" />
+                <img src={u.icon} alt={u.alt} width={96} height={96} loading="lazy" className="mx-auto h-20 w-20 object-contain" />
                 <div className="font-ui mt-3 text-sm font-semibold text-foreground">{u.label}</div>
               </div>
             ))}
@@ -129,7 +142,7 @@ export default function HomePage() {
         <div className="overflow-hidden rounded-xl">
           <img
             src={textureAsset.url}
-            alt="Close-up of Western Red Cedar wood grain showing natural color variation"
+            alt="Close-up of Western Red Cedar Shingles wood grain showing natural cedar siding color variation"
             width={1600}
             height={900}
             loading="lazy"
@@ -143,10 +156,10 @@ export default function HomePage() {
           </h2>
           <p className="font-body mt-5 text-lg text-foreground/80">
             Our #3/#4 undercourse grade Western Red Cedar Shingles carry natural character marks, flat grain, and the
-            occasional knot. On an interior accent wall that's the look people pay extra to fake — rustic
-            warmth a flawless Number One Blue Label simply doesn't have. On a shed, pergola, or siding job
-            they perform comparably to higher grades at a fraction of the cost. For contractors, it's an
-            affordable, beautiful, and distinctive option clients remember.
+            occasional knot. In particular, on an interior accent wall that's the look people pay extra to fake, a rustic
+            warmth a flawless Number One Blue Label simply doesn't have. By contrast, on a shed, pergola, or siding job
+            they perform comparably to higher grades at a fraction of the cost. As a result, contractors get an
+            affordable, beautiful, and distinctive option clients remember long after the invoice is paid.
           </p>
           <Link
             href="/product"
@@ -156,6 +169,7 @@ export default function HomePage() {
           </Link>
         </div>
       </section>
+
 
       {/* CONTRACTOR CALLOUT QUOTES */}
       <section className="bg-secondary py-16">
@@ -187,10 +201,16 @@ export default function HomePage() {
             The Tree of Life
           </h2>
           <p className="font-body mx-auto mt-5 max-w-3xl text-lg text-primary-foreground/90">
-            Western Red Cedar was the cornerstone of Northwest coastal Native American culture — called
-            the <em>Tree of Life</em> and the <em>Life Giver</em>. It provided shelter, tools, clothing, and
-            medicine for generations.
+            Western Red Cedar was the cornerstone of Northwest coastal Native American culture, called
+            the <em>Tree of Life</em> and the <em>Life Giver</em>. In addition, it provided shelter, tools,
+            clothing, and medicine for generations. For this reason, when you install Western Red Cedar
+            Shingles today you are working with a material whose usefulness has been proven for
+            thousands of years across the Pacific Northwest coast. Furthermore, the same qualities that
+            made cedar the first-choice building material for the tribes, its natural resistance to rot
+            and insects, straight-splitting grain, and dimensional stability, are exactly the qualities
+            that make cedar siding the smart choice on a modern jobsite.
           </p>
+
           <div className="mt-12 grid grid-cols-2 gap-5 md:grid-cols-4">
             {TREE_OF_LIFE.map((t) => (
               <div key={t.label} className="rounded-lg border border-forest-foreground/15 bg-forest text-forest-foreground p-6 text-left shadow-sm">
@@ -203,12 +223,44 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* WHY CHOOSE */}
+      <section className="mx-auto max-w-4xl px-4 py-20 sm:px-6">
+        <h2 className="font-display text-3xl font-bold text-primary sm:text-4xl">
+          Why Contractors and DIYers Choose Western Red Cedar Shingles
+        </h2>
+        <div className="font-body mt-6 space-y-5 text-lg text-foreground/85">
+          <p>
+            Western Red Cedar is one of the few building materials that genuinely improves with time.
+            Left untreated it weathers to a natural silver-gray patina that no composite or vinyl product
+            can replicate. Additionally, stained or finished it holds color longer than most softwoods
+            because the natural oils in the wood resist moisture absorption from the start.
+          </p>
+          <p>
+            For contractors, the economics are straightforward. Our undercourse grade Western Red Cedar
+            Shingles deliver the look clients want at a price point that keeps projects competitive.
+            For example, a shed exterior, a privacy screen, or a garage accent wall. These are the jobs
+            where the character of undercourse grade is not a limitation but the entire point.
+            Furthermore, natural knots and grain variation give each installation a texture that reads
+            as custom work.
+          </p>
+          <p>
+            For DIY homeowners, Western Red Cedar is forgiving material. It cuts cleanly with a standard
+            circular saw, nails without splitting at the edges, and requires no special tools or
+            experience. As a result, a first-time installer can complete an interior accent wall in a
+            single weekend with basic carpentry skills and our installation guide. In particular,
+            forgiving cut lines and knot-friendly grain mean small mistakes disappear into the
+            natural texture of the wall rather than standing out as flaws. Furthermore, cedar's
+            light weight keeps handling and layout physically easy for a solo installer.
+          </p>
+        </div>
+      </section>
+
       {/* PROJECT IDEAS */}
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
         <div className="flex items-end justify-between gap-4">
           <div>
             <h2 className="font-display text-3xl font-bold text-primary sm:text-4xl">Project inspiration</h2>
-            <p className="font-body mt-2 text-foreground/70">Start here, then go further.</p>
+            <p className="font-body mt-2 text-foreground/70">For this reason we start here, then go further.</p>
           </div>
           <Link href="/project-ideas" className="font-ui text-sm font-semibold text-accent hover:underline">
             See all ideas →
@@ -216,9 +268,9 @@ export default function HomePage() {
         </div>
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {[
-            { img: shedImg, title: "Backyard Cedar Shed", desc: "Rustic, weather-friendly, build-yourself.", w: 1024, h: 768 },
-            { img: accentImg, title: "Dining-Room Accent Wall", desc: "Warm interior texture in a weekend.", w: 1024, h: 768 },
-            { img: manCaveImg, title: "Man Cave Cedar Wall", desc: "Texture that pairs with leather, brass, warm light.", w: 1024, h: 768 },
+            { img: shedImg, title: "Backyard Cedar Shed", desc: "Rustic, weather-friendly, build-yourself.", alt: "Backyard cedar shed clad in Western Red Cedar Shingles siding", w: 1024, h: 768 },
+            { img: accentImg, title: "Dining-Room Accent Wall", desc: "Warm interior texture in a weekend.", alt: "Dining room accent wall built with cedar shingles DIY project", w: 1024, h: 768 },
+            { img: manCaveImg, title: "Man Cave Cedar Wall", desc: "Texture that pairs with leather, brass, warm light.", alt: "Man cave interior accent wall covered in Western Red Cedar Shingles", w: 1024, h: 768 },
           ].map((p) => (
             <Link
               href="/project-ideas"
@@ -228,7 +280,7 @@ export default function HomePage() {
               <div className="aspect-[4/3] overflow-hidden">
                 <img
                   src={p.img}
-                  alt={p.title}
+                  alt={p.alt}
                   width={p.w}
                   height={p.h}
                   loading="lazy"
@@ -270,11 +322,15 @@ export default function HomePage() {
             Ready to Purchase?
           </h2>
           <p className="font-body mt-4 text-lg text-primary-foreground/90">
-            Available exclusively at Lowe's — in-store only.{" "}
+            Western Red Cedar Shingles are available exclusively at Lowe's, in-store only.
+            Additionally, our Store Locator lists every stocking location so you can call ahead and
+            confirm inventory before your trip.{" "}
             <Link href="/store-locator" className="font-semibold text-highlight underline-offset-4 hover:underline">
               Find the location nearest you.
-            </Link>
+            </Link>{" "}
+            For contractors buying bundles by the pallet, ask the pro desk to check bulk availability.
           </p>
+
           <div className="mt-8">
             <LowesCTA size="lg" variant="highlight">Shop at Lowe's</LowesCTA>
           </div>

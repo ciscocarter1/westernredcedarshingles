@@ -96,9 +96,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary_large_image" },
       // Google Search Console — replace content value when verification tag is issued.
       // { name: "google-site-verification", content: "REPLACE_ME" },
-      { title: "Cedar Shingles for Siding & DIY | Buy at Lowe's" },
-      { property: "og:title", content: "Cedar Shingles for Siding & DIY | Buy at Lowe's" },
-      { name: "twitter:title", content: "Cedar Shingles for Siding & DIY | Buy at Lowe's" },
+      { title: "Western Red Cedar Shingles for Siding & DIY | Buy at Lowe's" },
+      { property: "og:title", content: "Western Red Cedar Shingles for Siding & DIY | Buy at Lowe's" },
+      { name: "twitter:title", content: "Western Red Cedar Shingles for Siding & DIY | Buy at Lowe's" },
       { name: "description", content: "Shop natural, untreated Western Red Cedar Shingles at Lowe's — Item #3976. Affordable cedar siding for sheds, accent walls, pergolas, and more." },
       { property: "og:description", content: "Shop natural, untreated Western Red Cedar Shingles at Lowe's — Item #3976. Affordable cedar siding for sheds, accent walls, pergolas, and more." },
       { name: "twitter:description", content: "Shop natural, untreated Western Red Cedar Shingles at Lowe's — Item #3976. Affordable cedar siding for sheds, accent walls, pergolas, and more." },

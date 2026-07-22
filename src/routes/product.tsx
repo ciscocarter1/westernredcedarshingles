@@ -176,6 +176,47 @@ function ProductPage() {
         </div>
       </section>
 
+      {/* COVERAGE CALCULATOR */}
+      <section className="mx-auto max-w-4xl px-4 py-20 sm:px-6">
+        <h2 className="font-display text-3xl font-bold text-primary sm:text-4xl">
+          How Many Bundles Do I Need?
+        </h2>
+        <p className="font-body mt-6 text-lg text-foreground/85">
+          One bundle of Western Red Cedar Shingles covers approximately 25 square feet of wall at a 5.5
+          inch exposure. For most siding and accent wall projects, plan on 4 bundles per 100 square feet
+          as your baseline. Wider exposures reduce the number of bundles needed.
+        </p>
+        <div className="mt-8 overflow-hidden rounded-lg border border-border">
+          <table className="w-full text-left">
+            <thead className="bg-secondary">
+              <tr>
+                <th className="font-ui px-5 py-3 text-sm font-semibold text-primary">Project Size</th>
+                <th className="font-ui px-5 py-3 text-sm font-semibold text-primary">Bundles Needed (at 5.5" exposure)</th>
+              </tr>
+            </thead>
+            <tbody className="font-body text-foreground/85">
+              {[
+                ["50 sq ft", "2 bundles"],
+                ["100 sq ft", "4 bundles"],
+                ["200 sq ft", "8 bundles"],
+                ["500 sq ft", "20 bundles"],
+              ].map(([s, b]) => (
+                <tr key={s} className="border-t border-border bg-card">
+                  <td className="px-5 py-3">{s}</td>
+                  <td className="px-5 py-3">{b}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="font-body mt-6 text-lg text-foreground/85">
+          For double-course applications, measure in linear running feet rather than square feet. Each
+          bundle yields approximately 32 running feet in undercourse applications.
+        </p>
+      </section>
+
+
+
       {/* PURCHASE + DOWNLOADS */}
       <section className="mx-auto max-w-5xl px-4 py-20 sm:px-6">
         <div className="rounded-2xl bg-primary p-10 text-center text-primary-foreground shadow-lg">

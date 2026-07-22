@@ -6,7 +6,7 @@ import "../src/styles.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://westernredcedarshingles.com"),
   title: {
-    default: "Cedar Shingles for Siding & DIY | Buy at Lowe's",
+    default: "Western Red Cedar Shingles for Siding & DIY | Buy at Lowe's",
     template: "%s | Western Red Cedar Shingles",
   },
   description:

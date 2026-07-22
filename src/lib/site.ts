@@ -95,14 +95,14 @@ export const FAQS: Faq[] = [
 
 
 export const USES = [
-  { label: "Exterior Sidewalls", icon: exteriorIcon.url },
-  { label: "Interior Accent Walls", icon: interiorIcon.url },
-  { label: "Storage Sheds", icon: shedIcon.url },
-  { label: "Gazebos & Pergolas", icon: pergolaIcon.url },
-  { label: "Dog Houses", icon: dogIcon.url },
-  { label: "Man Caves", icon: manCaveIcon.url },
-  { label: "Siding", icon: exteriorIcon.url },
-  { label: "Window & Door Shims", icon: windowIcon.url },
+  { label: "Exterior Sidewalls", icon: exteriorIcon.url, alt: "Exterior Sidewalls icon for Western Red Cedar Shingles applications" },
+  { label: "Interior Accent Walls", icon: interiorIcon.url, alt: "Interior Accent Wall icon for cedar shingle DIY projects" },
+  { label: "Storage Sheds", icon: shedIcon.url, alt: "Storage Shed built with Western Red Cedar Shingles siding" },
+  { label: "Gazebos & Pergolas", icon: pergolaIcon.url, alt: "Gazebo and pergola with Western Red Cedar Shingles cladding" },
+  { label: "Dog Houses", icon: dogIcon.url, alt: "Cedar shingle dog house exterior siding project" },
+  { label: "Man Caves", icon: manCaveIcon.url, alt: "Western Red Cedar Shingles man cave accent wall project" },
+  { label: "Siding", icon: exteriorIcon.url, alt: "Cedar siding project icon for Western Red Cedar Shingles" },
+  { label: "Window & Door Shims", icon: windowIcon.url, alt: "Window and door shim applications for cedar shingles" },
 ];
 
 export function jsonLdScript(data: unknown) {
