@@ -53,27 +53,40 @@ function ProjectIdeasPage() {
 
       <section className="mx-auto max-w-7xl px-4 pb-20 sm:px-6">
         <div className="grid gap-7 sm:grid-cols-2 lg:grid-cols-2">
-          {PROJECTS.map((p, i) => (
-            <article
-              key={p.title}
-              className="group overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
-            >
-              <div className="aspect-[16/10] overflow-hidden">
-                <img
-                  src={p.img}
-                  alt={p.title}
-                  width={1024}
-                  height={640}
-                  loading={i < 2 ? "eager" : "lazy"}
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-              <div className="p-6">
-                <h2 className="font-display text-2xl font-semibold text-primary">{p.title}</h2>
-                <p className="font-body mt-2 text-foreground/80">{p.desc}</p>
-              </div>
-            </article>
-          ))}
+          {PROJECTS.map((p, i) => {
+            const Card = (
+              <>
+                <div className="aspect-[16/10] overflow-hidden">
+                  <img
+                    src={p.img}
+                    alt={p.title}
+                    width={1024}
+                    height={640}
+                    loading={i < 2 ? "eager" : "lazy"}
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-6">
+                  <h2 className="font-display text-2xl font-semibold text-primary">{p.title}</h2>
+                  <p className="font-body mt-2 text-foreground/80">{p.desc}</p>
+                  {"to" in p && p.to ? (
+                    <p className="font-ui mt-3 text-sm font-semibold text-highlight">Read the guide →</p>
+                  ) : null}
+                </div>
+              </>
+            );
+            const className =
+              "group block overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg";
+            return "to" in p && p.to ? (
+              <Link key={p.title} to={p.to} className={className}>
+                {Card}
+              </Link>
+            ) : (
+              <article key={p.title} className={className}>
+                {Card}
+              </article>
+            );
+          })}
         </div>
       </section>
 

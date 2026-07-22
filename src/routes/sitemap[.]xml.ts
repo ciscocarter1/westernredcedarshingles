@@ -10,6 +10,7 @@ const ROUTES = [
   { path: "/installation-guide", changefreq: "monthly", priority: "0.8" },
   
   { path: "/project-ideas", changefreq: "monthly", priority: "0.7" },
+  { path: "/how-to-side-a-shed-with-cedar-shingles", changefreq: "monthly", priority: "0.7" },
   { path: "/cedar-shingles-faq", changefreq: "monthly", priority: "0.7" },
   { path: "/cedar-vs-composite", changefreq: "monthly", priority: "0.6" },
 ];
