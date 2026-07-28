@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { trackAdsConversion } from "@/lib/gtag";
 import { z } from "zod";
 import { SiteLayout, Breadcrumbs } from "@/components/SiteLayout";
 import { pageMeta, jsonLdScript, breadcrumbLd, CONTACT_EMAIL, SITE_URL, SITE_NAME } from "@/lib/site";
