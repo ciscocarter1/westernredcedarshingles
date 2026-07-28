@@ -1,6 +1,7 @@
 "use client";
 
 import { LOWES_URL } from "@/lib/site";
+import { trackAdsConversion } from "@/lib/gtag";
 import { ExternalLink } from "lucide-react";
 
 type Props = {
@@ -43,6 +44,7 @@ export function LowesCTA({
             event_label: "lowes_item_3976",
           });
         }
+        trackAdsConversion();
       }}
       className={`${base} ${sizes[size]} ${variants[variant]} ${className}`}
     >
