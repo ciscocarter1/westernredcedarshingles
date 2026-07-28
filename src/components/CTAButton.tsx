@@ -44,6 +44,7 @@ export function LowesCTA({
             event_label: "lowes_item_3976",
           });
         }
+        trackAdsConversion();
       }}
       className={`${base} ${sizes[size]} ${variants[variant]} ${className}`}
     >
