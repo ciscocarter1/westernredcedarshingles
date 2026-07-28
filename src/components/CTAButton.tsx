@@ -1,6 +1,7 @@
 "use client";
 
 import { LOWES_URL } from "@/lib/site";
+import { trackAdsConversion } from "@/lib/gtag";
 import { ExternalLink } from "lucide-react";
 
 type Props = {
