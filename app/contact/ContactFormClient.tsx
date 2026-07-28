@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { trackAdsConversion } from "@/lib/gtag";
 import { z } from "zod";
 import { supabase } from "@/integrations/supabase/client";
 import { Loader2 } from "lucide-react";
