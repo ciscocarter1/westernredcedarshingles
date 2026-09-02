@@ -1,4 +1,5 @@
 "use client";
+// GuideCards: shared inline-expanding article cards for /project-ideas
 
 import { useState } from "react";
 import type { ReactNode } from "react";
