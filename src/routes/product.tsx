@@ -241,6 +241,25 @@ function ProductPage() {
           </div>
         </div>
       </section>
+
+      {/* REVIEW CALLOUT */}
+      <section className="mx-auto max-w-3xl px-4 pb-20 text-center sm:px-6">
+        <h3 className="font-display text-2xl font-bold text-primary sm:text-3xl">
+          Bought a Bundle? Tell Others What You Think.
+        </h3>
+        <p className="font-body mt-4 text-lg text-foreground/85">
+          Customer reviews on Lowe's help other contractors and DIYers find this product. If you have
+          used Western Red Cedar Shingles on a project, we would love to hear about it.
+        </p>
+        <a
+          href="https://www.lowes.com/pd/Red-Cedar-Untreated-Wood-Siding-Shingles/3379244#reviews"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-ui mt-6 inline-flex items-center justify-center rounded-md border-2 border-highlight bg-highlight/10 px-6 py-3 text-sm font-semibold text-primary shadow-sm transition-all duration-200 hover:scale-[1.02] hover:bg-highlight/20"
+        >
+          Leave a Review on Lowe's
+        </a>
+      </section>
     </SiteLayout>
   );
 }
