@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteLayout, Breadcrumbs } from "@/components/SiteLayout";
 import { LowesCTA } from "@/components/CTAButton";
+import { GuideCards } from "@/components/GuideCards";
 
 import { pageMeta, SITE_URL } from "@/lib/site";
 import accentImg from "@/assets/project-accent-wall.jpg";
@@ -97,6 +98,14 @@ export default function ProjectIdeasPage() {
             </article>
           ))}
         </div>
+      </section>
+
+
+      <section className="mx-auto max-w-7xl px-4 pb-20 sm:px-6">
+        <h2 className="font-display mb-8 border-b border-border pb-3 text-3xl font-bold text-primary">
+          Contractor and DIY Guides
+        </h2>
+        <GuideCards />
       </section>
 
       <section className="bg-primary py-16 text-primary-foreground">
