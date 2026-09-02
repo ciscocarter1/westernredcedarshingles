@@ -107,7 +107,7 @@ function HomePage() {
       </section>
 
       {/* TRUST BAR */}
-      <section className="bg-primary py-10 text-primary-foreground">
+      <section className="bg-cedar py-10 text-cedar-foreground">
         <div className="mx-auto grid max-w-5xl gap-8 px-4 text-center sm:grid-cols-3 sm:px-6">
           {[
             { n: "45 Years", l: "Lowe's Supplier Relationship" },
