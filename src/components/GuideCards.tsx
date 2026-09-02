@@ -558,7 +558,7 @@ const ARTICLES: Article[] = [
       "Western Red Cedar undercourse shingles are available at Lowe's nationwide with no minimum order. Here is everything you need to know before your trip — pricing, coverage, and what to ask at the pro desk.",
     readTime: "4 min read",
     img: "/images/western-red-cedar-shed-siding.png",
-    alt: "Natural Western Red Cedar shingles weathering to silver gray on exterior shed siding",
+    alt: "Lowe's logo on a blue background with the tagline 'Lowe's knows home improvement'",
     cta: { text: "Find Your Nearest Lowe's", href: "/store-locator" },
     cta2: { text: "View at Lowes.com", href: LOWES_UTM_URL },
     body: (
