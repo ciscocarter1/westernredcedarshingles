@@ -9,6 +9,7 @@ type Props = {
   variant?: "primary" | "outline" | "highlight";
   size?: "md" | "lg";
   className?: string;
+  href?: string;
 };
 
 export function LowesCTA({
@@ -16,6 +17,7 @@ export function LowesCTA({
   variant = "primary",
   size = "md",
   className = "",
+  href = LOWES_URL,
 }: Props) {
   const base =
     "font-ui inline-flex items-center justify-center gap-2 font-semibold rounded-md transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] shadow-sm";
@@ -33,7 +35,7 @@ export function LowesCTA({
   };
   return (
     <a
-      href={LOWES_URL}
+      href={href}
       target="_blank"
       rel="noopener noreferrer sponsored"
       data-analytics-event="lowes_product_click"

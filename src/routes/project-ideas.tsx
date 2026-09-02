@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout, Breadcrumbs } from "@/components/SiteLayout";
 import { LowesCTA } from "@/components/CTAButton";
+import { GuideCards } from "@/components/GuideCards";
 import { pageMeta, jsonLdScript, breadcrumbLd, SITE_URL } from "@/lib/site";
 import accentImg from "@/assets/project-accent-wall.jpg";
 import manCaveAsset from "@/assets/man-cave-bar.png.asset.json";
@@ -88,6 +89,13 @@ function ProjectIdeasPage() {
             );
           })}
         </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-4 pb-20 sm:px-6">
+        <h2 className="font-display mb-8 border-b border-border pb-3 text-3xl font-bold text-primary">
+          Contractor and DIY Guides
+        </h2>
+        <GuideCards />
       </section>
 
       <section className="bg-primary py-16 text-primary-foreground">

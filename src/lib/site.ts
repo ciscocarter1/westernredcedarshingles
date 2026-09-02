@@ -11,6 +11,7 @@ export const SITE_NAME = "Western Red Cedar Planks";
 
 export const LOWES_URL =
   "https://www.lowes.com/pd/Red-Cedar-Untreated-Wood-Siding-Shingles/3379244?utm_source=blog&utm_medium=referral&utm_campaign=cedar_tracking&utm_content=lowes_outbound_test";
+export const LOWES_UTM_URL = LOWES_URL;
 
 export const HOWTO_PDF =
   "https://pdf.lowes.com/productdocuments/38190d28-c2f2-4d3b-b903-81634668f8ad/70363327.pdf";
