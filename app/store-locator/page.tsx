@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SiteLayout, Breadcrumbs } from "@/components/SiteLayout";
+import { LowesCTA } from "@/components/CTAButton";
 import { pageMeta, SITE_URL } from "@/lib/site";
 import StoreLocatorClient from "./StoreLocatorClient";
 

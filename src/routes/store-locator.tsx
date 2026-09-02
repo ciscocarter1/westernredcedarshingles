@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
 import { SiteLayout, Breadcrumbs } from "@/components/SiteLayout";
+import { LowesCTA } from "@/components/CTAButton";
 import { LOWES_STORES } from "@/lib/lowes-stores";
 import { pageMeta, jsonLdScript, breadcrumbLd } from "@/lib/site";
 import { MapPin, Search, ExternalLink } from "lucide-react";
