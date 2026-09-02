@@ -46,7 +46,7 @@ export const Route = createFileRoute("/")({
         jsonLdScript({
           "@context": "https://schema.org",
           "@type": "FAQPage",
-          mainEntity: FAQS.slice(0, 3).map((f) => ({
+          mainEntity: FAQS.map((f) => ({
             "@type": "Question",
             name: f.q,
             acceptedAnswer: { "@type": "Answer", text: f.a },
@@ -103,6 +103,22 @@ function HomePage() {
               Learn About the Product
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* TRUST BAR */}
+      <section className="bg-cedar py-10 text-cedar-foreground">
+        <div className="mx-auto grid max-w-5xl gap-8 px-4 text-center sm:grid-cols-3 sm:px-6">
+          {[
+            { n: "45 Years", l: "Lowe's Supplier Relationship" },
+            { n: "500+", l: "Bundles Sold Per Week at Lowe's" },
+            { n: "$50", l: "Per Bundle — No Minimum Order" },
+          ].map((s) => (
+            <div key={s.l}>
+              <div className="font-display text-3xl font-bold text-highlight sm:text-4xl">{s.n}</div>
+              <div className="font-ui mt-2 text-sm uppercase tracking-wider text-cedar-foreground/80">{s.l}</div>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -267,12 +283,13 @@ function HomePage() {
         </div>
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {[
-            { img: shedImg, title: "Backyard Cedar Shed", desc: "Rustic, weather-friendly, build-yourself.", alt: "Backyard cedar shed clad in Western Red Cedar Shingles siding", w: 1024, h: 768 },
-            { img: accentImg, title: "Dining-Room Accent Wall", desc: "Warm interior texture in a weekend.", alt: "Dining room accent wall built with cedar shingles DIY project", w: 1024, h: 768 },
-            { img: manCaveImg, title: "Man Cave Cedar Wall", desc: "Texture that pairs with leather, brass, warm light.", alt: "Man cave interior accent wall covered in Western Red Cedar Shingles", w: 1024, h: 768 },
+            { img: shedImg, title: "Backyard Cedar Shed", desc: "Rustic, weather-friendly, build-yourself.", alt: "Backyard cedar shed clad in Western Red Cedar Shingles siding", w: 1024, h: 768, hash: "cedar-siding-budget-guide" },
+            { img: accentImg, title: "Dining-Room Accent Wall", desc: "Warm interior texture in a weekend.", alt: "Dining room accent wall built with cedar shingles DIY project", w: 1024, h: 768, hash: "interior-accent-walls" },
+            { img: manCaveImg, title: "Man Cave Cedar Wall", desc: "Texture that pairs with leather, brass, warm light.", alt: "Man cave interior accent wall covered in Western Red Cedar Shingles", w: 1024, h: 768, hash: "interior-accent-walls" },
           ].map((p) => (
             <Link
               to="/project-ideas"
+              hash={p.hash}
               key={p.title}
               className="group block overflow-hidden rounded-xl border border-border bg-card shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
             >

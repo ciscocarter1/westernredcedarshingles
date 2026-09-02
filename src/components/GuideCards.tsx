@@ -6,6 +6,7 @@ import { ChevronDown } from "lucide-react";
 import { LOWES_UTM_URL } from "@/lib/site";
 
 interface Article {
+  id?: string;
   label: string;
   title: string;
   excerpt: string;
@@ -20,6 +21,7 @@ interface Article {
 
 const ARTICLES: Article[] = [
   {
+    id: "cedar-siding-budget-guide",
     label: "Contractor Guide",
     title: "A Builder's Guide to Budget-Friendly Cedar Siding",
     excerpt:
@@ -423,6 +425,7 @@ const ARTICLES: Article[] = [
     ),
   },
   {
+    id: "interior-accent-walls",
     label: "Interior DIY",
     title: "Untreated Cedar Shingles for Interior Accent Walls — Everything You Need to Know",
     excerpt:
@@ -699,7 +702,7 @@ const ARTICLES: Article[] = [
 function GuideCard({ article }: { article: (typeof ARTICLES)[number] }) {
   const [open, setOpen] = useState(false);
   return (
-    <article className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:shadow-lg">
+    <article id={article.id} className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:shadow-lg scroll-mt-24">
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
