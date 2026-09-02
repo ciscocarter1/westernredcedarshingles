@@ -96,6 +96,22 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* TRUST BAR */}
+      <section className="bg-primary py-10 text-primary-foreground">
+        <div className="mx-auto grid max-w-5xl gap-8 px-4 text-center sm:grid-cols-3 sm:px-6">
+          {[
+            { n: "45 Years", l: "Lowe's Supplier Relationship" },
+            { n: "500+", l: "Bundles Sold Per Week at Lowe's" },
+            { n: "$50", l: "Per Bundle — No Minimum Order" },
+          ].map((s) => (
+            <div key={s.l}>
+              <div className="font-display text-3xl font-bold text-highlight sm:text-4xl">{s.n}</div>
+              <div className="font-ui mt-2 text-sm uppercase tracking-wider text-primary-foreground/80">{s.l}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* WHAT IT IS */}
       <section className="mx-auto max-w-4xl px-4 py-20 text-center sm:px-6">
         <h2 className="font-display text-3xl font-bold text-primary sm:text-4xl">

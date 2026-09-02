@@ -205,6 +205,24 @@ export default function ProductPage() {
       </section>
 
 
+      {/* HOW TO FIND US AT LOWE'S */}
+      <section className="mx-auto max-w-4xl px-4 pb-20 sm:px-6">
+        <h3 className="font-display text-2xl font-bold text-primary sm:text-3xl">
+          How to Find Item #3976 at Your Local Lowe's
+        </h3>
+        <p className="font-body mt-4 text-lg text-foreground/85">
+          Ask for Western Red Cedar Shingles in the Wood Siding and Accessories department. Use Item
+          #3976 at the self-checkout kiosk or give it to a store associate to locate the product. At
+          participating stores, the pro desk can check bulk availability across nearby locations. Use
+          our Store Locator to find the nearest stocking Lowe's before your trip.
+        </p>
+        <Link
+          href="/store-locator"
+          className="font-ui mt-6 inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-sm transition-all duration-200 hover:scale-[1.02] hover:bg-primary/90"
+        >
+          Find a Store
+        </Link>
+      </section>
 
       {/* PURCHASE + DOWNLOADS */}
       <section className="mx-auto max-w-5xl px-4 py-20 sm:px-6">
