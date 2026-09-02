@@ -211,7 +211,7 @@ const ARTICLES: Article[] = [
       "A plain-language breakdown of every Western Red Cedar shingle grade so contractors and DIYers can choose the right product for the right job.",
     readTime: "5 min read",
     img: "/images/cedar-shingles-stack-wide.png",
-    alt: "Western Red Cedar shingle bundle showing #1 Blue Label through undercourse grade comparison",
+    alt: "Bundled Western Red Cedar shingles with green strapping showing natural grain and grade variation",
     cta: { text: "Find Your Nearest Lowe's", href: "/store-locator" },
     body: (
       <>
