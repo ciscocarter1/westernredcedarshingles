@@ -91,6 +91,9 @@ function HomePage() {
           <p className="font-body mt-6 max-w-2xl text-lg text-primary-foreground/90 sm:text-xl">
             100% Natural. Untreated. Available Exclusively at Lowe's.
           </p>
+          <p className="font-body mt-4 max-w-2xl text-lg text-primary-foreground/90 sm:text-xl">
+            Every bundle is milled from real Pacific Northwest Western Red Cedar and ready for siding, sheds, pergolas, and interior accent walls.
+          </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <LowesCTA size="lg" variant="highlight">Buy at Lowe's — Item #3976</LowesCTA>
             <Link
