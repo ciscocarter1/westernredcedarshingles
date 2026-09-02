@@ -12,6 +12,7 @@ interface Article {
   readTime: string;
   img: string;
   alt: string;
+  caption: string;
   cta: { text: string; href: string };
   cta2?: { text: string; href: string };
   body: ReactNode;
@@ -24,8 +25,9 @@ const ARTICLES: Article[] = [
     excerpt:
       "How contractors and DIYers across the US source affordable Western Red Cedar shingle siding at their local Lowe's. No shipping, no minimum order, no contractor account required.",
     readTime: "5 min read",
-    img: "/images/western-red-cedar-shed-siding.png",
-    alt: "Western Red Cedar shingle siding installed on a backyard shed exterior",
+    img: "/images/shingle-clad-house-traditional.png",
+    alt: "Traditional shingle-clad house with full Western Red Cedar shingle siding exterior showing warm cedar tones",
+    caption: "Natural Western Red Cedar Shingle Siding on a Traditional Home",
     cta: { text: "Find Your Nearest Lowe's", href: "/store-locator" },
     body: (
       <>
@@ -125,8 +127,9 @@ const ARTICLES: Article[] = [
     excerpt:
       "Vinyl, composite, engineered wood, or real cedar? A straight comparison of the most common wall cladding materials for DIYers and budget-conscious builders.",
     readTime: "4 min read",
-    img: "/images/cedar-shingles-stack-wide.png",
-    alt: "Close-up of Western Red Cedar shingle bundle showing natural wood grain and undercourse grade character",
+    img: "/images/wrc-shingle-stack-closeup.png",
+    alt: "Close-up of stacked Western Red Cedar shingles showing natural grain variation and warm tones at the mill",
+    caption: "Western Red Cedar Shingles — Natural Grain and Character at Every Grade",
     cta: { text: "View Cedar Shingle Grades", href: "/western-red-cedar" },
     body: (
       <>
@@ -210,8 +213,9 @@ const ARTICLES: Article[] = [
     excerpt:
       "A plain-language breakdown of every Western Red Cedar shingle grade so contractors and DIYers can choose the right product for the right job.",
     readTime: "5 min read",
-    img: "/images/cedar-shingles-stack-wide.png",
-    alt: "Bundled Western Red Cedar shingles with green strapping showing natural grain and grade variation",
+    img: "/images/wrc-bundle-banded.png",
+    alt: "Western Red Cedar shingle bundle banded and ready for delivery showing heartwood color variation between grades",
+    caption: "Cedar Shingle Bundle — Heartwood Color Variation Across Grades",
     cta: { text: "Find Your Nearest Lowe's", href: "/store-locator" },
     body: (
       <>
@@ -316,8 +320,9 @@ const ARTICLES: Article[] = [
     excerpt:
       "Untreated Western Red Cedar shingles weather naturally to silver gray. Here is what to expect over time and how to extend the life of any exterior cedar installation.",
     readTime: "4 min read",
-    img: "/images/western-red-cedar-shed-siding.png",
-    alt: "Shingle-clad house with traditional Western Red Cedar shingle siding, white trim, and a covered porch",
+    img: "/images/wrc-shingles-pallet-mill.png",
+    alt: "Western Red Cedar shingles stacked on pallet at the mill showing rough cut undercourse grade texture",
+    caption: "Undercourse Grade Western Red Cedar Shingles Fresh from the Mill",
     cta: { text: "View Installation Guide", href: "/installation-guide" },
     body: (
       <>
@@ -423,8 +428,9 @@ const ARTICLES: Article[] = [
     excerpt:
       "The same bundle used for exterior siding works beautifully on interior walls. Here is why untreated cedar is the right choice for dining rooms, bedrooms, offices, and man caves.",
     readTime: "4 min read",
-    img: "/images/Interior_Accent_Walls.png",
-    alt: "Interior accent wall covered in natural Western Red Cedar shingles showing rustic warm grain texture",
+    img: "/images/kids-playing-cedar-fort.png",
+    alt: "Children playing on a backyard cedar shingle fort showing Western Red Cedar shingles used on a kids outdoor structure",
+    caption: "Western Red Cedar Shingles on a Backyard Fort — Safe, Natural, Kid-Friendly",
     cta: { text: "See Full Installation Guide", href: "/installation-guide" },
     body: (
       <>
@@ -557,8 +563,9 @@ const ARTICLES: Article[] = [
     excerpt:
       "Western Red Cedar undercourse shingles are available at Lowe's nationwide with no minimum order. Here is everything you need to know before your trip — pricing, coverage, and what to ask at the pro desk.",
     readTime: "4 min read",
-    img: "/images/western-red-cedar-shed-siding.png",
-    alt: "Lowe's logo on a blue background with the tagline 'Lowe's knows home improvement'",
+    img: "/images/lowes-store-logo.png",
+    alt: "Lowe's store logo — Western Red Cedar Shingles Item 3976 available exclusively at Lowe's locations nationwide",
+    caption: "Available Exclusively at Lowe's — Item #3976 — In-Store Only",
     cta: { text: "Find Your Nearest Lowe's", href: "/store-locator" },
     cta2: { text: "View at Lowes.com", href: LOWES_UTM_URL },
     body: (
@@ -709,7 +716,10 @@ function GuideCard({ article }: { article: (typeof ARTICLES)[number] }) {
             className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
         </div>
-        <div className="p-6">
+        <p className="font-ui px-6 pt-2 text-center text-[12px] italic text-muted-foreground">
+          {article.caption}
+        </p>
+        <div className="p-6 pt-4">
           <p className="font-ui text-xs font-semibold uppercase tracking-[0.15em] text-highlight">
             {article.label}
           </p>
