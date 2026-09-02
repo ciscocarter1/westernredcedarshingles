@@ -116,7 +116,7 @@ function HomePage() {
           ].map((s) => (
             <div key={s.l}>
               <div className="font-display text-3xl font-bold text-highlight sm:text-4xl">{s.n}</div>
-              <div className="font-ui mt-2 text-sm uppercase tracking-wider text-primary-foreground/80">{s.l}</div>
+              <div className="font-ui mt-2 text-sm uppercase tracking-wider text-cedar-foreground/80">{s.l}</div>
             </div>
           ))}
         </div>
