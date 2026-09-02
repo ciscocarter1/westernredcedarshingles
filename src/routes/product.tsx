@@ -1,10 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout, Breadcrumbs } from "@/components/SiteLayout";
 import { LowesCTA } from "@/components/CTAButton";
-import { pageMeta, jsonLdScript, breadcrumbLd, LOWES_URL, HOWTO_PDF, SITE_URL } from "@/lib/site";
+import { pageMeta, jsonLdScript, breadcrumbLd, LOWES_URL, SITE_URL } from "@/lib/site";
 import bundleAsset from "@/assets/product-bundle-cedar.jpg.asset.json";
 const bundleImg = bundleAsset.url;
-import { Check, FileDown } from "lucide-react";
+import { Check } from "lucide-react";
 
 const TITLE = "Western Red Cedar Shingles — #3/#4 Undercourse Grade";
 const DESC = "Our #3/#4 undercourse grade cedar shingles are 100% natural, untreated, and sold exclusively at Lowe's. Built for siding, sheds, and DIY projects.";
@@ -107,14 +107,6 @@ function ProductPage() {
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
             <LowesCTA size="lg">Buy at Lowe's</LowesCTA>
-            <a
-              href={HOWTO_PDF}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-ui inline-flex items-center justify-center gap-2 rounded-md border-2 border-primary px-7 py-4 text-base font-semibold text-primary hover:bg-primary hover:text-primary-foreground"
-            >
-              <FileDown className="h-4 w-4" /> HowTo Manual (PDF)
-            </a>
           </div>
         </div>
       </section>
@@ -228,14 +220,6 @@ function ProductPage() {
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-3">
             <LowesCTA size="lg" variant="highlight">Buy at Lowe's</LowesCTA>
-            <a
-              href={HOWTO_PDF}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-ui inline-flex items-center gap-2 rounded-md border-2 border-primary-foreground/40 px-7 py-4 text-base font-semibold text-primary-foreground hover:bg-primary-foreground/10"
-            >
-              <FileDown className="h-4 w-4" /> Download HowTo PDF
-            </a>
           </div>
         </div>
       </section>
