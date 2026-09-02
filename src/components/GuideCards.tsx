@@ -729,13 +729,23 @@ function GuideCard({ article }: { article: (typeof ARTICLES)[number] }) {
       {open && (
         <div className="border-t border-border px-6 pb-6">
           {article.body}
-          <div className="mt-6">
+          <div className="mt-6 flex flex-wrap gap-3">
             <a
               href={article.cta.href}
               className="font-ui inline-flex items-center justify-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-sm transition-all duration-200 hover:scale-[1.02] hover:bg-primary/90"
             >
               {article.cta.text}
             </a>
+            {article.cta2 && (
+              <a
+                href={article.cta2.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-ui inline-flex items-center justify-center gap-2 rounded-md border-2 border-highlight bg-highlight/10 px-5 py-3 text-sm font-semibold text-primary shadow-sm transition-all duration-200 hover:scale-[1.02] hover:bg-highlight/20"
+              >
+                {article.cta2.text}
+              </a>
+            )}
           </div>
         </div>
       )}
