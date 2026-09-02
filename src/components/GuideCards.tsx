@@ -317,7 +317,7 @@ const ARTICLES: Article[] = [
       "Untreated Western Red Cedar shingles weather naturally to silver gray. Here is what to expect over time and how to extend the life of any exterior cedar installation.",
     readTime: "4 min read",
     img: "/images/western-red-cedar-shed-siding.png",
-    alt: "Exterior shed wall sided with natural Western Red Cedar shingles showing silver gray weathered patina",
+    alt: "Shingle-clad house with traditional Western Red Cedar shingle siding, white trim, and a covered porch",
     cta: { text: "View Installation Guide", href: "/installation-guide" },
     body: (
       <>
