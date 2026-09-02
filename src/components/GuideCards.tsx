@@ -425,6 +425,7 @@ const ARTICLES: Article[] = [
     ),
   },
   {
+    id: "interior-accent-walls",
     label: "Interior DIY",
     title: "Untreated Cedar Shingles for Interior Accent Walls — Everything You Need to Know",
     excerpt:
