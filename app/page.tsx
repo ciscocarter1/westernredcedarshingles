@@ -38,7 +38,7 @@ export const metadata: Metadata = pageMeta({
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      mainEntity: FAQS.slice(0, 3).map((f) => ({
+      mainEntity: FAQS.map((f) => ({
         "@type": "Question",
         name: f.q,
         acceptedAnswer: { "@type": "Answer", text: f.a },
