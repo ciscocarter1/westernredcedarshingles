@@ -1,9 +1,23 @@
 "use client";
 
 import { useState } from "react";
+import type { ReactNode } from "react";
 import { ChevronDown } from "lucide-react";
+import { LOWES_UTM_URL } from "@/lib/site";
 
-const ARTICLES = [
+interface Article {
+  label: string;
+  title: string;
+  excerpt: string;
+  readTime: string;
+  img: string;
+  alt: string;
+  cta: { text: string; href: string };
+  cta2?: { text: string; href: string };
+  body: ReactNode;
+}
+
+const ARTICLES: Article[] = [
   {
     label: "Contractor Guide",
     title: "A Builder's Guide to Budget-Friendly Cedar Siding",
