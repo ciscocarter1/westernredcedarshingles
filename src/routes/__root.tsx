@@ -75,7 +75,7 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
 const ORG_LD = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "Western Red Cedar Planks",
+  name: "Western Red Cedar Shingles",
   url: "https://westernredcedarshingles.com",
   description:
     "Maker of natural Western Red Cedar Shingle bundles sold exclusively at Lowe's for siding, accent walls, sheds, and outdoor projects. Pro and DIY friendly.",
@@ -90,8 +90,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { name: "theme-color", content: "#5C3D2E" },
-      { name: "author", content: "Western Red Cedar Planks" },
-      { property: "og:site_name", content: "Western Red Cedar Planks" },
+      { name: "author", content: "Western Red Cedar Shingles" },
+      { property: "og:site_name", content: "Western Red Cedar Shingles" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       // Google Search Console — replace content value when verification tag is issued.

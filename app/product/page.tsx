@@ -5,6 +5,7 @@ import { LowesCTA } from "@/components/CTAButton";
 import { pageMeta, LOWES_URL, SITE_URL } from "@/lib/site";
 import bundleAsset from "@/assets/product-bundle-cedar.jpg.asset.json";
 import { Check } from "lucide-react";
+import { BundleCalculator } from "@/components/BundleCalculator";
 
 const bundleImg = bundleAsset.url;
 
@@ -25,7 +26,7 @@ export const metadata: Metadata = pageMeta({
       name: "Western Red Cedar Tree of Life Wood Shingle Siding",
       description:
         "100% natural, untreated #3/#4 undercourse Western Red Cedar shingles for siding, sheds, accent walls, and outdoor projects. Available exclusively at Lowe's.",
-      brand: { "@type": "Brand", name: "Western Red Cedar Planks" },
+      brand: { "@type": "Brand", name: "Western Red Cedar Shingles" },
       material: "Western Red Cedar (Thuja plicata)",
       sku: "3976",
       image: `${SITE_URL}${bundleImg}`,
@@ -166,29 +167,27 @@ export default function ProductPage() {
       </section>
 
       {/* COVERAGE CALCULATOR */}
-      <section className="mx-auto max-w-4xl px-4 py-20 sm:px-6">
+      <section id="bundle-calculator" className="mx-auto max-w-4xl px-4 py-20 sm:px-6">
         <h2 className="font-display text-3xl font-bold text-primary sm:text-4xl">
           How Many Bundles Do I Need?
         </h2>
         <p className="font-body mt-6 text-lg text-foreground/85">
-          One bundle of Western Red Cedar Shingles covers approximately 25 square feet of wall at a 5.5
-          inch exposure. For most siding and accent wall projects, plan on 4 bundles per 100 square feet
-          as your baseline. Wider exposures reduce the number of bundles needed.
+          One bundle covers approximately 15 square feet at a 7.5 inch exposure.
         </p>
         <div className="mt-8 overflow-hidden rounded-lg border border-border">
           <table className="w-full text-left">
             <thead className="bg-secondary">
               <tr>
                 <th className="font-ui px-5 py-3 text-sm font-semibold text-primary">Project Size</th>
-                <th className="font-ui px-5 py-3 text-sm font-semibold text-primary">Bundles Needed (at 5.5" exposure)</th>
+                <th className="font-ui px-5 py-3 text-sm font-semibold text-primary">Bundles Needed (including 10% waste)</th>
               </tr>
             </thead>
             <tbody className="font-body text-foreground/85">
               {[
-                ["50 sq ft", "2 bundles"],
-                ["100 sq ft", "4 bundles"],
-                ["200 sq ft", "8 bundles"],
-                ["500 sq ft", "20 bundles"],
+                ["50 sq ft", "4 bundles"],
+                ["100 sq ft", "8 bundles"],
+                ["200 sq ft", "15 bundles"],
+                ["500 sq ft", "37 bundles"],
               ].map(([s, b]) => (
                 <tr key={s} className="border-t border-border bg-card">
                   <td className="px-5 py-3">{s}</td>
@@ -198,6 +197,7 @@ export default function ProductPage() {
             </tbody>
           </table>
         </div>
+        <div className="mt-8"><BundleCalculator /></div>
         <p className="font-body mt-6 text-lg text-foreground/85">
           For double-course applications, measure in linear running feet rather than square feet. Each
           bundle yields approximately 32 running feet in undercourse applications.

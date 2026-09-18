@@ -17,5 +17,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/cedar-vs-composite`, changeFrequency: "monthly", priority: 0.6 },
     { url: `${BASE_URL}/store-locator`, changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/contact`, changeFrequency: "monthly", priority: 0.5 },
+    { url: `${BASE_URL}/contractor-resources`, changeFrequency: "monthly", priority: 0.8 },
   ];
 }

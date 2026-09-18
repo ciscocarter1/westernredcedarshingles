@@ -43,7 +43,7 @@ export const metadata: Metadata = pageMeta({
         { "@type": "HowToTool", name: "Safety glasses and gloves" },
       ],
       step: [
-        { "@type": "HowToStep", name: "Measure and prep", text: "Measure wall height and width. Calculate square footage and add 10% for waste. One bundle covers approximately 25 sq ft at standard exposure." },
+        { "@type": "HowToStep", name: "Measure and prep", text: "Measure wall height and width. Calculate square footage and add 10% for waste. One bundle covers approximately 15 square feet at a 7.5 inch exposure." },
         { "@type": "HowToStep", name: "Mark your first course", text: "Snap a level chalk line 6 inches above the floor or baseboard as your baseline." },
         { "@type": "HowToStep", name: "Nail the first row", text: "Place shingles tight to the chalk line, 1/8\" apart, two nails per shingle 1\" above the exposure line." },
         { "@type": "HowToStep", name: "Offset each course", text: "Stagger joints by at least 1.5\" per course so no two vertical seams line up." },
@@ -129,7 +129,7 @@ export default function CedarAccentWallDiyPage() {
             {[
               {
                 n: "Step 1 — Measure and prep",
-                t: "Measure wall height and width. Calculate square footage and add 10% for waste. One bundle of cedar shingles covers approximately 25 square feet at standard exposure.",
+                t: "Measure wall height and width. Calculate square footage and add 10% for waste. One bundle covers approximately 15 square feet at a 7.5 inch exposure.",
               },
               {
                 n: "Step 2 — Mark your first course",

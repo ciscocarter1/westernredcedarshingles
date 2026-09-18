@@ -11,9 +11,9 @@ export const metadata: Metadata = {
   },
   description:
     "Shop natural, untreated Western Red Cedar Shingles at Lowe's — Item #3976. Affordable cedar siding for sheds, accent walls, pergolas, and more.",
-  authors: [{ name: "Western Red Cedar Planks" }],
+  authors: [{ name: "Western Red Cedar Shingles" }],
   openGraph: {
-    siteName: "Western Red Cedar Planks",
+    siteName: "Western Red Cedar Shingles",
     type: "website",
     locale: "en_US",
   },
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 const ORG_LD = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "Western Red Cedar Planks",
+  name: "Western Red Cedar Shingles",
   url: "https://westernredcedarshingles.com",
   description:
     "Maker of natural Western Red Cedar Shingle bundles sold exclusively at Lowe's for siding, accent walls, sheds, and outdoor projects. Pro and DIY friendly.",
