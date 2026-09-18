@@ -6,6 +6,8 @@
 // You can pass additional config via defineConfig({ vite: { ... }, etc... }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
+export const PRERENDER_ROUTES = ["/", "/product", "/western-red-cedar", "/installation-guide", "/project-ideas", "/cedar-shingles-faq", "/store-locator", "/contact", "/contractor-resources"];
+
 export default defineConfig({
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
@@ -14,7 +16,9 @@ export default defineConfig({
     // Prerender disabled — SSR was returning 500 for all routes during build.
     // Pages still render at runtime via SSR; re-enable once the underlying error is fixed.
     prerender: {
-      enabled: false,
+      enabled: true,
+      crawlLinks: true,
+      routes: PRERENDER_ROUTES,
     },
   },
   nitro: {
