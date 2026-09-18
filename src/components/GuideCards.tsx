@@ -79,8 +79,7 @@ const ARTICLES: Article[] = [
           Coverage and Pricing
         </h3>
         <p className="font-body mt-3 text-foreground/80">
-          One bundle covers approximately 25 square feet at a 5.5 inch
-          exposure. Current retail price is $50 per bundle at participating
+          One bundle covers approximately 15 square feet at a 7.5 inch exposure. Current retail price is $50 per bundle at participating
           Lowe's locations.
         </p>
         <div className="mt-4 overflow-x-auto">
@@ -93,11 +92,7 @@ const ARTICLES: Article[] = [
             </thead>
             <tbody className="text-foreground/80">
               {[
-                ["50 sq ft", "2 bundles"],
-                ["100 sq ft", "4 bundles"],
-                ["200 sq ft", "9 bundles"],
-                ["300 sq ft", "13 bundles"],
-                ["500 sq ft", "21 bundles"],
+                ["50 sq ft", "4 bundles"], ["100 sq ft", "8 bundles"], ["200 sq ft", "15 bundles"], ["300 sq ft", "22 bundles"], ["500 sq ft", "37 bundles"],
               ].map(([a, b]) => (
                 <tr key={a} className="border-b border-border/60">
                   <td className="py-2 pr-4">{a}</td>
@@ -183,9 +178,8 @@ const ARTICLES: Article[] = [
           Western Red Cedar shingles at undercourse grade pricing give you
           genuine natural wood performance and character at a cost that works
           for sheds, privacy screens, accent walls, and exterior cladding on
-          non-primary structures. At $50 per bundle and approximately 25 square
-          feet of coverage per bundle, material cost runs around $200 per 100
-          square feet of wall. That is real cedar pricing that competes
+          non-primary structures. At $50 per bundle and approximately 15 square
+          feet of coverage at a 7.5 inch exposure, the material offers real cedar character that competes
           directly with engineered wood and mid-tier composite options.
         </p>
         <p className="font-body mt-3 text-foreground/80">
@@ -204,7 +198,7 @@ const ARTICLES: Article[] = [
           <li>Accepts any oil-based stain or can be left to weather naturally</li>
           <li>Cuts and nails with standard hand tools</li>
           <li>Available at Lowe's in-store with no minimum order — Item #3976</li>
-          <li>$50 per bundle, approximately 4 bundles per 100 sq ft</li>
+          <li>$50 per bundle; calculate bundles by dividing square footage by 15, adding 10% waste, and rounding up</li>
         </ul>
       </>
     ),
@@ -404,8 +398,8 @@ const ARTICLES: Article[] = [
           imbalance between the face and back of the shingle. Usually a result
           of finish being applied to one face only during installation. Dark
           staining streaks: Caused by electro-galvanized or standard steel
-          nails corroding. Always use stainless steel or hot-dipped galvanized
-          nails with cedar. Splitting at nail holes: Usually caused by nails
+          nails corroding. Always use Type 304 or 316 stainless-steel ring-shank
+          nails outside; galvanized nails are acceptable only indoors. Splitting at nail holes: Usually caused by nails
           placed too close to the edge or shingles installed too dry in
           low-humidity conditions.
         </p>
@@ -496,10 +490,7 @@ const ARTICLES: Article[] = [
           How Many Bundles for an Interior Accent Wall
         </h3>
         <p className="font-body mt-3 text-foreground/80">
-          At a 5 inch exposure one bundle covers approximately 25 square feet.
-          For interior walls a tighter exposure of 4 to 5 inches creates a more
-          refined, layered look. A wider exposure of 6 to 7 inches creates a
-          bolder, more rustic texture.
+          One bundle covers approximately 15 square feet at a 7.5 inch exposure.
         </p>
         <div className="mt-4 overflow-x-auto">
           <table className="font-ui w-full min-w-[320px] border-collapse text-sm">
@@ -512,10 +503,7 @@ const ARTICLES: Article[] = [
             </thead>
             <tbody className="text-foreground/80">
               {[
-                ["Dining room feature wall", "80 sq ft", "4 bundles"],
-                ["Bedroom headboard wall", "100 sq ft", "5 bundles"],
-                ["Man cave full wall", "130 sq ft", "6 bundles"],
-                ["Home office background", "60 sq ft", "3 bundles"],
+                ["Dining room feature wall", "80 sq ft", "6 bundles"], ["Bedroom headboard wall", "100 sq ft", "8 bundles"], ["Man cave full wall", "130 sq ft", "10 bundles"], ["Home office background", "60 sq ft", "5 bundles"],
               ].map(([a, b, c]) => (
                 <tr key={a} className="border-b border-border/60">
                   <td className="py-2 pr-4">{a}</td>
@@ -603,10 +591,8 @@ const ARTICLES: Article[] = [
         </p>
         <p className="font-body mt-3 text-foreground/80">
           Plan your bundle count before you call. One bundle covers
-          approximately 25 square feet at a 5.5 inch exposure. Add 10 percent
-          for cuts and waste. For a 200 square foot shed that is 9 bundles. For
-          a 100 square foot accent wall that is 5 bundles with overage built
-          in.
+          approximately 15 square feet at a 7.5 inch exposure. Add 10 percent
+          for cuts and waste, then round up.
         </p>
         <h3 className="font-display mt-6 text-xl font-semibold text-primary">
           Coverage Quick Reference
@@ -622,11 +608,7 @@ const ARTICLES: Article[] = [
             </thead>
             <tbody className="text-foreground/80">
               {[
-                ["Small accent wall", "60 sq ft", "3 bundles"],
-                ["Standard accent wall", "100 sq ft", "5 bundles"],
-                ["Small shed exterior", "150 sq ft", "7 bundles"],
-                ["Standard shed exterior", "200 sq ft", "9 bundles"],
-                ["Large shed or privacy screen", "300 sq ft", "14 bundles"],
+                ["Small accent wall", "60 sq ft", "5 bundles"], ["Standard accent wall", "100 sq ft", "8 bundles"], ["Small shed exterior", "150 sq ft", "11 bundles"], ["Standard shed exterior", "200 sq ft", "15 bundles"], ["Large shed or privacy screen", "300 sq ft", "22 bundles"],
               ].map(([a, b, c]) => (
                 <tr key={a} className="border-b border-border/60">
                   <td className="py-2 pr-4">{a}</td>

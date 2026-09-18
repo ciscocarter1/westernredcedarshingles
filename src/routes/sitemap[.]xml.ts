@@ -13,6 +13,7 @@ const ROUTES = [
   { path: "/how-to-side-a-shed-with-cedar-shingles", changefreq: "monthly", priority: "0.7" },
   { path: "/cedar-shingles-faq", changefreq: "monthly", priority: "0.7" },
   { path: "/cedar-vs-composite", changefreq: "monthly", priority: "0.6" },
+  { path: "/contractor-resources", changefreq: "monthly", priority: "0.8" },
 ];
 
 export const Route = createFileRoute("/sitemap.xml")({

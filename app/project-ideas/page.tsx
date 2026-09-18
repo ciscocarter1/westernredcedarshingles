@@ -7,6 +7,7 @@ import { GuideCards } from "@/components/GuideCards";
 import { pageMeta, SITE_URL } from "@/lib/site";
 import accentImg from "@/assets/project-accent-wall.jpg";
 import manCaveAsset from "@/assets/man-cave-bar.png.asset.json";
+import { ProjectMeta, type ProjectDetails } from "@/components/ProjectMeta";
 
 const textureImg = manCaveAsset.url;
 
@@ -14,15 +15,15 @@ const TITLE = "Cedar Shingle Project Ideas — Sheds, Walls & More";
 const DESC =
   "Get inspired. Cedar shingles for accent walls, backyard sheds, pergolas, man caves, and dog houses. Natural wood. Affordable. Available at Lowe's.";
 
-const PROJECTS = [
-  { title: "Creative Backyard Shed with Western Red Cedar Shingles", desc: "Turn a basic storage shed into a focal point. Cedar shingles weather to silver-gray and look better every year — no paint, no replacement panels.", img: "/images/creative-backyard-shed.png" },
-  { title: "DIY Rustic Accent Wall", desc: "Dining room, bedroom, or stairwell. Construction adhesive, brad nails, a level — installable in a weekend with a warmer result than any peel-and-stick alternative.", img: "/images/indoor-sides-accent-wall.png" },
-  { title: "Build the Ultimate Man Cave Wall", desc: "Sports bar, basement lounge, gaming room. Cedar texture pairs beautifully with leather, brass, and warm lighting.", img: textureImg },
-  { title: "Bring the Outdoors In", desc: "A bedroom cedar accent wall behind the headboard turns the bed into a cabin retreat. The natural cedar scent is a bonus that lasts months.", img: "/images/bedroom-cedar-accent-wall.png" },
-  { title: "Outdoor Kitchen & BBQ Cedar Walls", desc: "Upgrade your outdoor kitchen in Western Red Cedar Shingles. Weather-resistant and gorgeous in dappled afternoon light.", img: "/images/outdoor-kitchen-bbq-cedar-walls.png" },
-  { title: "Gazebo and Pergola Cladding", desc: "Side panels, sun screens, partial walls — Western Red Cedar Shingles add privacy and texture to outdoor structures.", img: "/images/gazebo-pergola-cladding.png" },
-  { title: "Firepit Area Privacy Screens", desc: "Build cedar shingle privacy walls around a backyard firepit zone. Defines the space, deflects wind, and feels like a wilderness lodge.", img: "/images/firepit-privacy-screen.png" },
-  { title: "Children's Fort Exterior", desc: "Backyard fort, treehouse, or playhouse — Western Red Cedar Shingles upgrade a weekend project to a neighborhood landmark.", img: "/images/kids-play-fort.png" },
+const PROJECTS: Array<{ title: string; desc: string; img: string; details: ProjectDetails }> = [
+  { title: "Creative Backyard Shed with Western Red Cedar Shingles", desc: "Turn a basic storage shed into a focal point. Cedar shingles weather to silver-gray and look better every year — no paint, no replacement panels.", img: "/images/creative-backyard-shed.png", details: { difficulty: "Intermediate", time: "1 to 2 weekends", tools: "circular saw, hammer or nail gun, level, chalk line, stainless-steel nails", bundles: "18 bundles for a 10 × 20 ft wall" } },
+  { title: "DIY Rustic Accent Wall", desc: "Dining room, bedroom, or stairwell. Construction adhesive, brad nails, a level — installable in a weekend with a warmer result than any peel-and-stick alternative.", img: "/images/indoor-sides-accent-wall.png", details: { difficulty: "Beginner", time: "1 weekend", tools: "level, chalk line, construction adhesive, brad nailer", bundles: "6 bundles for a 10 × 8 ft wall" } },
+  { title: "Build the Ultimate Man Cave Wall", desc: "Sports bar, basement lounge, gaming room. Cedar texture pairs beautifully with leather, brass, and warm lighting.", img: textureImg, details: { difficulty: "Beginner", time: "1 weekend", tools: "level, chalk line, construction adhesive, brad nailer", bundles: "8 bundles for a 12 × 8 ft wall" } },
+  { title: "Bring the Outdoors In", desc: "A bedroom cedar accent wall behind the headboard turns the bed into a cabin retreat. The natural cedar scent is a bonus that lasts months.", img: "/images/bedroom-cedar-accent-wall.png", details: { difficulty: "Beginner", time: "1 weekend", tools: "level, chalk line, construction adhesive, brad nailer", bundles: "8 bundles for a 12 × 8 ft wall" } },
+  { title: "Outdoor Kitchen & BBQ Cedar Walls", desc: "Upgrade your outdoor kitchen in Western Red Cedar Shingles. Weather-resistant and gorgeous in dappled afternoon light.", img: "/images/outdoor-kitchen-bbq-cedar-walls.png", details: { difficulty: "Intermediate", time: "1 to 2 weekends", tools: "circular saw, hammer or nail gun, level, stainless-steel nails", bundles: "12 bundles for a 20 × 8 ft wall" } },
+  { title: "Gazebo and Pergola Cladding", desc: "Side panels, sun screens, partial walls — Western Red Cedar Shingles add privacy and texture to outdoor structures.", img: "/images/gazebo-pergola-cladding.png", details: { difficulty: "Intermediate", time: "2 to 3 weekends (cladding only, assumes structure already exists)", tools: "circular saw, hand saw for angled cuts, hammer or nail gun, level, stainless-steel nails", bundles: "18 bundles for 240 sq ft" } },
+  { title: "Firepit Privacy Screen", desc: "One of the smallest-bundle-count projects. Good first build if you want to test the material before committing to a bigger project.", img: "/images/firepit-privacy-screen.png", details: { difficulty: "Beginner", time: "1 day", tools: "circular saw, hammer or nail gun, level, stainless-steel nails", bundles: "6 bundles for a 10 × 8 ft screen" } },
+  { title: "Children's Fort Exterior", desc: "Backyard fort, treehouse, or playhouse — Western Red Cedar Shingles upgrade a weekend project to a neighborhood landmark.", img: "/images/kids-play-fort.png", details: { difficulty: "Intermediate", time: "1 to 2 weekends", tools: "circular saw, hammer or nail gun, level, stainless-steel nails", bundles: "9 bundles for 120 sq ft" } },
 ];
 
 export const metadata: Metadata = pageMeta({
@@ -94,6 +95,7 @@ export default function ProjectIdeasPage() {
               <div className="p-6">
                 <h2 className="font-display text-2xl font-semibold text-primary">{p.title}</h2>
                 <p className="font-body mt-2 text-foreground/80">{p.desc}</p>
+                <ProjectMeta details={p.details} />
               </div>
             </article>
           ))}
