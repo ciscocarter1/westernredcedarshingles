@@ -11,17 +11,13 @@ const DESC =
   "Learn how to side a shed with Western Red Cedar Shingles in 9 steps. Tools list, coverage calculator, nailing pattern, corner finishing, and pro tips. Available at Lowe's — Item #3976.";
 
 const COVERAGE: { area: string; bundles: string }[] = [
-  { area: "50 sq ft", bundles: "2 bundles" },
-  { area: "100 sq ft", bundles: "4 bundles" },
-  { area: "150 sq ft", bundles: "6 bundles" },
-  { area: "200 sq ft", bundles: "9 bundles" },
-  { area: "300 sq ft", bundles: "13 bundles" },
+  { area: "50 sq ft", bundles: "4 bundles" }, { area: "100 sq ft", bundles: "8 bundles" }, { area: "150 sq ft", bundles: "11 bundles" }, { area: "200 sq ft", bundles: "15 bundles" }, { area: "300 sq ft", bundles: "22 bundles" },
 ];
 
 const MATERIALS = [
   "Western Red Cedar Shingles — Item #3976 at Lowe's",
   "15 lb or 30 lb felt building paper or house wrap",
-  "Stainless steel or hot-dipped galvanized nails, 1.5 inch (never electro-galvanized)",
+  "Type 304 or 316 stainless-steel ring-shank nails, 1.5 inch",
   "Cedar corner boards — 1x4 or 1x6, one pair per corner",
   "Starter strip or wood lath",
   "Exterior wood stain or water repellent (optional — for color preservation)",
@@ -88,7 +84,7 @@ const MISTAKES = [
   "Nailing through the exposure zone. Nails placed below the coverage line will show and channel water directly into the wall. Always nail above the exposure line.",
   "Tight joints. Leave 1/8 inch between all shingles for expansion. Tight joints buckle.",
   "Skipping house wrap. Cedar is rot-resistant but the OSB sheathing behind it is not. House wrap is not optional on any exterior application.",
-  "Using electro-galvanized nails. They corrode within a few years and leave dark staining streaks down the face of the shingles.",
+  "Using non-stainless exterior nails. They can corrode and leave dark staining streaks down the face of the shingles.",
   "Not staggering joints. Joints that line up across multiple courses allow water to track vertically into the wall. Offset every joint by at least 1.5 inches.",
   "Applying film-forming finish. Paint and polyurethane trap moisture. Use only oil-based penetrating stains or water repellents on cedar shingles.",
 ];
@@ -122,7 +118,7 @@ export const Route = createFileRoute("/how-to-side-a-shed-with-cedar-shingles")(
           supply: [
             "Western Red Cedar Shingles — Item #3976 at Lowe's",
             "15 lb or 30 lb felt building paper / house wrap",
-            "Stainless steel or hot-dipped galvanized nails (1.5 inch)",
+            "Type 304 or 316 stainless-steel ring-shank nails (1.5 inch)",
             "Corner boards (cedar 1x4 or 1x6)",
             "Exterior wood stain or sealant (optional)",
           ].map((n) => ({ "@type": "HowToSupply", name: n })),
@@ -203,10 +199,10 @@ function ShedSidingPage() {
           </h2>
           <p className="mt-3 text-foreground/85">
             Calculate your bundle count before purchasing. One bundle of Western Red Cedar Shingles covers
-            approximately 25 square feet of wall at a 5.5 inch exposure. Use this formula:
+            approximately 15 square feet at a 7.5 inch exposure. Use this formula:
           </p>
           <p className="mt-3 font-semibold text-primary">
-            Total wall square footage ÷ 25 = bundles needed (round up, then add 10% for cuts)
+            Total wall square footage ÷ 15 × 1.10 = bundles needed (round up)
           </p>
 
           <div className="mt-5 overflow-hidden rounded-lg border border-border bg-card">
@@ -215,7 +211,7 @@ function ShedSidingPage() {
                 <tr>
                   <th className="font-ui px-4 py-3 text-sm font-semibold text-foreground/80">Shed wall area</th>
                   <th className="font-ui px-4 py-3 text-sm font-semibold text-foreground/80">
-                    Bundles needed (5.5" exposure)
+                    Bundles needed (7.5 inch exposure, including 10% waste)
                   </th>
                 </tr>
               </thead>
