@@ -22,7 +22,7 @@ const STEPS = [
   },
   {
     n: "Step 3 — Establish exposure and snap lines",
-    t: "Standard exposure for undercourse shingles is 5 inches. Snap a chalk line every 5 inches up the wall. These lines are your guides for each course.",
+    t: "Standard exposure for these shingles is 7.5 inches. Snap a chalk line every 7.5 inches up the wall. These lines are your guides for each course.",
   },
   {
     n: "Step 4 — Nail each course",
@@ -146,8 +146,8 @@ export default function CedarShedSidingPage() {
           <p className="font-body mt-4 text-foreground/85">
             Measure the perimeter of your shed and multiply by wall height to get total square
             footage. Subtract windows and doors. Add 15% for waste and cuts. One bundle of Western
-            Red Cedar Shingles (Lowe's Item #3976) covers approximately 25 square feet at a 5-inch
-            weather exposure. A standard 10x12 shed with 8-foot walls needs roughly 18–22 bundles.
+            Red Cedar Shingles (Lowe's Item #3976) covers approximately 15 square feet at a 7.5 inch
+            exposure. Divide the wall area by 15, add 10% for waste, and round up.
           </p>
         </section>
 
@@ -155,7 +155,7 @@ export default function CedarShedSidingPage() {
           <h2 className="font-display text-3xl font-semibold text-primary">Tools Required</h2>
           <ul className="font-body mt-4 list-disc space-y-2 pl-6 text-foreground/85">
             <li>Cedar shingles — Lowe's Item #3976</li>
-            <li>Corrosion-resistant ring-shank nails (1.5" or 2")</li>
+            <li>Type 304 or 316 stainless-steel ring-shank nails (1.5" or 2")</li>
             <li>Chalk line and level</li>
             <li>Speed square</li>
             <li>Circular saw or miter saw</li>

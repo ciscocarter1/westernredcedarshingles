@@ -65,7 +65,7 @@ export default function StoreLocatorPage() {
               <strong>$50 per bundle</strong> — Available exclusively at Lowe's, in store only.
             </p>
             <p className="font-body mt-2 text-foreground/80">
-              One bundle covers 25 sq ft at 5.5" exposure. 4 bundles cover 100 sq ft.
+              One bundle covers approximately 15 square feet at a 7.5 inch exposure.
             </p>
             <div className="mt-5">
               <LowesCTA
@@ -78,6 +78,15 @@ export default function StoreLocatorPage() {
             <p className="font-body mt-4 text-xs text-muted-foreground">
               Price may vary by location. Call your local Lowe's lumber department with Item #3976 to confirm current pricing and availability before your trip.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-card">
+        <div className="mx-auto max-w-7xl px-4 pt-6 sm:px-6">
+          <h2 className="font-display text-2xl font-bold text-primary">Stocking locations at a glance</h2>
+          <div className="mt-4 aspect-[16/7] min-h-[320px] overflow-hidden rounded-lg border border-border bg-secondary">
+            <iframe title="Western Red Cedar Shingles stocking locations" src="https://www.google.com/maps/d/embed?mid=1aX7lvBi1ChDWsgJ-InRpYYeVoIN2OQk" className="h-full w-full" loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
           </div>
         </div>
       </section>
