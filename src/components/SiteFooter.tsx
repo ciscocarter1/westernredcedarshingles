@@ -48,8 +48,7 @@ export function SiteFooter() {
           </div>
         </div>
         <div className="font-ui mt-10 border-t border-primary-foreground/20 pt-6 text-xs text-primary-foreground/60">
-          © {new Date().getFullYear()} Western Red Cedar Planks. Lowe's and Lowes.com are
-          trademarks of their respective owners.
+          © 2026 Western Red Cedar Shingles. Lowe's and Lowes.com are trademarks of their respective owners.
         </div>
       </div>
     </footer>

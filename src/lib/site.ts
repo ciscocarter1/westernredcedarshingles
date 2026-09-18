@@ -7,7 +7,7 @@ import manCaveIcon from "@/assets/uses/Man_Caves.png.asset.json";
 import windowIcon from "@/assets/uses/Window_Doors.png.asset.json";
 
 export const SITE_URL = "https://westernredcedarshingles.com";
-export const SITE_NAME = "Western Red Cedar Planks";
+export const SITE_NAME = "Western Red Cedar Shingles";
 
 export const LOWES_URL =
   "https://www.lowes.com/pd/Red-Cedar-Untreated-Wood-Siding-Shingles/3379244?utm_source=blog&utm_medium=referral&utm_campaign=cedar_tracking&utm_content=lowes_outbound_test";
@@ -63,7 +63,7 @@ export const FAQS: Faq[] = [
   },
   {
     q: "How do I install Western Red Cedar Shingles on a wall?",
-    a: "Snap a level chalk line at the base, work upward course by course with a 1/8\" gap between shingles for expansion, stagger joints at least 1.5\" from the course below, and use two galvanized nails per shingle placed ~2\" above the butt line and 3/4\" from each edge. Full step-by-step on our Installation Guide page.",
+    a: "Snap a level chalk line at the base, work upward course by course with a 1/8\" gap between shingles for expansion, stagger joints at least 1.5\" from the course below, and use two nails per shingle (stainless steel for exterior, galvanized is fine for interior) placed approximately 2 inches above the butt line and 3/4 inch from each edge. Full step-by-step on our Installation Guide page.",
   },
   {
     q: "Is this product available for contractors and bulk orders?",
@@ -72,7 +72,7 @@ export const FAQS: Faq[] = [
   },
   {
     q: "Does it take special skills or tools to install?",
-    a: "Yes. When working with Western Red Cedar you should use Type 304 or 316 stainless steel ring shank nails with thin shanks and blunt points. These fasteners prevent the natural tannins in cedar from reacting with the metal which avoids dark grey streaks, rust, and wood decay. A level, a chalk line, a hammer or nail gun, a circular or hand saw, and galvanized nails are all you need. The wood is light, cuts cleanly, and nails without splitting — Western Red Cedar Shingles are one of the most DIY-friendly siding products on the market.",
+    a: "Not really. Cedar is one of the most forgiving siding materials to work with. For exterior installs, use Type 304 or 316 stainless-steel ring-shank nails; cedar's natural tannins react with other metals over time and cause staining. For interior accent walls, galvanized nails are fine. Beyond that, you just need a level, a chalk line, a hammer or nail gun, and a circular or hand saw. The wood cuts cleanly and nails without splitting.",
   },
   {
     q: "What is the cultural significance of Western Red Cedar?",
