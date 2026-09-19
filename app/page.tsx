@@ -203,12 +203,11 @@ export default function HomePage() {
             { img: accentImg, title: "Dining-Room Accent Wall", desc: "Warm interior texture in a weekend.", alt: "Dining room accent wall built with cedar shingles DIY project", w: 1024, h: 768, hash: "interior-accent-walls", details: { difficulty: "Beginner", time: "1 weekend", tools: "level, chalk line, construction adhesive, brad nailer", bundles: "6 bundles for a 10 × 8 ft wall" } },
             { img: manCaveImg, title: "Man Cave Cedar Wall", desc: "Texture that pairs with leather, brass, warm light.", alt: "Man cave interior accent wall covered in Western Red Cedar Shingles", w: 1024, h: 768, hash: "interior-accent-walls", details: { difficulty: "Beginner", time: "1 weekend", tools: "level, chalk line, construction adhesive, brad nailer", bundles: "8 bundles for a 12 × 8 ft wall" } },
           ].map((p) => (
-            <Link
-              href={`/project-ideas#${p.hash}`}
+            <article
               key={p.title}
               className="group block overflow-hidden rounded-xl border border-border bg-card shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
             >
-              <div className="aspect-[4/3] overflow-hidden">
+              <Link href={`/project-ideas#${p.hash}`} className="block aspect-[4/3] overflow-hidden">
                 <img
                   src={p.img}
                   alt={p.alt}
@@ -217,13 +216,13 @@ export default function HomePage() {
                   loading="lazy"
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-              </div>
+              </Link>
               <div className="p-5">
-                <div className="font-display text-xl font-semibold text-primary">{p.title}</div>
+                <Link href={`/project-ideas#${p.hash}`} className="font-display text-xl font-semibold text-primary hover:underline">{p.title}</Link>
                 <p className="font-body mt-1 text-sm text-foreground/70">{p.desc}</p>
                 <ProjectMeta details={p.details} />
               </div>
-            </Link>
+            </article>
           ))}
         </div>
       </section>
