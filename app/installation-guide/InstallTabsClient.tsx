@@ -45,7 +45,7 @@ export default function InstallTabsClient({
           </div>
           <div>
             <dt className="font-ui text-xs font-semibold uppercase tracking-wider text-foreground/60">Coverage per bundle</dt>
-            <dd className="mt-1 text-foreground/85">At 7.50" exposure = 15 sq ft of wall coverage with ⅛" gap</dd>
+            <dd className="mt-1 text-foreground/85">One bundle covers approximately 15 square feet at a 7.5 inch exposure.</dd>
           </div>
         </dl>
       </div>

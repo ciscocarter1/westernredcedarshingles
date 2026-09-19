@@ -1,7 +1,7 @@
 export type Step = { name: string; text: string };
 
 export const EXTERIOR_STEPS: Step[] = [
-  { name: "Gather materials", text: "Cedar shingles, galvanized nails, chalk line, level, tape measure, hand saw or circular saw." },
+  { name: "Gather materials", text: "Cedar shingles, Type 304 or 316 stainless-steel ring-shank nails, chalk line, level, tape measure, hand saw or circular saw." },
   { name: "Prepare the wall surface", text: "Install sheathing if needed and apply a weather-resistant barrier across the entire wall." },
   { name: "Snap your starting line", text: "Use a chalk line to mark a level line for the first course at the base of the wall." },
   { name: "Place the first course", text: "Begin at the bottom — set first course shingles with the butt edge aligned to the chalk line." },

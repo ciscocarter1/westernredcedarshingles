@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export type ProjectDetails = { difficulty: string; time: string; tools: string; bundles: string };
 
 export function ProjectMeta({ details }: { details: ProjectDetails }) {
@@ -11,7 +9,7 @@ export function ProjectMeta({ details }: { details: ProjectDetails }) {
         <div><dt className="inline font-semibold text-primary">Tools:</dt> <dd className="inline">{details.tools}</dd></div>
         <div><dt className="inline font-semibold text-primary">Bundles:</dt> <dd className="inline">approximately {details.bundles}</dd></div>
       </dl>
-      <Link href="/product#bundle-calculator" className="mt-4 inline-block font-semibold text-accent hover:underline">Estimate bundles for this project →</Link>
+      <a href="/product#bundle-calculator" className="mt-4 inline-block font-semibold text-accent hover:underline">Estimate bundles for this project →</a>
     </div>
   );
 }

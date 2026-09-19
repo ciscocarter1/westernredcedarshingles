@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout, Breadcrumbs } from "@/components/SiteLayout";
 import { LowesCTA } from "@/components/CTAButton";
 import { pageMeta, jsonLdScript, breadcrumbLd, SITE_URL } from "@/lib/site";
+import { Hammer, Home, Leaf, Shirt } from "lucide-react";
 const forestImg = "/images/western-red-cedar-forest-pacific-northwest.jpg";
 const textureImg = "/images/western-red-cedar-grain-texture.jpg";
 
@@ -27,6 +28,7 @@ const GRADES = [
   { g: "Number 3 Grade, Black Label® (Common / Utility)", d: "More character, including knots, sapwood, and flat grain. A reliable, value-focused choice for economy applications and secondary buildings." },
   { g: "Number 4 Grade, Black Label (Utility / Undercoursing Grade)", d: "Natural character marks throughout. Intended for undercoursing in double-course walls. Ideal for the undercourse layer in double-course walls, utilitarian siding, sheds, dog houses, and rustic outdoor structures." },
 ];
+const HERITAGE_USES = [{ icon: Home, label: "Shelter", desc: "Longhouses, totem poles, lodges." }, { icon: Hammer, label: "Tools", desc: "Canoes, paddles, hunting implements." }, { icon: Shirt, label: "Clothing", desc: "Soft woven bark robes and hats." }, { icon: Leaf, label: "Medicine", desc: "Bark, leaves, and oils for healing." }];
 
 function SpeciesPage() {
   return (
@@ -164,6 +166,9 @@ function SpeciesPage() {
             <p>
               We honor that heritage every time we cut a shingle. <em>Tree of Life.</em>
             </p>
+          </div>
+          <div className="mt-10 grid grid-cols-2 gap-5 md:grid-cols-4">
+            {HERITAGE_USES.map(({ icon: Icon, label, desc }) => <div key={label} className="rounded-lg border border-forest-foreground/15 bg-forest p-6"><Icon className="h-7 w-7 text-highlight" /><h3 className="font-display mt-3 text-xl font-semibold">{label}</h3><p className="font-body mt-1 text-sm text-forest-foreground/80">{desc}</p></div>)}
           </div>
         </div>
       </section>

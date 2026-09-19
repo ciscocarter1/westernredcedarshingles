@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { SiteLayout, Breadcrumbs } from "@/components/SiteLayout";
 import { LowesCTA } from "@/components/CTAButton";
+import { BundleCalculator } from "@/components/BundleCalculator";
 import { pageMeta, jsonLdScript, breadcrumbLd, HOWTO_PDF, SITE_URL } from "@/lib/site";
 import shedImg from "@/assets/project-shed.jpg";
 
@@ -9,7 +10,7 @@ const TITLE = "How to Install Cedar Shingles — Step-by-Step Guide";
 const DESC = "Learn how to install Western Red Cedar Shingles on siding, sheds, and accent walls. Tips for DIYers and pro contractors using Lowe's Item #3976.";
 
 const EXTERIOR_STEPS = [
-  { name: "Gather materials", text: "Cedar shingles, galvanized nails, chalk line, level, tape measure, hand saw or circular saw." },
+  { name: "Gather materials", text: "Cedar shingles, Type 304 or 316 stainless-steel ring-shank nails, chalk line, level, tape measure, hand saw or circular saw." },
   { name: "Prepare the wall surface", text: "Install sheathing if needed and apply a weather-resistant barrier across the entire wall." },
   { name: "Snap your starting line", text: "Use a chalk line to mark a level line for the first course at the base of the wall." },
   { name: "Place the first course", text: "Begin at the bottom — set first course shingles with the butt edge aligned to the chalk line." },
@@ -41,7 +42,7 @@ export const Route = createFileRoute("/installation-guide")({
           name: "How to Install Cedar Shingles on an Exterior Wall",
           description: DESC,
           totalTime: "PT4H",
-          supply: ["Western Red Cedar shingles", "Galvanized nails", "Weather-resistant barrier"],
+          supply: ["Western Red Cedar shingles", "Type 304 or 316 stainless-steel ring-shank nails", "Weather-resistant barrier"],
           tool: ["Chalk line", "Level", "Tape measure", "Hand saw or circular saw", "Hammer or nail gun"],
           step: EXTERIOR_STEPS.map((s, i) => ({
             "@type": "HowToStep",
@@ -125,7 +126,7 @@ function InstallPage() {
             </div>
             <div>
               <dt className="font-ui text-xs font-semibold uppercase tracking-wider text-foreground/60">Coverage per bundle</dt>
-              <dd className="mt-1 text-foreground/85">At 7.50" exposure = 15 sq ft of wall coverage with ⅛" gap</dd>
+              <dd className="mt-1 text-foreground/85">One bundle covers approximately 15 square feet at a 7.5 inch exposure.</dd>
             </div>
           </dl>
         </div>
@@ -140,6 +141,7 @@ function InstallPage() {
             <strong> 32 running feet per bundle</strong>.
           </p>
         </div>
+        <div id="bundle-calculator" className="mt-8"><BundleCalculator /></div>
       </section>
 
       {/* PDF + CTA */}
