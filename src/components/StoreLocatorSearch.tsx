@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { CITY_CENTROIDS, STORE_LOCATIONS, ZIP_CENTROIDS, type StoreLocation } from "@/lib/store-location-data";
+import { STORE_LOCATIONS, type StoreLocation } from "@/lib/store-location-data";
 import { ExternalLink, MapPin, Search } from "lucide-react";
 
 const STATE_NAMES: Record<string, string> = Object.fromEntries(STORE_LOCATIONS.map((store) => [store.abbr, store.state]));
@@ -15,7 +15,8 @@ function distanceMiles(a: { lat: number; lng: number }, b: { lat: number; lng: n
   return 3958.8 * 2 * Math.atan2(Math.sqrt(x), Math.sqrt(1 - x));
 }
 
-function locate(query: string) {
+async function locate(query: string) {
+  const { CITY_CENTROIDS, ZIP_CENTROIDS } = await import("@/lib/location-centroids");
   const trimmed = query.trim();
   if (/^\d{5}$/.test(trimmed)) {
     const zip = ZIP_CENTROIDS.find(([code]) => code === trimmed);
@@ -36,9 +37,10 @@ function storeUrl(store: StoreLocation) {
 export function StoreLocatorSearch() {
   const [query, setQuery] = useState("");
   const [search, setSearch] = useState("");
+  const [origin, setOrigin] = useState<{ lat: number; lng: number; label: string } | null>(null);
+  const [loading, setLoading] = useState(false);
   const [stateFilter, setStateFilter] = useState("ALL");
   const states = useMemo(() => Object.entries(STATE_NAMES).sort((a, b) => a[1].localeCompare(b[1])), []);
-  const origin = useMemo(() => search ? locate(search) : null, [search]);
   const results = useMemo(() => {
     if (origin) {
       const ranked = STORE_LOCATIONS.map((store) => ({ ...store, distance: distanceMiles(origin, store) })).sort((a, b) => a.distance - b.distance);
@@ -52,23 +54,23 @@ export function StoreLocatorSearch() {
   return (
     <>
       <section className="border-b border-border bg-card">
-        <form onSubmit={(event) => { event.preventDefault(); setSearch(query.trim()); }} className="mx-auto max-w-7xl px-4 py-6 sm:px-6">
+        <form onSubmit={async (event) => { event.preventDefault(); const value = query.trim(); setSearch(value); setLoading(true); setOrigin(await locate(value)); setLoading(false); }} className="mx-auto max-w-7xl px-4 py-6 sm:px-6">
           <div className="grid gap-3 sm:grid-cols-[1fr_auto_minmax(0,240px)]">
             <label className="relative block">
               <span className="sr-only">Search by city or ZIP code</span>
               <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-foreground/50" />
               <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Enter city, state or ZIP code" className="font-ui w-full rounded-md border border-border bg-background py-3 pl-10 pr-3 text-sm text-foreground placeholder:text-foreground/50 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20" />
             </label>
-            <button type="submit" className="font-ui rounded-md bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:bg-primary/90">Find nearest stores</button>
+            <button type="submit" disabled={loading} className="font-ui rounded-md bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:bg-primary/90 disabled:opacity-60">{loading ? "Finding stores…" : "Find nearest stores"}</button>
             <label>
               <span className="sr-only">Browse by state</span>
-              <select value={stateFilter} onChange={(event) => { setStateFilter(event.target.value); setSearch(""); setQuery(""); }} className="font-ui w-full rounded-md border border-border bg-background px-3 py-3 text-sm text-foreground focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20">
+              <select value={stateFilter} onChange={(event) => { setStateFilter(event.target.value); setSearch(""); setOrigin(null); setQuery(""); }} className="font-ui w-full rounded-md border border-border bg-background px-3 py-3 text-sm text-foreground focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20">
                 <option value="ALL">Browse all states</option>
                 {states.map(([abbr, state]) => <option key={abbr} value={abbr}>{state}</option>)}
               </select>
             </label>
           </div>
-          {search && !origin ? <p className="font-ui mt-3 text-sm text-destructive">We could not locate “{search}.” Try a five-digit ZIP code or “City, State.”</p> : null}
+          {search && !origin && !loading ? <p className="font-ui mt-3 text-sm text-destructive">We could not locate “{search}.” Try a five-digit ZIP code or “City, State.”</p> : null}
           {origin ? <p className="font-ui mt-3 text-sm text-foreground/70">Nearest stocking locations to <strong>{origin.label}</strong>, sorted by distance.</p> : null}
         </form>
       </section>
