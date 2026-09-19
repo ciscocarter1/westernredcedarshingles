@@ -8,4 +8,4 @@
 - [x] Create Contractor Resources route, schema, sitemap entries, prerender entry, and PDF
 - [x] Move Tree of Life icon grid to Cedar Species page
 - [x] Fix branding, footer, schemas, store links, and filler transitions
-- [ ] Verify audits, build, pages, links, search, calculator, and mobile layouts
+- [x] Verify audits, build, pages, links, search, calculator, and mobile layouts
