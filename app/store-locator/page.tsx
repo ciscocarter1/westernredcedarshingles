@@ -6,7 +6,7 @@ import StoreLocatorClient from "./StoreLocatorClient";
 
 const TITLE = "Find a Lowe's Near You — Cedar Shingles Store Locator";
 const DESC =
-  "Search 350+ Lowe's locations that carry Western Red Cedar Tree of Life shingles (Item #3976). Filter by state or search by city to find a store near you.";
+  "Search 350+ Lowe's locations that carry Western Red Cedar Tree of Life shingles (Item #3976). Search by city, ZIP code, or address to find the nearest stores.";
 
 export const metadata: Metadata = pageMeta({
   title: TITLE,
@@ -42,8 +42,8 @@ export default function StoreLocatorPage() {
           </h1>
           <p className="font-body mt-4 text-lg text-primary-foreground/90">
             Western Red Cedar Tree of Life shingles (Item #3976) are stocked at
-            350+ Lowe's locations across the United States. Search by city, state,
-            or store number.
+            350+ Lowe's locations across the United States. Search by city, ZIP code,
+            or address.
           </p>
         </div>
       </section>
@@ -84,9 +84,9 @@ export default function StoreLocatorPage() {
 
       <section className="bg-card">
         <div className="mx-auto max-w-7xl px-4 pt-6 sm:px-6">
-          <h2 className="font-display text-2xl font-bold text-primary">Stocking locations at a glance</h2>
-          <div className="mt-4 aspect-[16/7] min-h-[320px] overflow-hidden rounded-lg border border-border bg-secondary">
-            <iframe title="Western Red Cedar Shingles stocking locations" src="https://www.google.com/maps/d/embed?mid=1aX7lvBi1ChDWsgJ-InRpYYeVoIN2OQk" className="h-full w-full" loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+          <h3 className="font-display text-2xl font-bold text-primary">Find a Lowe's stocking Western Red Cedar Shingles near you</h3>
+          <div className="mt-4 h-[480px] overflow-hidden rounded-lg border border-border bg-secondary">
+            <iframe title="Western Red Cedar Shingles Lowe's store locations map" src="https://www.google.com/maps/d/embed?mid=1aX7lvBi1ChDWsgJ-InRpYYeVoIN2OQk&ehbc=2E312F" className="h-full w-full border-0" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
           </div>
         </div>
       </section>
