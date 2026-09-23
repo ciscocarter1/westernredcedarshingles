@@ -26,7 +26,27 @@ async function locate(query: string) {
   const cityKey = normalize(cityPart);
   const stateKey = normalize(statePart);
   const city = CITY_CENTROIDS.find(([name, state]) => normalize(name) === cityKey && (!stateKey || normalize(state) === stateKey || normalize(STATE_NAMES[state] ?? "") === stateKey));
-  return city ? { lat: city[2], lng: city[3], label: `${city[0]}, ${city[1]}` } : null;
+  if (city) return { lat: city[2], lng: city[3], label: `${city[0]}, ${city[1]}` };
+
+  try {
+    const response = await fetch(`https://nominatim.openstreetmap.org/search?format=jsonv2&countrycodes=us&limit=1&addressdetails=1&q=${encodeURIComponent(trimmed)}`, {
+      headers: { "Accept-Language": "en-US,en" },
+    });
+    if (!response.ok) return null;
+    const matches = await response.json() as Array<{
+      lat: string;
+      lon: string;
+      display_name: string;
+      address?: { city?: string; town?: string; village?: string; municipality?: string; state?: string };
+    }>;
+    const match = matches[0];
+    if (!match) return null;
+    const locality = match.address?.city ?? match.address?.town ?? match.address?.village ?? match.address?.municipality;
+    const label = locality && match.address?.state ? `${locality}, ${match.address.state}` : match.display_name;
+    return { lat: Number(match.lat), lng: Number(match.lon), label };
+  } catch {
+    return null;
+  }
 }
 
 function storeUrl(store: StoreLocation) {
@@ -57,9 +77,9 @@ export function StoreLocatorSearch() {
         <form onSubmit={async (event) => { event.preventDefault(); const value = query.trim(); setSearch(value); setLoading(true); setOrigin(await locate(value)); setLoading(false); }} className="mx-auto max-w-7xl px-4 py-6 sm:px-6">
           <div className="grid gap-3 sm:grid-cols-[1fr_auto_minmax(0,240px)]">
             <label className="relative block">
-              <span className="sr-only">Search by city or ZIP code</span>
+              <span className="sr-only">Search by city, ZIP code, or address</span>
               <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-foreground/50" />
-              <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Enter city, state or ZIP code" className="font-ui w-full rounded-md border border-border bg-background py-3 pl-10 pr-3 text-sm text-foreground placeholder:text-foreground/50 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20" />
+              <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Enter city, ZIP code, or address" className="font-ui w-full rounded-md border border-border bg-background py-3 pl-10 pr-3 text-sm text-foreground placeholder:text-foreground/50 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20" />
             </label>
             <button type="submit" disabled={loading} className="font-ui rounded-md bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:bg-primary/90 disabled:opacity-60">{loading ? "Finding stores…" : "Find nearest stores"}</button>
             <label>
@@ -70,7 +90,7 @@ export function StoreLocatorSearch() {
               </select>
             </label>
           </div>
-          {search && !origin && !loading ? <p className="font-ui mt-3 text-sm text-destructive">We could not locate “{search}.” Try a five-digit ZIP code or “City, State.”</p> : null}
+          {search && !origin && !loading ? <p className="font-ui mt-3 text-sm text-destructive">We could not locate “{search}.” Try a five-digit ZIP code, “City, State,” or a complete street address.</p> : null}
           {origin ? <p className="font-ui mt-3 text-sm text-foreground/70">Nearest stocking locations to <strong>{origin.label}</strong>, sorted by distance.</p> : null}
         </form>
       </section>

@@ -5,6 +5,7 @@ import { pageMeta, HOWTO_PDF, SITE_URL } from "@/lib/site";
 import shedImg from "@/assets/project-shed.jpg";
 import InstallTabsClient from "./InstallTabsClient";
 import { EXTERIOR_STEPS, INTERIOR_STEPS } from "./steps-data";
+import { BundleCalculator } from "@/components/BundleCalculator";
 
 const TITLE = "How to Install Cedar Shingles — Step-by-Step Guide";
 const DESC =
@@ -22,7 +23,7 @@ export const metadata: Metadata = pageMeta({
       name: "How to Install Cedar Shingles on an Exterior Wall",
       description: DESC,
       totalTime: "PT4H",
-      supply: ["Western Red Cedar shingles", "Galvanized nails", "Weather-resistant barrier"],
+      supply: ["Western Red Cedar shingles", "Type 304 or 316 stainless-steel ring-shank nails", "Weather-resistant barrier"],
       tool: ["Chalk line", "Level", "Tape measure", "Hand saw or circular saw", "Hammer or nail gun"],
       step: EXTERIOR_STEPS.map((s, i) => ({
         "@type": "HowToStep",
@@ -73,6 +74,10 @@ export default function InstallPage() {
         interiorSteps={INTERIOR_STEPS}
         howtoPdf={HOWTO_PDF}
       />
+
+      <section id="bundle-calculator" className="mx-auto max-w-4xl px-4 pt-12 sm:px-6">
+        <BundleCalculator />
+      </section>
 
       {/* PDF + CTA */}
       <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6">
