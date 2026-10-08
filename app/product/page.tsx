@@ -6,6 +6,7 @@ import { pageMeta, LOWES_URL, SITE_URL } from "@/lib/site";
 import bundleAsset from "@/assets/product-bundle-cedar.jpg.asset.json";
 import { Check } from "lucide-react";
 import { BundleCalculator } from "@/components/BundleCalculator";
+import { CustomerBuilds } from "@/components/CustomerBuilds";
 
 const bundleImg = bundleAsset.url;
 
@@ -223,6 +224,9 @@ export default function ProductPage() {
           Find a Store
         </Link>
       </section>
+
+      {/* CUSTOMER BUILDS */}
+      <CustomerBuilds />
 
       {/* PURCHASE + DOWNLOADS */}
       <section className="mx-auto max-w-5xl px-4 py-20 sm:px-6">

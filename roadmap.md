@@ -9,3 +9,4 @@
 - [x] Move Tree of Life icon grid to Cedar Species page
 - [x] Fix branding, footer, schemas, store links, and filler transitions
 - [x] Verify audits, build, pages, links, search, calculator, and mobile layouts
+- [x] Add "What Customers Are Building" review section above the purchase CTA on /product and /contractor-resources (placeholder photos pending real Lowe's review photos)

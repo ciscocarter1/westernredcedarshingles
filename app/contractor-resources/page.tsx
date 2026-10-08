@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteLayout, Breadcrumbs } from "@/components/SiteLayout";
 import { BundleCalculator } from "@/components/BundleCalculator";
+import { CustomerBuilds } from "@/components/CustomerBuilds";
 import { pageMeta, SITE_URL } from "@/lib/site";
 
 const TITLE = "Contractor Resources — Western Red Cedar Shingles for Siding Projects";
@@ -35,6 +36,7 @@ export default function ContractorResourcesPage() {
     <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6"><h2 className="font-display text-3xl font-bold text-primary">Bulk Ordering and Pro Desk</h2><p className="font-body mt-4 text-lg text-foreground/85">Western Red Cedar Shingles are available in bulk through the Pro Desk at any stocking Lowe's location. The Pro Desk can also special order at non-stocking stores. Use our Store Locator to find your nearest Lowe's.</p><Link href="/store-locator" className="font-ui mt-5 inline-flex rounded-md bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground">Find a Stocking Location</Link></section>
     <section className="bg-secondary py-16"><div className="mx-auto max-w-4xl px-4 sm:px-6"><h2 className="font-display text-3xl font-bold text-primary">Spec Sheet</h2><dl className="mt-7 overflow-hidden rounded-lg border border-border bg-card">{SPECS.map(([term, value]) => <div key={term} className="grid border-b border-border p-4 last:border-0 sm:grid-cols-[180px_1fr]"><dt className="font-ui font-semibold text-primary">{term}</dt><dd className="font-body text-foreground/80">{value}</dd></div>)}</dl><p className="font-body mt-6 text-foreground/80">Need a spec sheet for a client estimate? <a href="/images/wrc-spec-sheet.pdf" download className="font-semibold text-accent hover:underline">Download our one-page PDF.</a></p><div className="mt-10"><BundleCalculator /></div></div></section>
     <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6"><h2 className="font-display text-3xl font-bold text-primary">Installation Reference</h2><p className="font-body mt-4 text-lg text-foreground/85">For full installation instructions including single-course and double-course methods, nail patterns, corner finishing, and sealing options:</p><Link href="/installation-guide" className="font-ui mt-5 inline-block font-semibold text-accent hover:underline">View the Installation Guide →</Link></section>
+    <CustomerBuilds />
     <section className="bg-primary py-16 text-primary-foreground"><div className="mx-auto max-w-4xl px-4 sm:px-6"><h2 className="font-display text-3xl font-bold">Questions</h2><p className="font-body mt-4 text-lg text-primary-foreground/85">Questions on volume pricing or availability? Ask your local Lowe's pro desk directly.</p><Link href="/store-locator" className="font-ui mt-5 inline-flex rounded-md bg-highlight px-5 py-3 text-sm font-semibold text-highlight-foreground">Find your nearest pro desk</Link></div></section>
   </SiteLayout>;
 }
