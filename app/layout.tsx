@@ -45,17 +45,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             __html: `window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-
-gtag('config', 'G-T5BXYZVMG5');`,
-          }}
-        />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17483688284"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-
+gtag('config', 'G-T5BXYZVMG5');
 gtag('config', 'AW-17483688284');`,
           }}
         />

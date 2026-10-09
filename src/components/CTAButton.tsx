@@ -1,7 +1,7 @@
 "use client";
 
 import { LOWES_URL } from "@/lib/site";
-import { trackAdsConversion } from "@/lib/gtag";
+import { trackAdsConversion, trackLowesClick } from "@/lib/gtag";
 import { ExternalLink } from "lucide-react";
 
 type Props = {
@@ -10,6 +10,8 @@ type Props = {
   size?: "md" | "lg";
   className?: string;
   href?: string;
+  productName?: string;
+  grade?: string;
 };
 
 export function LowesCTA({
@@ -18,6 +20,8 @@ export function LowesCTA({
   size = "md",
   className = "",
   href = LOWES_URL,
+  productName = "Western Red Cedar Shingles",
+  grade = "#3/#4",
 }: Props) {
   const base =
     "font-ui inline-flex items-center justify-center gap-2 font-semibold rounded-md transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] shadow-sm";
@@ -40,12 +44,11 @@ export function LowesCTA({
       rel="noopener noreferrer sponsored"
       data-analytics-event="lowes_product_click"
       onClick={() => {
-        if (typeof window !== "undefined" && (window as any).gtag) {
-          (window as any).gtag("event", "lowes_product_click", {
-            event_category: "outbound",
-            event_label: "lowes_item_3976",
-          });
-        }
+        trackLowesClick({
+          product_name: productName,
+          grade: grade,
+          link_url: href,
+        });
         trackAdsConversion();
       }}
       className={`${base} ${sizes[size]} ${variants[variant]} ${className}`}
