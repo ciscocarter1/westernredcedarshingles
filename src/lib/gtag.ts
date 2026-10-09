@@ -40,19 +40,19 @@ export function trackAdsConversion() {
 }
 
 /** Fires GA4 store_locator_search event when user searches for a store. */
-export function trackStoreSearch(query: string, resultCount: number) {
+export function trackStoreSearch(searchTerm: string, resultCount: number) {
   if (typeof window === "undefined") return;
   const g = (window as unknown as { gtag?: typeof gtag }).gtag;
   if (typeof g !== "function") return;
   g("event", "store_locator_search", {
     event_category: "store_locator",
-    search_query: query,
+    search_term: searchTerm,
     result_count: resultCount,
   });
 }
 
 /** Fires GA4 store_locator_click event when user clicks a store link. */
-export function trackStoreClick(storeName: string, storeCode: string) {
+export function trackStoreClick(storeName: string, storeCode: string, linkUrl: string) {
   if (typeof window === "undefined") return;
   const g = (window as unknown as { gtag?: typeof gtag }).gtag;
   if (typeof g !== "function") return;
@@ -60,6 +60,7 @@ export function trackStoreClick(storeName: string, storeCode: string) {
     event_category: "store_locator",
     store_name: storeName,
     store_code: storeCode,
+    link_url: linkUrl,
   });
 }
 

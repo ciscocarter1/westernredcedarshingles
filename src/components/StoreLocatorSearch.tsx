@@ -110,7 +110,7 @@ export function StoreLocatorSearch() {
                 <div className="min-w-0 flex-1">
                   <div className="font-display font-semibold text-foreground">{store.name}</div>
                   <div className="font-ui mt-1 text-xs text-foreground/60">Store #{store.code}{store.distance !== null ? ` · ${store.distance.toFixed(1)} miles` : ""}</div>
-                  <a href={storeUrl(store)} target="_blank" rel="noopener noreferrer" onClick={() => trackStoreClick(store.name, store.code)} className="font-ui mt-2 inline-flex items-center gap-1 text-sm font-semibold text-accent hover:underline">View on Lowes.com <ExternalLink className="h-3 w-3" /></a>
+                  <a href={storeUrl(store)} target="_blank" rel="noopener noreferrer" onClick={() => trackStoreClick(store.name, store.code, storeUrl(store))} className="font-ui mt-2 inline-flex items-center gap-1 text-sm font-semibold text-accent hover:underline">View on Lowes.com <ExternalLink className="h-3 w-3" /></a>
                 </div>
               </div>
             </li>
