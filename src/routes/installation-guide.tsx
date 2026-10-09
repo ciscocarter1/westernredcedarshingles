@@ -153,7 +153,7 @@ function InstallPage() {
             rel="noopener noreferrer"
             className="font-ui rounded-xl border-2 border-primary bg-card p-6 text-center font-semibold text-primary hover:bg-primary hover:text-primary-foreground"
           >
-            Download Lowe's HowTo Manual (PDF) ↗
+            Download Our Cedar Shingles Brochure (PDF)&nbsp;↗
           </a>
           <div className="rounded-xl bg-primary p-6 text-center text-primary-foreground">
             <p className="font-body mb-3">Have what you need? Pick up Item #3976.</p>

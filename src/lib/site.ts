@@ -84,7 +84,7 @@ export const FAQS: Faq[] = [
   },
   {
     q: "Does this product come with installation instructions?",
-    a: "Yes. A HowTo manual PDF is available directly from Lowe's, and we publish a full step-by-step installation guide on this site covering exterior walls, interior accent walls, and the double-course method.",
+    a: "Yes. We publish a full step-by-step installation guide on this site covering exterior walls, interior accent walls, and the double-course method. For a printable overview of applications and the Tree of Life story, download our Western Red Cedar Shingles brochure.",
   },
   {
     q: "Are there project ideas available to help me get started?",
