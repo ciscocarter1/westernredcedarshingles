@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { trackAdsConversion } from "@/lib/gtag";
+import { trackAdsConversion, trackFormSubmit } from "@/lib/gtag";
 import { z } from "zod";
 import { supabase } from "@/integrations/supabase/client";
 import { Loader2 } from "lucide-react";
@@ -60,6 +60,7 @@ export default function ContactFormClient({ contactEmail }: { contactEmail: stri
       return;
     }
     setSubmitted(true);
+    trackFormSubmit(parsed.data.subject);
     toast.success("Inquiry received — we'll be in touch soon.");
     (e.target as HTMLFormElement).reset();
   }

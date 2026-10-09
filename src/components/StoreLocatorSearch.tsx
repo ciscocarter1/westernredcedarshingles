@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { STORE_LOCATIONS, type StoreLocation } from "@/lib/store-location-data";
+import { trackStoreSearch, trackStoreClick } from "@/lib/gtag";
 import { ExternalLink, MapPin, Search } from "lucide-react";
 
 const STATE_NAMES: Record<string, string> = Object.fromEntries(STORE_LOCATIONS.map((store) => [store.abbr, store.state]));
@@ -74,7 +75,7 @@ export function StoreLocatorSearch() {
   return (
     <>
       <section className="border-b border-border bg-card">
-        <form onSubmit={async (event) => { event.preventDefault(); const value = query.trim(); setSearch(value); setLoading(true); setOrigin(await locate(value)); setLoading(false); }} className="mx-auto max-w-7xl px-4 py-6 sm:px-6">
+        <form onSubmit={async (event) => { event.preventDefault(); const value = query.trim(); setSearch(value); setLoading(true); const locResult = await locate(value); setOrigin(locResult); setLoading(false); trackStoreSearch(value, locResult ? STORE_LOCATIONS.length : 0); }} className="mx-auto max-w-7xl px-4 py-6 sm:px-6">
           <div className="grid gap-3 sm:grid-cols-[1fr_auto_minmax(0,240px)]">
             <label className="relative block">
               <span className="sr-only">Search by city, ZIP code, or address</span>
@@ -109,7 +110,7 @@ export function StoreLocatorSearch() {
                 <div className="min-w-0 flex-1">
                   <div className="font-display font-semibold text-foreground">{store.name}</div>
                   <div className="font-ui mt-1 text-xs text-foreground/60">Store #{store.code}{store.distance !== null ? ` · ${store.distance.toFixed(1)} miles` : ""}</div>
-                  <a href={storeUrl(store)} target="_blank" rel="noopener noreferrer" className="font-ui mt-2 inline-flex items-center gap-1 text-sm font-semibold text-accent hover:underline">View on Lowes.com <ExternalLink className="h-3 w-3" /></a>
+                  <a href={storeUrl(store)} target="_blank" rel="noopener noreferrer" onClick={() => trackStoreClick(store.name, store.code)} className="font-ui mt-2 inline-flex items-center gap-1 text-sm font-semibold text-accent hover:underline">View on Lowes.com <ExternalLink className="h-3 w-3" /></a>
                 </div>
               </div>
             </li>
