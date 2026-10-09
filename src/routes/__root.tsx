@@ -117,7 +117,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     scripts: [
       { src: "https://www.googletagmanager.com/gtag/js?id=G-T5BXYZVMG5", async: true },
       {
-        children: `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-T5BXYZVMG5');gtag('config', 'AW-17483688284');`,
+        children: `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-T5BXYZVMG5');`,
       },
       { type: "application/ld+json", children: JSON.stringify(ORG_LD) },
     ],

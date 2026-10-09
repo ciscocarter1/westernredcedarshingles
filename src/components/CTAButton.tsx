@@ -1,7 +1,7 @@
 "use client";
 
 import { LOWES_URL } from "@/lib/site";
-import { trackAdsConversion, trackLowesClick } from "@/lib/gtag";
+import { trackLowesClick } from "@/lib/gtag";
 import { ExternalLink } from "lucide-react";
 
 type Props = {
@@ -49,7 +49,6 @@ export function LowesCTA({
           grade: grade,
           link_url: href,
         });
-        trackAdsConversion();
       }}
       className={`${base} ${sizes[size]} ${variants[variant]} ${className}`}
     >

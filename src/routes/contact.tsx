@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useEffect, useState } from "react";
-import { trackAdsConversion } from "@/lib/gtag";
+import { useState } from "react";
+import { trackFormSubmit } from "@/lib/gtag";
 import { z } from "zod";
 import { SiteLayout, Breadcrumbs } from "@/components/SiteLayout";
 import { pageMeta, jsonLdScript, breadcrumbLd, CONTACT_EMAIL, SITE_URL, SITE_NAME } from "@/lib/site";
@@ -63,10 +63,6 @@ function ContactPage() {
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
-  useEffect(() => {
-    if (submitted) trackAdsConversion();
-  }, [submitted]);
-
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const fd = new FormData(e.currentTarget);
@@ -94,6 +90,7 @@ function ContactPage() {
       return;
     }
     setSubmitted(true);
+    trackFormSubmit(parsed.data.subject);
     toast.success("Inquiry received — we'll be in touch soon.");
     (e.target as HTMLFormElement).reset();
   }

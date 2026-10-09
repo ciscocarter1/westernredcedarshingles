@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { trackAdsConversion, trackFormSubmit } from "@/lib/gtag";
+import { useState } from "react";
+import { trackFormSubmit } from "@/lib/gtag";
 import { z } from "zod";
 import { supabase } from "@/integrations/supabase/client";
 import { Loader2 } from "lucide-react";
@@ -31,10 +31,6 @@ const inputCx =
 export default function ContactFormClient({ contactEmail }: { contactEmail: string }) {
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
-
-  useEffect(() => {
-    if (submitted) trackAdsConversion();
-  }, [submitted]);
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
