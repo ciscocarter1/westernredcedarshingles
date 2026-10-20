@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { SiteLayout, Breadcrumbs } from "@/components/SiteLayout";
 import { LowesCTA } from "@/components/CTAButton";
-import { pageMeta, jsonLdScript, breadcrumbLd, FAQS, SITE_URL } from "@/lib/site";
+import { pageHead, jsonLdScript, breadcrumbLd, FAQS, SITE_URL } from "@/lib/site";
 import heroAsset from "@/assets/western-red-cedar-shed-siding.png.asset.json";
 import { ChevronDown } from "lucide-react";
 
@@ -11,7 +11,7 @@ const DESC = "Answers to the most common questions about Western Red Cedar Shing
 
 export const Route = createFileRoute("/cedar-shingles-faq")({
   head: () => {
-    const m = pageMeta({ title: TITLE, description: DESC, path: "/cedar-shingles-faq", image: `${SITE_URL}${heroAsset.url}` });
+    const m = pageHead({ title: TITLE, description: DESC, path: "/cedar-shingles-faq", image: `${SITE_URL}${heroAsset.url}` });
     return {
       ...m,
       scripts: [

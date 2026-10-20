@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout, Breadcrumbs } from "@/components/SiteLayout";
 import { LowesCTA } from "@/components/CTAButton";
-import { pageMeta, jsonLdScript, breadcrumbLd, SITE_URL } from "@/lib/site";
+import { pageHead, jsonLdScript, breadcrumbLd, SITE_URL } from "@/lib/site";
 
 const HERO = "/images/western-red-cedar-shed-siding.png";
 const HERO_ABS = `${SITE_URL}${HERO}`;
@@ -97,7 +97,7 @@ const RELATED = [
 
 export const Route = createFileRoute("/how-to-side-a-shed-with-cedar-shingles")({
   head: () => {
-    const m = pageMeta({
+    const m = pageHead({
       title: TITLE,
       description: DESC,
       path: "/how-to-side-a-shed-with-cedar-shingles",

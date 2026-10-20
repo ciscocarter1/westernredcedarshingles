@@ -3,7 +3,7 @@ import { SiteLayout, Breadcrumbs } from "@/components/SiteLayout";
 import { LowesCTA } from "@/components/CTAButton";
 import { GuideCards } from "@/components/GuideCards";
 
-import { pageMeta, jsonLdScript, breadcrumbLd, SITE_URL } from "@/lib/site";
+import { pageHead, jsonLdScript, breadcrumbLd, SITE_URL } from "@/lib/site";
 import accentImg from "@/assets/project-accent-wall.jpg";
 import manCaveAsset from "@/assets/man-cave-bar.png.asset.json";
 import { ProjectMeta, type ProjectDetails } from "@/components/ProjectMeta";
@@ -25,7 +25,7 @@ const PROJECTS: Array<{ title: string; desc: string; img: string; details: Proje
 
 export const Route = createFileRoute("/project-ideas")({
   head: () => {
-    const m = pageMeta({ title: TITLE, description: DESC, path: "/project-ideas", image: `${SITE_URL}${accentImg}` });
+    const m = pageHead({ title: TITLE, description: DESC, path: "/project-ideas", image: `${SITE_URL}${accentImg}` });
     return {
       ...m,
       scripts: [

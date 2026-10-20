@@ -3,7 +3,7 @@ import { useState } from "react";
 import { SiteLayout, Breadcrumbs } from "@/components/SiteLayout";
 import { LowesCTA } from "@/components/CTAButton";
 import { BundleCalculator } from "@/components/BundleCalculator";
-import { pageMeta, jsonLdScript, breadcrumbLd, HOWTO_PDF, SITE_URL } from "@/lib/site";
+import { pageHead, jsonLdScript, breadcrumbLd, HOWTO_PDF, SITE_URL } from "@/lib/site";
 import shedImg from "@/assets/project-shed.jpg";
 
 const TITLE = "How to Install Cedar Shingles — Step-by-Step Guide";
@@ -32,7 +32,7 @@ const INTERIOR_STEPS = [
 
 export const Route = createFileRoute("/installation-guide")({
   head: () => {
-    const m = pageMeta({ title: TITLE, description: DESC, path: "/installation-guide", image: `${SITE_URL}${shedImg}` });
+    const m = pageHead({ title: TITLE, description: DESC, path: "/installation-guide", image: `${SITE_URL}${shedImg}` });
     return {
       ...m,
       scripts: [
