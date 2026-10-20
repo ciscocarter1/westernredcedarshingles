@@ -3,7 +3,7 @@ import { useState } from "react";
 import { trackFormSubmit } from "@/lib/gtag";
 import { z } from "zod";
 import { SiteLayout, Breadcrumbs } from "@/components/SiteLayout";
-import { pageMeta, jsonLdScript, breadcrumbLd, CONTACT_EMAIL, SITE_URL, SITE_NAME } from "@/lib/site";
+import { pageHead, jsonLdScript, breadcrumbLd, CONTACT_EMAIL, SITE_URL, SITE_NAME } from "@/lib/site";
 import { supabase } from "@/integrations/supabase/client";
 import { Loader2 } from "lucide-react";
 import { toast } from "sonner";
@@ -14,7 +14,7 @@ const DESC =
 
 export const Route = createFileRoute("/contact")({
   head: () => {
-    const m = pageMeta({ title: TITLE, description: DESC, path: "/contact" });
+    const m = pageHead({ title: TITLE, description: DESC, path: "/contact" });
     return {
       ...m,
       scripts: [

@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout, Breadcrumbs } from "@/components/SiteLayout";
 import { LowesCTA } from "@/components/CTAButton";
-import { pageMeta, jsonLdScript, breadcrumbLd } from "@/lib/site";
+import { pageHead, jsonLdScript, breadcrumbLd } from "@/lib/site";
 import { Check, X } from "lucide-react";
 
 const TITLE = "Cedar Shingles vs Composite Siding — Natural Wood vs Synthetic Comparison";
@@ -22,7 +22,8 @@ const ROWS: { label: string; cedar: string; composite: string; cedarWin: boolean
 
 export const Route = createFileRoute("/cedar-vs-composite")({
   head: () => {
-    const m = pageMeta({ title: TITLE, description: DESC, path: "/cedar-vs-composite" });
+    const m = pageHead({ title: TITLE,
+      socialTitle: "Cedar Shingles vs Composite Siding — Wood vs Synthetic", description: DESC, path: "/cedar-vs-composite" });
     return {
       ...m,
       scripts: [

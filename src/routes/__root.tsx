@@ -97,13 +97,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       // Google Search Console — replace content value when verification tag is issued.
       // { name: "google-site-verification", content: "REPLACE_ME" },
       { title: "Western Red Cedar Shingles for Siding & DIY | Buy at Lowe's" },
-      { property: "og:title", content: "Western Red Cedar Shingles for Siding & DIY | Buy at Lowe's" },
-      { name: "twitter:title", content: "Western Red Cedar Shingles for Siding & DIY | Buy at Lowe's" },
       { name: "description", content: "Shop natural, untreated Western Red Cedar Shingles at Lowe's — Item #3976. Affordable cedar siding for sheds, accent walls, pergolas, and more." },
-      { property: "og:description", content: "Shop natural, untreated Western Red Cedar Shingles at Lowe's — Item #3976. Affordable cedar siding for sheds, accent walls, pergolas, and more." },
-      { name: "twitter:description", content: "Shop natural, untreated Western Red Cedar Shingles at Lowe's — Item #3976. Affordable cedar siding for sheds, accent walls, pergolas, and more." },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/54a5b237-f3b3-43a3-a418-5136afc51611" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/54a5b237-f3b3-43a3-a418-5136afc51611" },
+      // og:title/og:description/twitter:title/twitter:description/og:image are
+      // intentionally NOT set here: leaf routes define them via pageHead(), and
+      // root-level defaults duplicate or override every page's social preview.
     ],
     links: [
       { rel: "stylesheet", href: appCss },

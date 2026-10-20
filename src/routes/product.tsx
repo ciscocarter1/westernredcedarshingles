@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout, Breadcrumbs } from "@/components/SiteLayout";
 import { LowesCTA } from "@/components/CTAButton";
-import { pageMeta, jsonLdScript, breadcrumbLd, LOWES_URL, SITE_URL } from "@/lib/site";
+import { pageHead, jsonLdScript, breadcrumbLd, LOWES_URL, SITE_URL } from "@/lib/site";
 import bundleAsset from "@/assets/product-bundle-cedar.jpg.asset.json";
 const bundleImg = bundleAsset.url;
 import { Check } from "lucide-react";
@@ -13,7 +13,7 @@ const DESC = "Our #3/#4 undercourse grade cedar shingles are 100% natural, untre
 
 export const Route = createFileRoute("/product")({
   head: () => {
-    const m = pageMeta({
+    const m = pageHead({
       title: TITLE,
       description: DESC,
       path: "/product",

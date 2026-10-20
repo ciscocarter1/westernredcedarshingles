@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout, Breadcrumbs } from "@/components/SiteLayout";
 import { LowesCTA } from "@/components/CTAButton";
-import { pageMeta, jsonLdScript, breadcrumbLd } from "@/lib/site";
+import { pageHead, jsonLdScript, breadcrumbLd } from "@/lib/site";
 import { StoreLocatorSearch } from "@/components/StoreLocatorSearch";
 
 const TITLE = "Find a Lowe's Near You — Cedar Shingles Store Locator";
@@ -9,7 +9,7 @@ const DESC = "Search 350+ Lowe's locations that carry Western Red Cedar Tree of 
 
 export const Route = createFileRoute("/store-locator")({
   head: () => {
-    const m = pageMeta({ title: TITLE, description: DESC, path: "/store-locator" });
+    const m = pageHead({ title: TITLE, description: DESC, path: "/store-locator" });
     return {
       ...m,
       scripts: [

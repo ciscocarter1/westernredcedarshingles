@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { breadcrumbLd, jsonLdScript, pageMeta } from "@/lib/site";
+import { breadcrumbLd, jsonLdScript, pageHead } from "@/lib/site";
 import { SiteLayout, Breadcrumbs } from "@/components/SiteLayout";
 import { BundleCalculator } from "@/components/BundleCalculator";
 import { CustomerBuilds } from "@/components/CustomerBuilds";
@@ -9,7 +9,8 @@ const title = "Contractor Resources — Western Red Cedar Shingles for Siding Pr
 const description = "Spec sheet, bulk ordering info, installation reference, and client-facing talking points for contractors and remodelers using Western Red Cedar Shingles from Lowe's.";
 
 export const Route = createFileRoute("/contractor-resources")({
-  head: () => ({ ...pageMeta({ title, description, path: "/contractor-resources", image: "https://westernredcedarshingles.com/images/western-red-cedar-shed-siding.png" }), scripts: [jsonLdScript({ "@context": "https://schema.org", "@type": "Service", name: "Western Red Cedar Shingles Contractor Resources", description }), jsonLdScript(breadcrumbLd([{ name: "Home", path: "/" }, { name: "Contractor Resources", path: "/contractor-resources" }]))] }),
+  head: () => ({ ...pageHead({ title,
+        socialTitle: "Contractor Resources — Western Red Cedar Shingles", description, path: "/contractor-resources", image: "https://westernredcedarshingles.com/images/western-red-cedar-shed-siding.png" }), scripts: [jsonLdScript({ "@context": "https://schema.org", "@type": "Service", name: "Western Red Cedar Shingles Contractor Resources", description }), jsonLdScript(breadcrumbLd([{ name: "Home", path: "/" }, { name: "Contractor Resources", path: "/contractor-resources" }]))] }),
   component: ContractorResourcesPage,
 });
 

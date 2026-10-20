@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout, Breadcrumbs } from "@/components/SiteLayout";
 import { LowesCTA } from "@/components/CTAButton";
-import { pageMeta, jsonLdScript, breadcrumbLd, SITE_URL } from "@/lib/site";
+import { pageHead, jsonLdScript, breadcrumbLd, SITE_URL } from "@/lib/site";
 import { Hammer, Home, Leaf, Shirt } from "lucide-react";
 const forestImg = "/images/western-red-cedar-forest-pacific-northwest.jpg";
 const textureImg = "/images/western-red-cedar-grain-texture.jpg";
@@ -11,7 +11,8 @@ const DESC = "Learn why Western Red Cedar (Thuja plicata) is North America's pre
 
 export const Route = createFileRoute("/western-red-cedar")({
   head: () => {
-    const m = pageMeta({ title: TITLE, description: DESC, path: "/western-red-cedar", image: `${SITE_URL}${forestImg}` });
+    const m = pageHead({ title: TITLE,
+      socialTitle: "What Is Western Red Cedar? Species, Grades & Uses", description: DESC, path: "/western-red-cedar", image: `${SITE_URL}${forestImg}` });
     return {
       ...m,
       scripts: [

@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
 import { LowesCTA } from "@/components/CTAButton";
-import { pageMeta, jsonLdScript, USES, FAQS, LOWES_URL, SITE_URL } from "@/lib/site";
+import { pageHead, jsonLdScript, USES, FAQS, LOWES_URL, SITE_URL } from "@/lib/site";
 import heroAsset from "@/assets/western-red-cedar-shed-siding.png.asset.json";
 const heroImg = heroAsset.url;
 import shedAsset from "@/assets/backyard-garden-shed.png.asset.json";
@@ -19,7 +19,7 @@ const DESC = "Shop natural, untreated Western Red Cedar Shingles at Lowe's — I
 
 export const Route = createFileRoute("/")({
   head: () => {
-    const m = pageMeta({ title: TITLE, description: DESC, path: "/", image: `${SITE_URL}${heroImg}` });
+    const m = pageHead({ title: TITLE, description: DESC, path: "/", image: `${SITE_URL}${heroImg}` });
     return {
       ...m,
       scripts: [
