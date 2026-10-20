@@ -127,6 +127,7 @@ export function breadcrumbLd(items: { name: string; path: string }[]) {
 
 export function pageMeta(opts: {
   title: string;
+  socialTitle?: string;
   description: string;
   path: string;
   ogType?: string;
@@ -135,12 +136,13 @@ export function pageMeta(opts: {
 }) {
   const url = `${SITE_URL}${opts.path}`;
   const img = opts.image ?? `${SITE_URL}/og-default.jpg`;
+  const socialTitle = opts.socialTitle ?? opts.title;
   return {
     title: opts.title,
     description: opts.description,
     alternates: { canonical: url },
     openGraph: {
-      title: opts.title,
+      title: socialTitle,
       description: opts.description,
       type: (opts.ogType === "product" ? "website" : (opts.ogType ?? "website")) as "website" | "article",
       url,
@@ -149,7 +151,7 @@ export function pageMeta(opts: {
     },
     twitter: {
       card: "summary_large_image" as const,
-      title: opts.title,
+      title: socialTitle,
       description: opts.description,
       images: [img],
     },
@@ -157,5 +159,39 @@ export function pageMeta(opts: {
       "twitter:url": url,
       ...(opts.jsonLd ? { "application/ld+json": opts.jsonLd.map((d) => JSON.stringify(d)).join("\n") } : {}),
     },
+  };
+}
+
+// TanStack-native head payload for the legacy route tree (src/routes/*).
+// TanStack head() only honors `meta` descriptors and `links`; pageMeta's
+// Next.js Metadata shape is silently ignored there.
+export function pageHead(opts: {
+  title: string;
+  socialTitle?: string;
+  description: string;
+  path: string;
+  ogType?: string;
+  image?: string;
+}) {
+  const url = `${SITE_URL}${opts.path}`;
+  const img = opts.image ?? `${SITE_URL}/og-default.jpg`;
+  const socialTitle = opts.socialTitle ?? opts.title;
+  return {
+    meta: [
+      { title: opts.title },
+      { name: "description", content: opts.description },
+      { property: "og:title", content: socialTitle },
+      { property: "og:description", content: opts.description },
+      { property: "og:type", content: opts.ogType === "product" ? "website" : (opts.ogType ?? "website") },
+      { property: "og:url", content: url },
+      { property: "og:site_name", content: SITE_NAME },
+      { property: "og:image", content: img },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: socialTitle },
+      { name: "twitter:description", content: opts.description },
+      { name: "twitter:image", content: img },
+      { name: "twitter:url", content: url },
+    ],
+    links: [{ rel: "canonical", href: url }],
   };
 }
