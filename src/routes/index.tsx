@@ -159,30 +159,30 @@ function HomePage() {
             What customers are building
           </h2>
           <p className="font-body mt-2 text-center text-foreground/60">
-            Real projects from Lowe's verified buyers
+            Real projects from Lowe's verified purchasers
           </p>
           <div className="mt-10 grid gap-6 sm:grid-cols-3">
             {[
               {
                 stars: 5,
-                name: "J. Morrison",
-                date: "Sep 2026",
-                project: "Storage shed siding",
-                text: "Used 22 bundles to side my 12×16 shed. Cut clean with a circular saw, held up through heavy rain the first week. Looks like a professional install.",
+                name: "Barry",
+                date: "Oct 2026",
+                project: "Full exterior siding",
+                text: "I recently completed a full exterior siding project using the Western Red Cedar Wood Shingles from Lowe's. I loved the coloring and perfect imperfections on this wood. The grain pattern and rich color variations give the house an authentic, high-end craftsman character that vinyl or composite materials simply cannot replicate. These shingles take nails perfectly without splitting easily. They cut cleanly, which made fitting them around windows, corners, and tight gables a breeze. It completely transformed my home and was worth every penny.",
               },
               {
                 stars: 5,
-                name: "R. Castillo",
-                date: "Aug 2026",
-                project: "Living room accent wall",
-                text: "Weekend project with a brad nailer and construction adhesive. My wife picked it out at Lowe's and we both love the result. Already had people asking who did the work.",
+                name: "Nick",
+                date: "Mar 2021",
+                project: "Backyard shed siding",
+                text: "Used these for the siding on a backyard shed. Work great — expect about 10-15% waste per bundle due to knots, splits or odd size. Price was very fair in comparison to the premium shakes used for true houses. Used a 2 inch 18 gauge nail gun, did not have any split or detach from the shed and it's been over a year since install. Highly recommend a sealer or stain as soon as possible following install. Overall very pleased with the final result.",
               },
               {
                 stars: 5,
-                name: "T. Williams",
-                date: "Jul 2026",
-                project: "Backyard pergola",
-                text: "Ordered 15 bundles for the pergola walls. The natural weathering is already starting and it looks better every week. Great price for real cedar.",
+                name: "Rosebud",
+                date: "Apr 2022",
+                project: "Exterior accent wall",
+                text: "Used the cedar shingles to make an accent wall for the front of my house. Although I ended up getting two different shades of shingles it still looks amazing. My house is the only one that has the accent wall, so it really stands out.",
               },
             ].map((r) => (
               <div key={r.name} className="rounded-xl border border-border bg-background p-6 shadow-sm">
@@ -200,7 +200,7 @@ function HomePage() {
             ))}
           </div>
           <p className="font-ui mt-8 text-center text-sm text-foreground/50">
-            119 verified reviews at Lowe's · Item #3976
+            119 verified reviews at Lowe's · Item #3976 · Verified Purchasers
           </p>
         </div>
       </section>
