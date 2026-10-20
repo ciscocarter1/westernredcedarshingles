@@ -22,7 +22,8 @@ const ROWS: { label: string; cedar: string; composite: string; cedarWin: boolean
 
 export const Route = createFileRoute("/cedar-vs-composite")({
   head: () => {
-    const m = pageHead({ title: TITLE, description: DESC, path: "/cedar-vs-composite" });
+    const m = pageHead({ title: TITLE,
+      socialTitle: "Cedar Shingles vs Composite Siding — Wood vs Synthetic", description: DESC, path: "/cedar-vs-composite" });
     return {
       ...m,
       scripts: [

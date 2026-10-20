@@ -11,7 +11,8 @@ const DESC = "Learn why Western Red Cedar (Thuja plicata) is North America's pre
 
 export const Route = createFileRoute("/western-red-cedar")({
   head: () => {
-    const m = pageHead({ title: TITLE, description: DESC, path: "/western-red-cedar", image: `${SITE_URL}${forestImg}` });
+    const m = pageHead({ title: TITLE,
+      socialTitle: "What Is Western Red Cedar? Species, Grades & Uses", description: DESC, path: "/western-red-cedar", image: `${SITE_URL}${forestImg}` });
     return {
       ...m,
       scripts: [
