@@ -79,6 +79,19 @@ export default function InstallPage() {
         <BundleCalculator />
       </section>
 
+      {/* MID-PAGE PURCHASE NUDGE */}
+      <section className="mx-auto max-w-4xl px-4 pb-8 sm:px-6">
+        <div className="rounded-xl border border-highlight/30 bg-cedar px-6 py-5 text-cedar-foreground flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <p className="font-display text-lg font-semibold">Ready to grab your bundles?</p>
+            <p className="font-body mt-1 text-sm text-cedar-foreground/80">Western Red Cedar Shingles — Item #3976, available in-store at Lowe's.</p>
+          </div>
+          <LowesCTA variant="highlight" size="md" grade="#3/#4" productName="Western Red Cedar Shingles">
+            Buy at Lowe's
+          </LowesCTA>
+        </div>
+      </section>
+
       {/* PDF + CTA */}
       <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6">
         <div className="grid gap-4 sm:grid-cols-2">

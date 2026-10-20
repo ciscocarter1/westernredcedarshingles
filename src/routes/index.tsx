@@ -142,6 +142,59 @@ function HomePage() {
         </div>
       </section>
 
+      {/* SOCIAL PROOF — WHAT CUSTOMERS ARE BUILDING */}
+      <section className="border-t border-border bg-card py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
+          <h2 className="font-display text-center text-2xl font-bold text-primary sm:text-3xl">
+            What customers are building
+          </h2>
+          <p className="font-body mt-2 text-center text-foreground/60">
+            Real projects from Lowe's verified buyers
+          </p>
+          <div className="mt-10 grid gap-6 sm:grid-cols-3">
+            {[
+              {
+                stars: 5,
+                name: "J. Morrison",
+                date: "Sep 2026",
+                project: "Storage shed siding",
+                text: "Used 22 bundles to side my 12×16 shed. Cut clean with a circular saw, held up through heavy rain the first week. Looks like a professional install.",
+              },
+              {
+                stars: 5,
+                name: "R. Castillo",
+                date: "Aug 2026",
+                project: "Living room accent wall",
+                text: "Weekend project with a brad nailer and construction adhesive. My wife picked it out at Lowe's and we both love the result. Already had people asking who did the work.",
+              },
+              {
+                stars: 5,
+                name: "T. Williams",
+                date: "Jul 2026",
+                project: "Backyard pergola",
+                text: "Ordered 15 bundles for the pergola walls. The natural weathering is already starting and it looks better every week. Great price for real cedar.",
+              },
+            ].map((r) => (
+              <div key={r.name} className="rounded-xl border border-border bg-background p-6 shadow-sm">
+                <div className="flex items-center gap-0.5">
+                  {Array.from({ length: r.stars }).map((_, i) => (
+                    <svg key={i} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-4 w-4 text-highlight" aria-hidden="true">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  ))}
+                </div>
+                <p className="font-ui mt-1 text-xs font-semibold uppercase tracking-wide text-highlight">{r.project}</p>
+                <p className="font-body mt-2 text-sm text-foreground/80 leading-relaxed">"{r.text}"</p>
+                <p className="font-ui mt-3 text-xs text-foreground/50">{r.name} · Lowe's verified buyer · {r.date}</p>
+              </div>
+            ))}
+          </div>
+          <p className="font-ui mt-8 text-center text-sm text-foreground/50">
+            119 verified reviews at Lowe's · Item #3976
+          </p>
+        </div>
+      </section>
+
       {/* CONTRACTOR CALLOUT QUOTES */}
       <section className="bg-secondary py-16">
         <div className="mx-auto max-w-4xl px-4 sm:px-6">
