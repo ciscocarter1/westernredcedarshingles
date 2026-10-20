@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 
 export const dynamic = "force-static";
 
-const BASE_URL = "https://westernredcedarshingles.com";
+const BASE_URL = "https://westernredcedarshingles.lovable.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
