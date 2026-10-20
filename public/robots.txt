@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://westernredcedarshingles.com/sitemap.xml
+Sitemap: https://westernredcedarshingles.lovable.app/sitemap.xml
