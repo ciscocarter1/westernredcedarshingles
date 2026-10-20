@@ -1,18 +1,21 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
 
-const BASE_URL = "https://westernredcedarshingles.com";
+const BASE_URL = "https://westernredcedarshingles.lovable.app";
 
 const ROUTES = [
   { path: "/", changefreq: "weekly", priority: "1.0" },
   { path: "/product", changefreq: "weekly", priority: "0.9" },
   { path: "/western-red-cedar", changefreq: "monthly", priority: "0.8" },
   { path: "/installation-guide", changefreq: "monthly", priority: "0.8" },
+  { path: "/how-to", changefreq: "monthly", priority: "0.5" },
   
   { path: "/project-ideas", changefreq: "monthly", priority: "0.7" },
   { path: "/how-to-side-a-shed-with-cedar-shingles", changefreq: "monthly", priority: "0.7" },
   { path: "/cedar-shingles-faq", changefreq: "monthly", priority: "0.7" },
   { path: "/cedar-vs-composite", changefreq: "monthly", priority: "0.6" },
+  { path: "/store-locator", changefreq: "monthly", priority: "0.7" },
+  { path: "/contact", changefreq: "monthly", priority: "0.5" },
   { path: "/contractor-resources", changefreq: "monthly", priority: "0.8" },
 ];
 
