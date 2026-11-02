@@ -17,9 +17,9 @@ const shedImg = shedAsset.url;
 const accentImg = accentAsset.url;
 const manCaveImg = manCaveAsset.url;
 
-const TITLE = "Western Red Cedar Shingles for Siding & DIY | Buy at Lowe's";
+const TITLE = "Western Red Cedar Shingles for Siding & Sheds | $50/Bundle at Lowe's";
 const DESC =
-  "Shop natural, untreated Western Red Cedar Shingles at Lowe's — Item #3976. Affordable cedar siding for sheds, accent walls, pergolas, and more.";
+  "Real western red cedar shingles — $50/bundle, no minimum. Natural rot resistance, DIY-friendly. 119 verified reviews. Available in-store at Lowe's, Item #3976.";
 
 export const metadata: Metadata = pageMeta({
   title: TITLE,
@@ -45,6 +45,34 @@ export const metadata: Metadata = pageMeta({
         acceptedAnswer: { "@type": "Answer", text: f.a },
       })),
     },
+    {
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Western Red Cedar Shingles",
+        "description": "100% natural, untreated western red cedar shingles for siding, sheds, and accent walls. #3/#4 undercourse grade. Covers 15 sq ft per bundle at 7.5-inch exposure.",
+        "sku": "3976",
+        "brand": {
+          "@type": "Brand",
+          "name": "Tree of Life"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "50.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStoreOnly",
+          "seller": {
+            "@type": "Organization",
+            "name": "Lowe's"
+          }
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.5",
+          "reviewCount": "119"
+        }
+      }
+    },
   ],
 });
 
@@ -69,7 +97,7 @@ export default function HomePage() {
             The Tree of Life — Pacific Northwest Heritage
           </p>
           <h1 className="font-display max-w-3xl text-4xl font-bold leading-[1.1] text-primary-foreground sm:text-5xl lg:text-6xl">
-            Real Western Red Cedar Shingles for Siding, Sheds &amp; Accent Walls
+            Western Red Cedar Shingles for Siding, Sheds &amp; Accent Walls
           </h1>
           <p className="font-body mt-6 max-w-2xl text-lg text-primary-foreground/90 sm:text-xl">
             100% Natural. Untreated. Available Exclusively at Lowe's.
@@ -87,6 +115,9 @@ export default function HomePage() {
               Find a Store Near You
             </Link>
           </div>
+          <p className="font-body mt-6 max-w-2xl text-sm text-primary-foreground/75">
+            Western red cedar shingles are naturally rot- and insect-resistant wood shingles milled from Thuja plicata, a softwood native to the Pacific Northwest. Unlike pressure-treated lumber, western red cedar contains natural oils that protect against decay without chemical treatment. These shingles are sold in #3/#4 undercourse grade, meaning they contain natural character marks including knots and flat grain — making them ideal for siding, accent walls, sheds, and gazebos at a lower cost than premium grades. Each bundle covers approximately 15 square feet at a 7.5-inch weather exposure.
+          </p>
           <div className="mt-4 flex flex-wrap items-center gap-3 text-sm text-primary-foreground/80">
             <span className="flex items-center gap-1.5">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-4 w-4 text-highlight" aria-hidden="true">
@@ -114,11 +145,13 @@ export default function HomePage() {
 
       {/* TRUST BAR */}
       <section className="bg-cedar py-10 text-cedar-foreground">
-        <div className="mx-auto grid max-w-5xl gap-8 px-4 text-center sm:grid-cols-3 sm:px-6">
+        <div className="mx-auto grid max-w-5xl gap-8 px-4 text-center sm:grid-cols-2 lg:grid-cols-5 sm:px-6">
           {[
             { n: "51 Years", l: "Lowe's Supplier Relationship" },
             { n: "500+", l: "Bundles Sold Per Week at Lowe's" },
             { n: "$50", l: "Per Bundle — No Minimum Order" },
+            { n: "15 sq ft", l: "Coverage Per Bundle at 7.5\" Exposure" },
+            { n: "~$3.33", l: "Cost Per Sq Ft of Natural Cedar" },
           ].map((s) => (
             <div key={s.l}>
               <div className="font-display text-3xl font-bold text-highlight sm:text-4xl">{s.n}</div>
@@ -129,7 +162,7 @@ export default function HomePage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
-        <h2 className="font-display text-center text-3xl font-bold text-primary sm:text-4xl">Find Your Path</h2>
+        <h2 className="font-display text-center text-3xl font-bold text-primary sm:text-4xl">Western Red Cedar Shingles for Every Project</h2>
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           <article className="rounded-lg border border-border bg-card p-7 shadow-sm"><h3 className="font-display text-2xl font-semibold text-primary">Contractor / Remodeler</h3><p className="font-body mt-3 text-foreground/80">Need affordable, distinctive cedar for your next client project? Our #3/#4 grade shingles deliver character and warmth at a price that keeps your bids competitive.</p><Link href="/contractor-resources" className="font-ui mt-6 inline-flex rounded-md bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground">See Contractor Resources</Link></article>
           <article className="rounded-lg border border-border bg-card p-7 shadow-sm"><h3 className="font-display text-2xl font-semibold text-primary">DIY / Homeowner</h3><p className="font-body mt-3 text-foreground/80">Looking for an affordable, dramatic covering solution for an accent wall or shed siding? Our #3/#4 grade shingles offer style, character, and functionality at a budget-friendly price. Straightforward installation with basic tools.</p><Link href="/project-ideas" className="font-ui mt-6 inline-flex rounded-md bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground">See DIY Project Ideas</Link></article>
@@ -144,7 +177,7 @@ export default function HomePage() {
       <section className="py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <h2 className="font-display text-center text-3xl font-bold text-primary sm:text-4xl">
-            Eight ways pros and DIYers put it to work
+            8 Ways to Use Cedar Shingles: Siding, Sheds, Accent Walls &amp; More
           </h2>
           <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-4">
             {USES.map((u) => (
@@ -242,6 +275,9 @@ export default function HomePage() {
           <h2 className="font-display mt-3 text-3xl font-bold sm:text-4xl">
             The Tree of Life
           </h2>
+          <h3 className="font-body mt-3 text-lg text-primary-foreground/70 sm:text-xl">
+            Why Western Red Cedar? Natural Rot Resistance, No Chemical Treatment
+          </h3>
           <p className="font-body mx-auto mt-5 max-w-3xl text-lg text-primary-foreground/90">
             Western Red Cedar was the cornerstone of Pacific Northwest Native American culture for thousands of years: shelter, canoes, clothing, medicine, all from one tree. The same qualities that made it indispensable then (natural rot and insect resistance, straight-splitting grain, dimensional stability) are exactly why it still works on a modern jobsite today.
           </p>
@@ -294,10 +330,10 @@ export default function HomePage() {
       <section className="bg-secondary py-20">
         <div className="mx-auto max-w-4xl px-4 sm:px-6">
           <h2 className="font-display text-center text-3xl font-bold text-primary sm:text-4xl">
-            Quick answers
+            Frequently Asked Questions: Cedar Shingles at Lowe's
           </h2>
           <div className="mt-10 space-y-3">
-            {FAQS.slice(0, 3).map((f, i) => (
+            {FAQS.slice(0, 6).map((f, i) => (
               <FaqRowClient key={i} q={f.q} a={f.a} aHtml={f.aHtml} />
             ))}
           </div>

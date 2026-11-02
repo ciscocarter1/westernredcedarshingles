@@ -32,6 +32,22 @@ type Faq = { q: string; a: string; aHtml?: string };
 
 export const FAQS: Faq[] = [
   {
+    q: "What is the difference between cedar shingles and cedar shakes?",
+    a: "Cedar shingles are sawn smooth on both faces and taper to a thin edge — they create a clean, uniform look. Cedar shakes are split and have a rougher, more rustic texture. For siding and accent walls, shingles install flat and are easier to handle for DIY projects.",
+  },
+  {
+    q: "How many bundles of cedar shingles do I need?",
+    a: "At a 7.5-inch weather exposure, one bundle covers approximately 15 square feet. For a 10×20 ft shed wall (200 sq ft), plan on 15–16 bundles including 10–15% waste.",
+  },
+  {
+    q: "Can cedar shingles be used on a roof?",
+    a: "These #3/#4 undercourse grade shingles are designed for wall siding, accent walls, and shed exteriors. For roof applications on inhabited dwellings, a higher-grade cedar shingle or cedar shake rated for roofing is required.",
+  },
+  {
+    q: "Do cedar shingles need to be sealed or stained?",
+    a: "No chemical treatment is required. Western red cedar's natural oils provide rot and insect resistance. Left untreated, shingles weather to a natural silver-gray. Apply an exterior penetrating stain or sealer within 2–4 weeks of installation if you want to maintain the original color.",
+  },
+  {
     q: "What exactly is this product and where can I buy it?",
     a: "It's a Western Red Cedar Tree of Life wood shingle siding bundle. Our #3/#4 undercourse grade is 100% natural and untreated and sold exclusively at Lowe's. This is an in-store-only product — please see our Store Locator to find the Lowe's location nearest you. Item #3976 / Model #3976.",
     aHtml: `It's a Western Red Cedar Tree of Life wood shingle siding bundle. Our #3/#4 undercourse grade is 100% natural and untreated and sold exclusively at Lowe's. This is an in-store-only product — please see our <a href="/store-locator" class="text-accent font-semibold hover:underline">Store Locator</a> to find the Lowe's location nearest you. Item #3976 / Model #3976.`,
