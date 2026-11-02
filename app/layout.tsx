@@ -6,11 +6,11 @@ import "../src/styles.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://westernredcedarshingles.com"),
   title: {
-    default: "Western Red Cedar Shingles for Siding & DIY | Buy at Lowe's",
+    default: "Western Red Cedar Shingles for Siding & Sheds | $50/Bundle at Lowe's",
     template: "%s | Western Red Cedar Shingles",
   },
   description:
-    "Shop natural, untreated Western Red Cedar Shingles at Lowe's — Item #3976. Affordable cedar siding for sheds, accent walls, pergolas, and more.",
+    "Real western red cedar shingles — $50/bundle, no minimum. Natural rot resistance, DIY-friendly. 119 verified reviews. Available in-store at Lowe's, Item #3976.",
   authors: [{ name: "Western Red Cedar Shingles" }],
   openGraph: {
     siteName: "Western Red Cedar Shingles",
