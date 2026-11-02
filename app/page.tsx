@@ -46,7 +46,6 @@ export const metadata: Metadata = pageMeta({
       })),
     },
     {
-      {
         "@context": "https://schema.org",
         "@type": "Product",
         "name": "Western Red Cedar Shingles",
@@ -71,7 +70,6 @@ export const metadata: Metadata = pageMeta({
           "ratingValue": "4.5",
           "reviewCount": "119"
         }
-      }
     },
   ],
 });

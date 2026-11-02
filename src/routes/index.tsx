@@ -53,7 +53,6 @@ export const Route = createFileRoute("/")({
           })),
         }),
         jsonLdScript({
-          {
             "@context": "https://schema.org",
             "@type": "Product",
             "name": "Western Red Cedar Shingles",
@@ -78,7 +77,6 @@ export const Route = createFileRoute("/")({
               "ratingValue": "4.5",
               "reviewCount": "119"
             }
-          }
         }),
       ],
     };
