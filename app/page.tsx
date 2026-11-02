@@ -21,62 +21,61 @@ const TITLE = "Western Red Cedar Shingles for Siding & Sheds | $50/Bundle at Low
 const DESC =
   "Real western red cedar shingles — $50/bundle, no minimum. Natural rot resistance, DIY-friendly. 119 verified reviews. Available in-store at Lowe's, Item #3976.";
 
+const PAGE_SCHEMAS = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Western Red Cedar Shingles",
+    url: SITE_URL,
+    description:
+      "Maker of natural Western Red Cedar shingle bundles sold exclusively at Lowe's for siding, accent walls, outdoor structures, and DIY and contractor projects.",
+    sameAs: ["https://www.lowes.com/pd/Red-Cedar-Untreated-Wood-Siding-Shingles/3379244"],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: FAQS.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: "Western Red Cedar Shingles",
+    description:
+      "100% natural, untreated western red cedar shingles for siding, sheds, and accent walls. #3/#4 undercourse grade. Covers 15 sq ft per bundle at 7.5-inch exposure.",
+    sku: "3976",
+    brand: { "@type": "Brand", name: "Tree of Life" },
+    offers: {
+      "@type": "Offer",
+      price: "50.00",
+      priceCurrency: "USD",
+      availability: "https://schema.org/InStoreOnly",
+      seller: { "@type": "Organization", name: "Lowe's" },
+    },
+    aggregateRating: { "@type": "AggregateRating", ratingValue: "4.5", reviewCount: "119" },
+  },
+];
+
 export const metadata: Metadata = pageMeta({
   title: TITLE,
   description: DESC,
   path: "/",
   image: `${SITE_URL}${heroImg}`,
-  jsonLd: [
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      name: "Western Red Cedar Shingles",
-      url: SITE_URL,
-      description:
-        "Maker of natural Western Red Cedar shingle bundles sold exclusively at Lowe's for siding, accent walls, outdoor structures, and DIY and contractor projects.",
-      sameAs: ["https://www.lowes.com/pd/Red-Cedar-Untreated-Wood-Siding-Shingles/3379244"],
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      mainEntity: FAQS.map((f) => ({
-        "@type": "Question",
-        name: f.q,
-        acceptedAnswer: { "@type": "Answer", text: f.a },
-      })),
-    },
-    {
-        "@context": "https://schema.org",
-        "@type": "Product",
-        "name": "Western Red Cedar Shingles",
-        "description": "100% natural, untreated western red cedar shingles for siding, sheds, and accent walls. #3/#4 undercourse grade. Covers 15 sq ft per bundle at 7.5-inch exposure.",
-        "sku": "3976",
-        "brand": {
-          "@type": "Brand",
-          "name": "Tree of Life"
-        },
-        "offers": {
-          "@type": "Offer",
-          "price": "50.00",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStoreOnly",
-          "seller": {
-            "@type": "Organization",
-            "name": "Lowe's"
-          }
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.5",
-          "reviewCount": "119"
-        }
-    },
-  ],
 });
 
 export default function HomePage() {
   return (
     <SiteLayout>
+      {PAGE_SCHEMAS.map((s, i) => (
+        <script
+          key={i}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }}
+        />
+      ))}
       {/* HERO */}
       <section className="relative isolate overflow-hidden">
         <div className="absolute inset-0 -z-10">
