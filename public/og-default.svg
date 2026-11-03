@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Western Red Cedar Shingles — $50/Bundle at Lowe's, Item #3976. Natural, untreated, 119 customer reviews. westernredcedarshingles.com">
+  <defs>
+    <!-- Diagonal wood-grain texture: slightly lighter green lines over the forest-green base -->
+    <pattern id="grain" width="260" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(-16)">
+      <rect width="260" height="24" fill="#22552D" />
+      <path d="M0 3 H260" stroke="#285C34" stroke-width="2" opacity="0.85" />
+      <path d="M0 8 H168" stroke="#285C34" stroke-width="1" opacity="0.55" />
+      <path d="M72 14 H260" stroke="#285C34" stroke-width="3" opacity="0.45" />
+      <path d="M196 19 H260" stroke="#285C34" stroke-width="1" opacity="0.7" />
+      <path d="M0 21 H64" stroke="#285C34" stroke-width="1" opacity="0.5" />
+    </pattern>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0.35">
+      <stop offset="0" stop-color="#1E4C28" stop-opacity="0.55" />
+      <stop offset="0.55" stop-color="#22552D" stop-opacity="0" />
+      <stop offset="1" stop-color="#143C1E" stop-opacity="0.45" />
+    </linearGradient>
+  </defs>
+
+  <!-- Base + texture -->
+  <rect width="1200" height="630" fill="#22552D" />
+  <rect width="1200" height="630" fill="url(#grain)" />
+  <rect width="1200" height="630" fill="url(#fade)" />
+
+  <!-- Long grain sweeps -->
+  <g stroke="#285C34" fill="none" opacity="0.5">
+    <path d="M-60 118 C 260 84, 620 152, 1260 96" stroke-width="4" />
+    <path d="M-60 206 C 320 176, 700 232, 1260 188" stroke-width="2" opacity="0.7" />
+    <path d="M-60 470 C 300 508, 680 442, 1260 498" stroke-width="3" />
+    <path d="M-60 516 C 360 546, 760 492, 1260 540" stroke-width="1.5" opacity="0.6" />
+  </g>
+
+  <!-- Headline -->
+  <g font-family="Liberation Sans, DejaVu Sans, Arial, Helvetica, sans-serif" fill="#FFFFFF" font-weight="bold">
+    <text x="80" y="252" font-size="72" letter-spacing="-1">Western Red Cedar</text>
+    <text x="80" y="336" font-size="72" letter-spacing="-1">Shingles</text>
+  </g>
+
+  <!-- Subtext -->
+  <text x="80" y="406" font-family="Liberation Sans, DejaVu Sans, Arial, Helvetica, sans-serif" font-size="36" fill="#C8EBCD">$50/Bundle at Lowe's &#183; Item #3976</text>
+
+  <!-- Second line -->
+  <text x="80" y="452" font-family="Liberation Sans, DejaVu Sans, Arial, Helvetica, sans-serif" font-size="28" fill="#B4DCBE">Natural &#183; Untreated &#183; 119 Customer Reviews</text>
+
+  <!-- Bottom bar -->
+  <rect y="546" width="1200" height="84" fill="#143C1E" />
+  <text x="80" y="598" font-family="Liberation Sans, DejaVu Sans, Arial, Helvetica, sans-serif" font-size="26" font-weight="bold" fill="#C8EBCD" letter-spacing="1">westernredcedarshingles.com</text>
+</svg>
