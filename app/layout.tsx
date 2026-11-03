@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   alternates: { canonical: "/" },
   verification: {
-    google: "REPLACE_WITH_YOUR_GSC_VERIFICATION_CODE",
+    google: "qV3Tfl0ajLlsxOyvyxCWXvd3qIpnoAwzP7XLTQJBVdg",
   },
   robots: { index: true, follow: true },
 };
