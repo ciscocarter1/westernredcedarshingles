@@ -9,7 +9,7 @@ import { BundleCalculator } from "@/components/BundleCalculator";
 
 const TITLE = "How to Install Cedar Shingles: Step-by-Step Siding Guide";
 const DESC =
-  "Learn to install Western Red Cedar shingles on siding, sheds and accent walls with stainless nails and 7.5 inch exposure. Free bundle calculator. Start your project.";
+  "Learn to install Western Red Cedar shingles on siding, sheds and accent walls with stainless nails and 7.5 inch exposure. Free bundle calculator. Start now.";
 
 export const metadata: Metadata = pageMeta({
   title: TITLE,

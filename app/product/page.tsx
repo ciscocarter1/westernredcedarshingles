@@ -10,7 +10,7 @@ import { CustomerBuilds } from "@/components/CustomerBuilds";
 
 const bundleImg = bundleAsset.url;
 
-const TITLE = "Western Red Cedar Shingles: #3/#4 Grade, $50/Bundle at Lowe's";
+const TITLE = "Western Red Cedar Shingles #3/#4 Grade — $50/Bundle at Lowe's";
 const DESC =
   "Natural, untreated #3/#4 Western Red Cedar shingles for siding, sheds and accent walls. 15 sq ft per $50 bundle, no minimum. Buy in-store at Lowe's, Item #3976.";
 

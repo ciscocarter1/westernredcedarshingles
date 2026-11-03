@@ -6,7 +6,7 @@ import { Check, X } from "lucide-react";
 
 const TITLE = "Cedar Shingles vs Composite Siding: Real Wood vs Synthetic";
 const DESC =
-  "Compare Western Red Cedar shingles with composite siding on looks, durability, cost and eco impact. See which fits your project, then grab real cedar at Lowe's today.";
+  "Compare Western Red Cedar shingles with composite siding on looks, durability, cost and eco impact. See which fits your project and shop real cedar at Lowe's.";
 
 const ROWS: { label: string; cedar: string; composite: string; cedarWin: boolean }[] = [
   { label: "Material origin", cedar: "Natural softwood (Thuja plicata)", composite: "Engineered wood fibers + resins, vinyl, or fiber-cement", cedarWin: true },

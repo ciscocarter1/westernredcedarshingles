@@ -13,7 +13,7 @@ const textureImg = manCaveAsset.url;
 
 const TITLE = "Cedar Shingle Project Ideas: Sheds, Accent Walls & Pergolas";
 const DESC =
-  "Get inspired with cedar shingle projects: accent walls, backyard sheds, pergolas, fire pits and dog houses. Real Western Red Cedar at $50 a bundle. Plan your build now.";
+  "Get inspired with cedar shingle projects: accent walls, backyard sheds, pergolas, fire pits and dog houses. Real Western Red Cedar at $50 a bundle. Plan yours.";
 
 const PROJECTS: Array<{ title: string; desc: string; img: string; details: ProjectDetails }> = [
   { title: "Creative Backyard Shed with Western Red Cedar Shingles", desc: "Turn a basic storage shed into a focal point. Cedar shingles weather to silver-gray and look better every year — no paint, no replacement panels.", img: "/images/creative-backyard-shed.png", details: { difficulty: "Intermediate", time: "1 to 2 weekends", tools: "circular saw, hammer or nail gun, level, chalk line, stainless-steel nails", bundles: "18 bundles for a 10 × 20 ft wall" } },

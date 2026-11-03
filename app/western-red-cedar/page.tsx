@@ -9,7 +9,7 @@ const textureImg = { src: "/images/western-red-cedar-grain-texture.jpg" };
 
 const TITLE = "What Is Western Red Cedar? Species Guide, Grades & Uses";
 const DESC =
-  "Why Western Red Cedar (Thuja plicata) is North America's top shingle wood: natural rot resistance, straight grain and lasting beauty. Learn the grades and best uses.";
+  "Why Western Red Cedar (Thuja plicata) is North America's top shingle wood: natural rot resistance, straight grain and lasting beauty. Learn grades and uses.";
 
 export const metadata: Metadata = pageMeta({
   title: TITLE,

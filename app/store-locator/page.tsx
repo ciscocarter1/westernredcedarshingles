@@ -6,7 +6,7 @@ import StoreLocatorClient from "./StoreLocatorClient";
 
 const TITLE = "Find a Lowe's Near You: Cedar Shingles Store Locator";
 const DESC =
-  "Search 350+ Lowe's stores carrying Western Red Cedar shingles, Item #3976. Enter your city, ZIP or address to find the nearest three stores and check stock first.";
+  "Search 350+ Lowe's stores carrying Western Red Cedar shingles, Item #3976. Enter your city, ZIP or address to find the nearest three stores and call ahead.";
 
 export const metadata: Metadata = pageMeta({
   title: TITLE,
