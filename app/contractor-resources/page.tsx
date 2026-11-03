@@ -7,7 +7,7 @@ import { pageMeta, SITE_URL } from "@/lib/site";
 
 const TITLE = "Contractor Resources: Western Red Cedar Shingle Spec Sheet";
 const DESC =
-  "Spec sheet, coverage math, fastener rules and client talking points for contractors using Western Red Cedar shingles. $50 a bundle at Lowe's. Get the spec sheet.";
+  "Spec sheet, coverage math, fastener rules and client talking points for contractors using Western Red Cedar shingles. $50 a bundle at Lowe's. Get spec sheet.";
 
 export const metadata: Metadata = pageMeta({
   title: TITLE,
