@@ -16,9 +16,15 @@ export const metadata: Metadata = {
     siteName: "Western Red Cedar Shingles",
     type: "website",
     locale: "en_US",
+    images: [{ url: "https://westernredcedarshingles.com/og-default.jpg", width: 1200, height: 630, alt: "Western Red Cedar Shingles — $50/Bundle at Lowe's" }],
   },
   twitter: {
     card: "summary_large_image",
+    images: ["https://westernredcedarshingles.com/og-default.jpg"],
+  },
+  alternates: { canonical: "/" },
+  verification: {
+    google: "REPLACE_WITH_YOUR_GSC_VERIFICATION_CODE",
   },
   robots: { index: true, follow: true },
 };

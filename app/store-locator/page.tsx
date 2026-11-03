@@ -4,9 +4,9 @@ import { LowesCTA } from "@/components/CTAButton";
 import { pageMeta, SITE_URL } from "@/lib/site";
 import StoreLocatorClient from "./StoreLocatorClient";
 
-const TITLE = "Find a Lowe's Near You — Cedar Shingles Store Locator";
+const TITLE = "Find a Lowe's Near You: Cedar Shingles Store Locator";
 const DESC =
-  "Search 350+ Lowe's locations that carry Western Red Cedar Tree of Life shingles (Item #3976). Search by city, ZIP code, or address to find the nearest stores.";
+  "Search 350+ Lowe's stores carrying Western Red Cedar shingles, Item #3976. Enter your city, ZIP or address to find the nearest three stores and check stock first.";
 
 export const metadata: Metadata = pageMeta({
   title: TITLE,

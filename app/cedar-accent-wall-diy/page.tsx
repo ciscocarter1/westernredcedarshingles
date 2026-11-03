@@ -7,9 +7,9 @@ import accentAsset from "@/assets/indoor-sides-accent-wall.png.asset.json";
 
 const heroImg = accentAsset.url;
 
-const TITLE = "Cedar Accent Wall DIY — How to Install Wood Shingles";
+const TITLE = "Cedar Accent Wall DIY: Install Wood Shingles in a Weekend";
 const DESC =
-  "Step-by-step guide to building a cedar shingle accent wall. Natural Western Red Cedar from Lowe's adds warmth and texture to any room in a weekend.";
+  "Build a cedar shingle accent wall in a weekend with our step-by-step guide. Natural Western Red Cedar, just $50 a bundle at Lowe's. See the tools and layout tips.";
 
 export const metadata: Metadata = pageMeta({
   title: TITLE,

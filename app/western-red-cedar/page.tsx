@@ -7,9 +7,9 @@ import { Hammer, Home, Leaf, Shirt } from "lucide-react";
 const forestImg = { src: "/images/western-red-cedar-forest-pacific-northwest.jpg" };
 const textureImg = { src: "/images/western-red-cedar-grain-texture.jpg" };
 
-const TITLE = "What Is Western Red Cedar? Species Guide — Properties, Grades & Uses";
+const TITLE = "What Is Western Red Cedar? Species Guide, Grades & Uses";
 const DESC =
-  "Learn why Western Red Cedar (Thuja plicata) is North America's premier shingle wood — natural rot resistance, straight grain, and decades of proven durability for siding and DIY projects.";
+  "Why Western Red Cedar (Thuja plicata) is North America's top shingle wood: natural rot resistance, straight grain and lasting beauty. Learn the grades and best uses.";
 
 export const metadata: Metadata = pageMeta({
   title: TITLE,

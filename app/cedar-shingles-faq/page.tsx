@@ -5,9 +5,9 @@ import { pageMeta, FAQS, SITE_URL } from "@/lib/site";
 import FaqItemClient from "./FaqItemClient";
 import heroAsset from "@/assets/western-red-cedar-shed-siding.png.asset.json";
 
-const TITLE = "Western Red Cedar Shingles FAQ — Grade, Uses & Installation";
+const TITLE = "Western Red Cedar Shingles FAQ: Grade, Coverage & Install";
 const DESC =
-  "Answers to the most common questions about Western Red Cedar Shingles — what grade they are, where to buy, how to install, and more.";
+  "Answers on Western Red Cedar shingle grade, coverage, fasteners, roofing limits and where to buy. $50 a bundle at Lowe's, Item #3976. Get your questions answered now.";
 
 export const metadata: Metadata = pageMeta({
   title: TITLE,

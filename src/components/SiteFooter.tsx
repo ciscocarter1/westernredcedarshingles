@@ -10,7 +10,7 @@ export function SiteFooter() {
           <div>
             <img
               src={logoAsset.url}
-              alt="Western Red Cedar"
+              alt="Western Red Cedar Shingles logo"
               width={600}
               height={300}
               className="h-14 w-auto"

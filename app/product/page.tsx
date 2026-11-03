@@ -10,9 +10,9 @@ import { CustomerBuilds } from "@/components/CustomerBuilds";
 
 const bundleImg = bundleAsset.url;
 
-const TITLE = "Western Red Cedar Shingles — #3/#4 Undercourse Grade";
+const TITLE = "Western Red Cedar Shingles: #3/#4 Grade, $50/Bundle at Lowe's";
 const DESC =
-  "Our #3/#4 undercourse grade cedar shingles are 100% natural, untreated, and sold exclusively at Lowe's. Built for siding, sheds, and DIY projects.";
+  "Natural, untreated #3/#4 Western Red Cedar shingles for siding, sheds and accent walls. 15 sq ft per $50 bundle, no minimum. Buy in-store at Lowe's, Item #3976.";
 
 export const metadata: Metadata = pageMeta({
   title: TITLE,
@@ -24,20 +24,22 @@ export const metadata: Metadata = pageMeta({
     {
       "@context": "https://schema.org",
       "@type": "Product",
-      name: "Western Red Cedar Tree of Life Wood Shingle Siding",
+      name: "Western Red Cedar Shingles",
       description:
-        "100% natural, untreated #3/#4 undercourse Western Red Cedar shingles for siding, sheds, accent walls, and outdoor projects. Available exclusively at Lowe's.",
-      brand: { "@type": "Brand", name: "Western Red Cedar Shingles" },
+        "Tree of Life 100% natural, untreated #3/#4 undercourse Western Red Cedar shingles for siding, sheds, accent walls, and outdoor projects. Each bundle covers 15 sq ft at 7.5 inch exposure. $50 per bundle, no minimum order, available in-store only at Lowe's (Item #3976).",
+      brand: { "@type": "Brand", name: "Tree of Life" },
       material: "Western Red Cedar (Thuja plicata)",
       sku: "3976",
       image: `${SITE_URL}${bundleImg}`,
       offers: {
         "@type": "Offer",
         url: "https://www.lowes.com/pd/Red-Cedar-Untreated-Wood-Siding-Shingles/3379244",
+        price: "50.00",
         priceCurrency: "USD",
         seller: { "@type": "Organization", name: "Lowe's" },
         availability: "https://schema.org/InStoreOnly",
       },
+      aggregateRating: { "@type": "AggregateRating", ratingValue: "4.5", bestRating: "5", reviewCount: "119" },
     },
     {
       "@context": "https://schema.org",
