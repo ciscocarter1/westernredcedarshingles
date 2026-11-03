@@ -7,9 +7,9 @@ import shedAsset from "@/assets/western-red-cedar-shed-siding.png.asset.json";
 
 const heroImg = shedAsset.url;
 
-const TITLE = "Cedar Shed Siding — How to Install Cedar Shingles";
+const TITLE = "Cedar Shed Siding: How to Install Western Red Cedar Shingles";
 const DESC =
-  "Complete guide to siding a shed with Western Red Cedar Shingles. Natural, untreated, rot-resistant — available at Lowe's. DIY and contractor tips.";
+  "Side your shed with natural, rot-resistant Western Red Cedar shingles. Step-by-step DIY and contractor tips, 15 sq ft per $50 bundle. Find a Lowe's today.";
 
 const STEPS = [
   {

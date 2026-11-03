@@ -3,9 +3,9 @@ import { SiteLayout, Breadcrumbs } from "@/components/SiteLayout";
 import { pageMeta, CONTACT_EMAIL, SITE_URL, SITE_NAME } from "@/lib/site";
 import ContactFormClient from "./ContactFormClient";
 
-const TITLE = "Contact & Inquiries — Western Red Cedar Shingles";
+const TITLE = "Contact Us: Western Red Cedar Shingles Questions & Orders";
 const DESC =
-  "Get in touch about Western Red Cedar Shingle bundles — product questions, bulk orders, project guidance, and DIY support. We respond within 1–2 business days.";
+  "Questions about Western Red Cedar shingle bundles, bulk orders or your project? Contact our team. We reply within 1–2 business days. Send us your message today.";
 
 export const metadata: Metadata = pageMeta({
   title: TITLE,

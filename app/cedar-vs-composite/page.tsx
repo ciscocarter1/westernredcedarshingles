@@ -4,9 +4,9 @@ import { LowesCTA } from "@/components/CTAButton";
 import { pageMeta, SITE_URL } from "@/lib/site";
 import { Check, X } from "lucide-react";
 
-const TITLE = "Cedar Shingles vs Composite Siding — Natural Wood vs Synthetic Comparison";
+const TITLE = "Cedar Shingles vs Composite Siding: Real Wood vs Synthetic";
 const DESC =
-  "Compare Western Red Cedar shingles to composite and synthetic siding. Natural beauty, durability, eco-friendliness, and cost — which is right for your project?";
+  "Compare Western Red Cedar shingles with composite siding on looks, durability, cost and eco impact. See which fits your project and shop real cedar at Lowe's.";
 
 const ROWS: { label: string; cedar: string; composite: string; cedarWin: boolean }[] = [
   { label: "Material origin", cedar: "Natural softwood (Thuja plicata)", composite: "Engineered wood fibers + resins, vinyl, or fiber-cement", cedarWin: true },

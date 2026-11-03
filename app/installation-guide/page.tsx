@@ -7,9 +7,9 @@ import InstallTabsClient from "./InstallTabsClient";
 import { EXTERIOR_STEPS, INTERIOR_STEPS } from "./steps-data";
 import { BundleCalculator } from "@/components/BundleCalculator";
 
-const TITLE = "How to Install Cedar Shingles — Step-by-Step Guide";
+const TITLE = "How to Install Cedar Shingles: Step-by-Step Siding Guide";
 const DESC =
-  "Learn how to install Western Red Cedar Shingles on siding, sheds, and accent walls. Tips for DIYers and pro contractors using Lowe's Item #3976.";
+  "Learn to install Western Red Cedar shingles on siding, sheds and accent walls with stainless nails and 7.5 inch exposure. Free bundle calculator. Start now.";
 
 export const metadata: Metadata = pageMeta({
   title: TITLE,

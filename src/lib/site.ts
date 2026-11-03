@@ -154,7 +154,7 @@ export function pageMeta(opts: {
   const img = opts.image ?? `${SITE_URL}/og-default.jpg`;
   const socialTitle = opts.socialTitle ?? opts.title;
   return {
-    title: opts.title,
+    title: { absolute: opts.title },
     description: opts.description,
     alternates: { canonical: url },
     openGraph: {
